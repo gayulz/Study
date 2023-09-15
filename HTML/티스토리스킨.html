@@ -1,0 +1,2983 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+		<title>[##_page_title_##]</title>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=auto" as="font" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400;1,600&display=auto" as="font" crossorigin="anonymous">
+		<link rel="preload" href="./style.css" as="style">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./images/custom.css">
+		<style>
+			<s_if_var_custom-font>
+				@font-face {
+    			font-family: 'SUITE-Regular';
+    			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    			font-weight: 400;
+    			font-style: normal;
+				}			
+				@font-face {
+					font-family: 'IropkeBatang';
+					src: local(IropkeBatangM),
+						url('./images/iropkebatangm-webfont.woff2') format('woff2'),
+						url('./images/iropkebatangm-webfont.woff') format('woff');
+					font-weight: normal;
+					font-style: normal;
+					font-display: auto;
+				}
+				@font-face {
+					font-family: 'RIDIBatang';
+					src: local(RIDIBatang),
+						url("./images/RIDIBatang.woff2") format("woff2"),
+						url('./images/RIDIBatang.woff') format('woff');
+					font-weight: normal;
+					font-style: normal;
+					font-display: auto;
+				}
+			</s_if_var_custom-font>
+
+			/* font family */
+			html, button, textarea, input,
+			.container_postbtn .postbtn_like .wrap_btn .btn_post .uoc-icon .txt_like,
+			#tistoryEtcLayer .bundle_post .btn_mark, #tt-body-page div[data-ke-type='moreLess'] .btn-toggle-moreless,
+			.container_postbtn button em {
+				font-family: <s_if_var_custom-font>[##_var_custom-font_##]</s_if_var_custom-font>'SUITE-Regular',"Noto Sans DemiLight",AppleSDGothicNeo,"Malgun Gothic","맑은 고딕","돋움",dotum,sans-serif,'Font_Awesome_5_Free' !important;
+			}
+			figure[data-ke-type='opengraph'] div.og-text p.og-title,
+			#tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-title {
+				font-family: <s_if_var_custom-font>[##_var_custom-font_##]</s_if_var_custom-font>'SUITE-Regular',"Noto Sans DemiLight",AppleSDGothicNeo,"Malgun Gothic","맑은 고딕","돋움",dotum,sans-serif,'Font_Awesome_5_Free'!important;
+				font-size: 22px !important;
+				max-width: 100%;
+				margin-bottom: 5px !important
+			}
+			figure[data-ke-type='opengraph'] div.og-text p.og-desc,
+			#tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-desc {
+				font-family: <s_if_var_custom-font>[##_var_custom-font_##]</s_if_var_custom-font>'SUITE-Regular',"Noto Sans DemiLight",AppleSDGothicNeo,"Malgun Gothic","맑은 고딕","돋움",dotum,sans-serif,'Font_Awesome_5_Free' !important;
+				font-size: 15px !important;
+				max-height: none;
+			}
+			figure[data-ke-type='opengraph'] div.og-text p.og-host,
+			#tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-host {
+				font-family: <s_if_var_custom-font>[##_var_custom-font_##]</s_if_var_custom-font>'SUITE-Regular',"Noto Sans DemiLight",AppleSDGothicNeo,"Malgun Gothic","맑은 고딕","돋움",dotum,sans-serif,'Font_Awesome_5_Free'!important;
+				font-size: 14px !important;
+				bottom: 10px;
+			}
+
+			/* title position */
+			header p a {text-align: [##_var_title-position_##]}
+
+			/* round style */
+			<s_if_var_round-style>
+				.content-wrapper, .content-title, .book-toc, .floating-toc-new {
+					border-radius: [##_var_round-style-border-radius_##]px;
+				}
+			</s_if_var_round-style>
+
+			/* text underline style */
+			.content-article u {
+				text-decoration-style: [##_var_text_underline_style_##];
+			}
+			
+			/* font-size, line-height setting */
+			html {
+				font-size: [##_var_html-font-size_##]px !important;
+			}
+			.content-article p {
+				line-height: [##_var_html-line-height_##] !important;
+			}
+			article .another_category h4:before,
+			article .tags h2, .related-articles h2, .comments h2,
+			article .another_category.another_category_color_gray a,
+			article .another_category.another_category_color_gray a.current,
+			.comment-list ul li .author-meta .control button:before,
+			.comment-list .tt_more_preview_comments_text, .comment-list ul li .reply,
+			.pagination, #blog-menu, article .another_category th:before,
+			#tt-body-page blockquote, .content-article > div > ol, .content-article > div > ul,
+			#tt-body-page div[data-ke-type='moreLess'] .btn-toggle-moreless,
+			.book-toc > p {
+				font-size: calc(1em * [##_var_font-size-ratio_##]) !important;
+			}
+			#toc > li > a {
+				font-size: calc(1em * [##_var_font-size-ratio_##]) !important;
+			}
+			#toc > li > ul > li > a {
+				font-size: calc(0.95em * [##_var_font-size-ratio_##]) !important;
+			}
+			#toc > li > ul > li > ul > li > a {
+				font-size: calc(0.91em * [##_var_font-size-ratio_##]) !important;
+			}
+			#toc-body #toc > li > a {
+				font-size: calc(0.91em * [##_var_font-size-ratio_##]) !important;
+			}
+			#toc-body #toc > li > ul > li > a {
+				font-size: calc(0.87em * [##_var_font-size-ratio_##]) !important;
+			}
+			#toc-body #toc > li > ul > li > ul > li > a {
+				font-size: calc(0.84em * [##_var_font-size-ratio_##]) !important;
+			}
+			
+			#tt-body-page blockquote[data-ke-style='style1'] {
+				padding-top: calc(29px * [##_var_font-size-ratio_##]) !important;
+				background-size: calc(23px * [##_var_font-size-ratio_##]) !important;
+			}
+			h1, h1[data-ke-size] { font-size:calc(1.4em * [##_var_font-size-ratio_##]) !important; }
+			h2, h2[data-ke-size] { font-size:calc(1.3em * [##_var_font-size-ratio_##]) !important; }
+			h3, h3[data-ke-size] { font-size:calc(1.24em * [##_var_font-size-ratio_##]) !important;}
+			h4, h4[data-ke-size] { font-size:calc(1.17em * [##_var_font-size-ratio_##]) !important; }
+			#tt-body-page p[data-ke-size='size18'],
+			p[data-ke-size='size18'] { font-size: calc(1.12em * [##_var_font-size-ratio_##]) !important; }
+			#tt-body-page p[data-ke-size='size16'],
+			p[data-ke-size='size16'] { font-size: calc(1.08em * [##_var_font-size-ratio_##]) !important; }
+			#tt-body-page p[data-ke-size='size14'],
+			p[data-ke-size='size14'] { font-size: calc(0.9em * [##_var_font-size-ratio_##]) !important; }
+			figure[data-ke-type='opengraph'] div.og-text p.og-title, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-title {
+				font-size: calc(1.22em * [##_var_font-size-ratio_##]) !important;
+			}
+			.comment-list ul li p {
+				font-size: calc(0.9em * [##_var_font-size-ratio_##]) !important;
+			}
+			.content-article pre code {
+				font-size: calc(0.85em * [##_var_font-size-ratio_##]) !important;
+			}
+			figure[data-ke-type='opengraph'] div.og-text p.og-desc, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-desc {
+				font-size: calc(0.83em * [##_var_font-size-ratio_##]) !important;
+			}
+			figure[data-ke-type='opengraph'] div.og-text p.og-host, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-host,
+			figure.fileblock .filename, #tt-body-page figure.fileblock .filename {
+				font-size: calc(0.77em * [##_var_font-size-ratio_##]) !important;
+			}
+			figure.fileblock .size, #tt-body-page figure.fileblock .size {
+				font-size: calc(0.67em * [##_var_font-size-ratio_##]) !important;
+			}
+			article .tags a, .comment-list ul li .author-meta {
+				font-size: calc(0.8125em * [##_var_font-size-ratio_##]) !important;
+			}
+			.comment-form textarea, footer p, .content-title .category,
+			.content-title .meta {
+				font-size: calc(0.875em * [##_var_font-size-ratio_##]) !important;
+			}
+			footer .copyright {
+				font-size: calc(0.8em * [##_var_font-size-ratio_##]) !important;
+			}
+			.comment-form .submit button, .comment-form .submit .upload-image-label {
+				font-size: calc(0.77em * [##_var_font-size-ratio_##]) !important;
+				width: calc(100px * [##_var_font-size-ratio_##]);
+				height: calc(36px * [##_var_font-size-ratio_##]);
+			}
+			.content-title .title-box {
+				height: calc(66px * [##_var_font-size-ratio_##]) !important;
+			}
+			#blog-menu {
+				padding-top: calc(30px + 40px / [##_var_font-size-ratio_##]);
+			}
+			@media (max-width: 767px) {
+				article .another_category h4:before,
+				article .tags h2, .related-articles h2, .comments h2,
+				article .another_category.another_category_color_gray a,
+				article .another_category.another_category_color_gray a.current,
+				.comment-list ul li .author-meta .control button:before,
+				.comment-list .tt_more_preview_comments_text, .comment-list ul li .reply,
+				.pagination, #blog-menu, article .another_category th:before,
+				#tt-body-page blockquote, .content-article > div > ol, .content-article > div > ul,
+				#tt-body-page div[data-ke-type='moreLess'] .btn-toggle-moreless,
+				.book-toc > p {
+					font-size: calc(1em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#toc > li > a {
+					font-size: calc(1em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#toc > li > ul > li > a {
+					font-size: calc(0.95em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#toc > li > ul > li > ul > li > a {
+					font-size: calc(0.91em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#toc-body #toc > li > a {
+					font-size: calc(0.91em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#toc-body #toc > li > ul > li > a {
+					font-size: calc(0.87em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#toc-body #toc > li > ul > li > ul > li > a {
+					font-size: calc(0.84em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#tt-body-page blockquote[data-ke-style='style1'] {
+					padding-top: calc(29px * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+					background-size: calc(23px * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				h1, h1[data-ke-size] { font-size:calc(1.4em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				h2, h2[data-ke-size] { font-size:calc(1.3em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				h3, h3[data-ke-size] { font-size:calc(1.24em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;}
+				h4, h4[data-ke-size] { font-size:calc(1.17em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				#tt-body-page p[data-ke-size='size18'],
+				p[data-ke-size='size18'] { font-size: calc(1.12em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				#tt-body-page p[data-ke-size='size16'],
+				p[data-ke-size='size16'] { font-size: calc(1.08em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				#tt-body-page p[data-ke-size='size14'],
+				p[data-ke-size='size14'] { font-size: calc(0.9em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				figure[data-ke-type='opengraph'] div.og-text p.og-title, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-title {
+					font-size: calc(1.22em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+					margin-bottom: 10px !important;
+				}
+				.comment-list ul li p {
+					font-size: calc(0.9em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				.content-article pre code {
+					font-size: calc(0.85em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				figure[data-ke-type='opengraph'] div.og-text p.og-desc, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-desc {
+					font-size: calc(0.83em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				figure[data-ke-type='opengraph'] div.og-text p.og-host, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-host {
+					font-size: calc(0.77em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				article .tags a, .comment-list ul li .author-meta {
+					font-size: calc(0.8125em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				.comment-form textarea, footer p, .content-title .category,
+				.content-title .meta {
+					font-size: calc(0.875em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				footer .copyright {
+					font-size: calc(0.8em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				.comment-form .submit button, .comment-form .submit .upload-image-label {
+					font-size: calc(0.77em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+					width: calc(100px * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]);
+					height: calc(36px * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]);
+				}
+				.content-title .title-box {
+					height: calc(99px * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+				#blog-menu {
+					padding-top: calc(30px + 40px / [##_var_mobile-font-ratio_##] / [##_var_font-size-ratio_##]);
+				}
+			}
+			@media (max-width: 600px) {
+				p[data-ke-size='size14'] { font-size: calc(0.9em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important; }
+				figure[data-ke-type='opengraph'] div.og-text p.og-title, #tt-body-page figure[data-ke-type='opengraph'] div.og-text p.og-title {
+					font-size: calc(1.0em * [##_var_mobile-font-ratio_##] * [##_var_font-size-ratio_##]) !important;
+				}
+			}
+			/* shadow effect */
+			<s_if_var_shadow-effect>
+				section .content-wrapper, .post-item a, .post-item .thum, .cover-list ul li a,
+				.cover-list ul li figure, .cover-special ul li, .sidebar .category,
+				.sidebar .notice, .sidebar .recent, .sidebar .popular, .sidebar .recent-comment,
+				.sidebar .tags, .sidebar .archives, .sidebar .count, .sidebar .profile-info,
+				.sidebar .module_plugin, .sidebar .revenue_unit_wrap, .content-title, .content-article pre,
+				figure.fileblock a, #tt-body-page figure.fileblock a, .sidebar .best-post, .sidebar .d-day,
+				figure[data-ke-type='opengraph'] a, #tt-body-page figure[data-ke-type='opengraph'] a,
+				.related-articles-wrap, .main-ads, #ad-top-left, #ad-top-right, #ad-bottom-left, #ad-bottom-right,
+				.book-toc, .floating-toc-new, #tistorySnsLayer.layer_post, #toast,
+				img:not(.flag, .title-image, .loading-image), .sidebar .content-item .thum, .content-box, .content-comment,
+				article > .inner > ul li a, article > .inner > ul li figure {
+					box-shadow: 0 0 16px -4px #ddd;
+				}
+				
+				body.dark-mode section .content-wrapper, body.dark-mode .post-item a, body.dark-mode .post-item .thum, body.dark-mode .cover-list ul li a,
+				body.dark-mode .cover-list ul li figure, body.dark-mode .cover-special ul li, body.dark-mode .sidebar .category,
+				body.dark-mode article > .inner > ul li a, body.dark-mode article > .inner > ul li figure,
+				body.dark-mode .sidebar .notice, body.dark-mode .sidebar .recent, body.dark-mode .sidebar .popular, body.dark-mode .sidebar .recent-comment,
+				body.dark-mode .sidebar .tags, body.dark-mode .sidebar .archives, body.dark-mode .sidebar .count, body.dark-mode .sidebar .profile-info,
+				body.dark-mode .sidebar .module_plugin, body.dark-mode .sidebar .revenue_unit_wrap, body.dark-mode .content-title, body.dark-mode .content-article pre,
+				body.dark-mode figure.fileblock a, body.dark-mode #tt-body-page figure.fileblock a, body.dark-mode .sidebar .best-post, body.dark-mode .sidebar .d-day,
+				body.dark-mode figure[data-ke-type='opengraph'] a, body.dark-mode #tt-body-page figure[data-ke-type='opengraph'] a,
+				body.dark-mode .related-articles-wrap, body.dark-mode .main-ads, body.dark-mode #ad-top-left, body.dark-mode #ad-top-right,
+				body.dark-mode #ad-bottom-left, body.dark-mode #ad-bottom-right, body.dark-mode article > .inner > ul li a, body.dark-mode article > .inner > ul li figure,
+				body.dark-mode .book-toc, body.dark-mode .floating-toc-new, body.dark-mode #tistorySnsLayer.layer_post, body.dark-mode #toast,
+				body.dark-mode img:not(.flag, .title-image, .loading-image), body.dark-mode .sidebar .content-item .thum, body.dark-mode .content-box, body.dark-mode .content-comment {
+					box-shadow: 0 0 16px -4px #555 !important;
+				}
+			</s_if_var_shadow-effect>
+
+			<s_not_var_shadow-effect>
+				.layer_post {
+					box-shadow: none !important;
+				}
+			</s_not_var_shadow-effect>
+
+			/* etc settings */
+			<s_if_var_best-post-hl1>
+			.sidebar .best-post ul li:nth-child(1) {
+				font-size: 0.94em;
+				font-weight: bold;
+			}
+			</s_if_var_best-post-hl1>
+			<s_if_var_best-post-hl2>
+			.sidebar .best-post ul li:nth-child(2) {
+				font-size: 0.94em;
+				font-weight: bold;
+			}
+			</s_if_var_best-post-hl2>
+			<s_if_var_best-post-hl3>
+			.sidebar .best-post ul li:nth-child(3) {
+				font-size: 0.94em;
+				font-weight: bold;
+			}
+			</s_if_var_best-post-hl3>
+			<s_if_var_best-post-hl4>
+			.sidebar .best-post ul li:nth-child(4) {
+				font-size: 0.94em;
+				font-weight: bold;
+			}
+			</s_if_var_best-post-hl4>
+			<s_if_var_best-post-hl5>
+			.sidebar .best-post ul li:nth-child(5) {
+				font-size: 0.94em;
+				font-weight: bold;
+			}
+			</s_if_var_best-post-hl5>
+			
+			<s_if_var_d-day-hl1>
+			.sidebar .d-day li:nth-child(1) .d-day-text {
+				color: [##_var_d-day-hl1_##]
+			}
+			</s_if_var_d-day-hl1>
+			<s_if_var_d-day-hl2>
+			.sidebar .d-day li:nth-child(2) .d-day-text {
+				color: [##_var_d-day-hl2_##]
+			}
+			</s_if_var_d-day-hl2>
+			<s_if_var_d-day-hl3>
+			.sidebar .d-day li:nth-child(3) .d-day-text {
+				color: [##_var_d-day-hl3_##]
+			}
+			</s_if_var_d-day-hl3>
+			<s_if_var_d-day-hl4>
+			.sidebar .d-day li:nth-child(4) .d-day-text {
+				color: [##_var_d-day-hl4_##]
+			}
+			</s_if_var_d-day-hl4>
+			<s_if_var_d-day-hl5>
+			.sidebar .d-day li:nth-child(5) .d-day-text {
+				color: [##_var_d-day-hl5_##]
+			}
+			</s_if_var_d-day-hl5>
+
+			<s_if_var_matched-ads-height>
+				.sidebar #recommend-ads.revenue_unit_item.adsense {
+					height:  [##_var_matched-ads-height_##]px;
+				}
+				.sidebar #recommend-ads > ins {
+					height: calc([##_var_matched-ads-height_##]px - 20px) !important;
+				}
+			</s_if_var_matched-ads-height>
+
+			<s_if_var_custom-font-forced>
+				.content-article p span {
+					font-family: <s_if_var_custom-font>[##_var_custom-font_##]</s_if_var_custom-font>'SUITE-Regular',"Noto Sans DemiLight",AppleSDGothicNeo,"Malgun Gothic","맑은 고딕","돋움",dotum,sans-serif,'Font_Awesome_5_Free' !important;
+				}
+			</s_if_var_custom-font-forced>
+			<s_if_var_sidebar-left>
+				article {
+					float: right;
+				}
+				aside {
+					float: left;
+				}
+			</s_if_var_sidebar-left>
+			<s_not_var_sidebar-left>
+				article {
+					float: left;
+				}
+				aside {
+					float: right;
+				}
+			</s_not_var_sidebar-left>
+			<s_if_var_paper-style>
+				section, footer, header, .floating-toc-new:after {
+					background-image: url('./images/paper.jpg');
+				}
+			</s_if_var_paper-style>
+			<s_not_var_paper-style>
+				section, footer, header, .floating-toc-new:after {
+					background: #fff;
+				}
+			</s_not_var_paper-style>
+			<s_if_var_blog-title-color>
+				header p a {color:[##_var_blog-title-color_##]}
+			</s_if_var_blog-title-color>
+
+			<s_if_var_blog-menu-color>
+				#blog-menu ul li a {color:[##_var_blog-menu-color_##]}
+			</s_if_var_blog-menu-color>
+
+			<s_if_var_background-color>
+				header:after, section:after, footer:after, .content-title:after, .top-button .menu button:before,
+				.book-toc:after, .top-button .menu button:before, .move-top-btn:before, .move-comment-btn:before, .floating-toc-new,
+				.mobile-menu aside:after, .toast-wrap:after, .share-btn:before, .dark-mode-on-btn:before, .dark-mode-off-btn:before, .font-size-up-btn:before, .font-size-down-btn:before,
+				#toc-body::-webkit-scrollbar-track, ::-webkit-scrollbar-track {background-color:[##_var_background-color_##]}
+
+				.cover-list ul li a, .post-item a, .cover-special ul li,
+				article > .inner > ul li a {
+					background: [##_var_background-color_##]1A;
+				}
+				.comment-list ul li .author-meta .control .link a {
+					background: [##_var_background-color_##]DD;
+				}
+			</s_if_var_background-color>
+			
+			<s_if_var_sidebar-color>
+				.sidebar h2 {background-color:[##_var_sidebar-color_##]}
+			</s_if_var_sidebar-color>
+
+			<s_if_var_sidebar-text-color>
+				.sidebar h2, .sidebar h2 a {color:[##_var_sidebar-text-color_##]}
+			</s_if_var_sidebar-text-color>
+			
+			<s_if_var_etc-color>
+				.sidebar .category .c_cnt,
+				article .another_category th a,
+				.pagination .next:before,
+				.pagination .prev:before, .content-title .meta a,
+				.content-article h2 button, .content-title .category, .content-title .meta,
+				.content-article h3 button, #tt-body-search .post-header h1 span:before,
+				.content-article h4 button, .tags a:before, #tt-body-tag .post-header h1 span:before, .cover-special ul li .category,
+				.more-reply, #toc-title p, .search button:before, .content-article a, .toast, .change-font-btn, .post-item .meta .category,
+				.content-article .book-toc p, .content-article .book-toc p span#toggle, .cover-list ul li .meta .category, article > .inner > ul li .meta .category,
+				.comments h2 .count, article .another_category th:before, .post-header h1 em, .bgm-btn, .dark-mode-btn-dark, .dark-mode-btn-default,
+				.move-top-btn:after, .move-comment-btn:after, .top-button .menu button:after, .post-header h1:before, article h2:before, .content-article .copy-title-btn,
+				.share-btn:after,.dark-mode-on-btn:after,.dark-mode-off-btn:after, .font-size-up-btn:after, .font-size-down-btn:after,
+				#toc > li a:after, #toc > li > ul > li a:after, #toc > li > ul > li > ul > li a:after {color:[##_var_etc-color_##]}
+				#toc-title p #toggle, .floating-icon:after, .sidebar .recent-comment ul li a:before, .sidebar .archives ul li a:before,
+				.sidebar .notice ul li a:before, .sidebar .best-post ul li a:before, .sidebar .d-day ul li span:first-child:before,
+				.sidebar .category .category_list .link_item:before, .bgm-header, h2 .bgm-btn,
+				.sidebar .category .sub_category_list .link_sub_item:before,
+				#toc > li:before, #toc > li > ul > li:before, #toc > li > ul > li > ul > li:before {color:[##_var_etc-color_##] !important;opacity:0.7;}
+				<s_not_var_title-modern-style>
+					.content-article h2 {border-left: [##_var_etc-color_##]ff 12px solid !important;border-bottom: 0px solid [##_var_etc-color_##]ff !important;}
+					.content-article h3 {border-left: [##_var_etc-color_##]cc 10px solid !important;border-bottom: 0px solid [##_var_etc-color_##]cc !important;}
+					.content-article h4 {border-left: [##_var_etc-color_##]88 8px solid !important;border-bottom: 0px solid [##_var_etc-color_##]88 !important;}
+				</s_not_var_title-modern-style>
+				<s_if_var_title-modern-style>
+					.content-article h2 {
+						position: relative;
+						padding: 5px 10px;
+						border-bottom-left-radius: 12px;
+						border-bottom: 2px solid [##_var_etc-color_##]ff !important;
+					}
+					.content-article h2:after {
+						content: '';
+						position: absolute;
+						bottom: calc(-100% - 4px);
+						margin-left: -10px;
+						display: block;
+						width: 100%;
+						height: 100%;
+						border-top-left-radius: 12px;
+						border-top: 2px solid [##_var_etc-color_##]ff !important;
+					}
+					.content-article h3 {
+						position: relative;
+						padding: 5px 10px;
+						border-bottom-left-radius: 12px;
+						border-bottom: 2px solid [##_var_etc-color_##]88 !important;
+					}
+					.content-article h3:after {
+						content: '';
+						position: absolute;
+						bottom: calc(-100% - 4px);
+						margin-left: -10px;
+						display: block;
+						width: 100%;
+						height: 100%;
+						border-top-left-radius: 12px;
+						border-top: 2px solid [##_var_etc-color_##]88 !important;
+					}
+					.content-article h4 {
+						position: relative;
+						padding: 5px 10px;
+						border-bottom-left-radius: 12px;
+						border-bottom: 2px solid [##_var_etc-color_##]33 !important;
+					}
+					.content-article h4:after {
+						content: '';
+						position: absolute;
+						bottom: calc(-100% - 4px);
+						margin-left: -10px;
+						display: block;
+						width: 100%;
+						height: 100%;
+						border-top-left-radius: 12px;
+						border-top: 2px solid [##_var_etc-color_##]33 !important;
+					}
+				</s_if_var_title-modern-style>
+				.comment-form .submit button, .comment-form .submit .upload-image-label,
+				.progress-bar-vertical, .progress-bar-horizontal,
+				.progress-bar-etc-vertical, .progress-bar-etc-horizontal,
+				.sidebar .close:before, .sidebar .close:after {background-color:[##_var_etc-color_##]}
+				.move-top-btn, .move-comment-btn, .top-button .menu button, .sidebar .close, .top-button .profile button,
+				.share-btn, .dark-mode-on-btn, .dark-mode-off-btn, .font-size-up-btn, .font-size-down-btn, .toast-wrap
+				{border: [##_var_border-size_##]px solid [##_var_etc-color_##]55 !important}
+				.comment-list ul li .author-meta .control .link a {border: 1px solid [##_var_etc-color_##]55}
+				::-webkit-scrollbar-thumb, #toc-body::-webkit-scrollbar-thumb {background-color:[##_var_etc-color_##]55 !important}
+				.search input {border-bottom: [##_var_border-size_##]px solid [##_var_etc-color_##]55;}
+				article .another_category.another_category_color_gray a, .comment-list ul li .author-meta .control button:before,
+				.comment-list .tt_more_preview_comments_text, .content-box .content-arrow {
+					color:[##_var_etc-color_##] !important;
+				}
+				.sidebar .category ul li ul li {
+					border-bottom: [##_var_border-size_##]px dotted [##_var_etc-color_##]55;
+				}
+				.comment-list ul li ul li:after {
+					background: linear-gradient(90deg, [##_var_etc-color_##]55, transparent 50%);
+				}
+				.content-box {
+					background-color: [##_var_sidebar-color_##]cc;
+					color: [##_var_sidebar-text-color_##];
+				}
+				.content-box a {
+					color: [##_var_sidebar-text-color_##];
+				}
+				.content-comment {
+					background-color: [##_var_etc-color_##]33;
+				}
+				.content-article u {
+					text-decoration-color: [##_var_etc-color_##]99;
+				}
+				.content-close-btn:after {
+					color: [##_var_etc-color_##]ff;
+				}
+			
+				/* custom border size */
+			  <s_if_var_border-size>
+					.container_postbtn .postbtn_like + .btn_menu_toolbar{
+						height: calc(30px + ([##_var_border-size_##]px * 2));
+					}
+					.bgm-title-wrap {
+						width: calc(220px - [##_var_border-size_##]px);
+					}
+				</s_if_var_border-size>
+
+				/* solid style */
+				<s_if_var_sidebar-solid-style>
+					.comment-form .field {
+						border: 0px;
+					}
+					.comment-form .field input[type=text] {
+						border-top: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+						border-left: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+					.comment-form .field input[type=password] {
+						border-top: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+						border-left: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+						border-right: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+					.container_postbtn .postbtn_like,
+					.container_postbtn .btn_menu_toolbar {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55 !important;
+					}
+					.comment-list ul li, .comment-list ul li ul li {
+						border-top: [##_var_border-size_##]px dotted [##_var_etc-color_##]55;
+						border-bottom: 0px;
+					}
+					.comment-list {
+						border-bottom: [##_var_border-size_##]px dotted [##_var_etc-color_##]55;
+					}
+					.sidebar .category, .sidebar .notice, .sidebar .recent, .sidebar .profile-info, 
+					.sidebar .popular, .sidebar .recent-comment, .sidebar .tags, #tistorySnsLayer.layer_post,
+					.sidebar .count, .sidebar .module_plugin, .archives, .comment-form textarea,
+					.comment-list .tt_more_preview_comments_text, .sidebar .best-post, .sidebar .d-day,
+					figure.fileblock, #tt-body-page figure.fileblock {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+					#___gcse_1 {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+					.gsc-input-box {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55 !important;
+					}			
+					.gsc-search-button-v2 {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##] !important;
+						background-color: [##_var_etc-color_##] !important;
+					}
+				</s_if_var_sidebar-solid-style>
+				<s_if_var_content-solid-style>
+					section .content-wrapper {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+				</s_if_var_content-solid-style>
+				<s_if_var_title-solid-style>
+					.content-title {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+				</s_if_var_title-solid-style>
+				<s_if_var_toc-solid-style>
+					.floating-toc-new, .book-toc {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+				</s_if_var_toc-solid-style>
+				<s_if_var_opengraph-solid-style>
+					figure[data-ke-type='opengraph'], #tt-body-page figure[data-ke-type='opengraph'] {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+				</s_if_var_opengraph-solid-style>
+				<s_if_var_cover-solid-style>
+					.cover-list ul li, .post-item a, .cover-special ul li, article > .inner > ul li {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+				</s_if_var_cover-solid-style>
+				<s_if_var_ads-solid-style>
+					#ad-top-left, #ad-top-right, #ad-bottom-left, #ad-bottom-right {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+				</s_if_var_ads-solid-style>
+				<s_if_var_image-solid-style>
+					figure.imageblock span[data-lightbox], #tt-body-page figure.imageblock span[data-lightbox],
+					figure.imagegridblock > div > span > img, #tt-body-page figure.imagegridblock > div > span > img {
+						border: [##_var_border-size_##]px solid [##_var_etc-color_##]55;
+					}
+					figure.imageblock span[data-lightbox], #tt-body-page figure.imageblock span[data-lightbox] {
+						display: flex;
+					}
+				</s_if_var_image-solid-style>
+			</s_if_var_etc-color>
+			
+			/* custom dark mode color */
+			<s_if_var_use-dark-mode-color>
+				<s_if_var_blog-title-color-d>
+					body.dark-mode header p a {color:[##_var_blog-title-color-d_##]}
+				</s_if_var_blog-title-color-d>
+
+				<s_if_var_blog-menu-color-d>
+					body.dark-mode #blog-menu ul li a {color:[##_var_blog-menu-color-d_##]}
+				</s_if_var_blog-menu-color-d>
+
+				<s_if_var_background-color-d>
+					body.dark-mode header:after, body.dark-mode section:after, body.dark-mode footer:after, body.dark-mode .content-title:after, body.dark-mode .top-button .menu button:before,
+					body.dark-mode .book-toc:after, body.dark-mode .top-button .menu button:before, body.dark-mode .move-top-btn:before, .move-comment-btn:before,
+					body.dark-mode .mobile-menu aside:after, body.dark-mode .toast-wrap:after, body.dark-mode .share-btn:before, body.dark-mode .dark-mode-on-btn:before, body.dark-mode .dark-mode-off-btn:before, body.dark-mode .font-size-up-btn:before, body.dark-mode .font-size-down-btn:before
+					{background-color:[##_var_background-color-d_##]}
+
+					body.dark-mode .cover-list ul li a, body.dark-mode .post-item a, body.dark-mode .cover-special ul li, body.dark-mode .floating-toc-new,
+					body.dark-mode article > .inner > ul li a {
+						background: [##_var_background-color-d_##]1A;
+					}
+				</s_if_var_background-color-d>
+			
+				<s_if_var_sidebar-color-d>
+					body.dark-mode .sidebar h2 {background-color:[##_var_sidebar-color-d_##] !important}
+				</s_if_var_sidebar-color-d>
+
+				<s_if_var_sidebar-text-color-d>
+					body.dark-mode .sidebar h2, body.dark-mode .sidebar h2 a {color:[##_var_sidebar-text-color-d_##] !important}
+				</s_if_var_sidebar-text-color-d>
+			
+				<s_if_var_etc-color-d>
+					body.dark-mode .sidebar .category .c_cnt,
+					body.dark-mode article .another_category th a,
+					body.dark-mode .pagination .next:before,
+					body.dark-mode .pagination .prev:before, body.dark-mode .content-title .meta a,
+					body.dark-mode .content-article h2 button, body.dark-mode .content-title .category, body.dark-mode .content-title .meta,
+					body.dark-mode .content-article h3 button, body.dark-mode #tt-body-search .post-header h1 span:before,
+					body.dark-mode .content-article h4 button, body.dark-mode .tags a:before, body.dark-mode #tt-body-tag .post-header h1 span:before, body.dark-mode .cover-special ul li .category,
+					body.dark-mode .more-reply, body.dark-mode #toc-title p, body.dark-mode .search button:before, body.dark-mode .content-article a, body.dark-mode .toast, body.dark-mode .change-font-btn, body.dark-mode .post-item .meta .category,
+					body.dark-mode .content-article .book-toc p, body.dark-mode .content-article .book-toc p span#toggle, body.dark-mode #toc > li:before, body.dark-mode #toc > li > ul > li:before, body.dark-mode #toc > li > ul > li > ul > li:before, body.dark-mode .cover-list ul li .meta .category, body.dark-mode article > .inner > ul li .meta .category,
+					body.dark-mode .comments h2 .count, body.dark-mode article .another_category th:before, body.dark-mode .post-header h1 em, body.dark-mode .bgm-btn, body.dark-mode .dark-mode-btn-dark, body.dark-mode .dark-mode-btn-default,
+					body.dark-mode .move-top-btn:after, body.dark-mode .move-comment-btn:after, body.dark-mode .top-button .menu button:after, body.dark-mode .post-header h1:before, body.dark-mode article h2:before, body.dark-mode .content-article .copy-title-btn,
+					body.dark-mode .share-btn:after, body.dark-mode .dark-mode-on-btn:after, body.dark-mode .dark-mode-off-btn:after, body.dark-mode .font-size-up-btn:after, body.dark-mode .font-size-down-btn:after,
+					body.dark-mode #toc > li a:after, body.dark-mode #toc > li > ul > li a:after, body.dark-mode #toc > li > ul > li > ul > li a:after {color:[##_var_etc-color-d_##]}
+					body.dark-mode #toc-title p #toggle, body.dark-mode .floating-icon:after, body.dark-mode .sidebar .recent-comment ul li a:before, body.dark-mode .sidebar .archives ul li a:before,
+					body.dark-mode .sidebar .notice ul li a:before, body.dark-mode .sidebar .best-post ul li a:before, body.dark-mode .sidebar .d-day ul li span:first-child:before,
+					body.dark-mode .sidebar .category .category_list .link_item:before, body.dark-mode .bgm-header, body.dark-mode h2 .bgm-btn,
+					body.dark-mode .sidebar .category .sub_category_list .link_sub_item:before,
+					body.dark-mode #toc > li:before, body.dark-mode #toc > li > ul > li:before, body.dark-mode #toc > li > ul > li > ul > li:before {color:[##_var_etc-color-d_##] !important;opacity:0.7;}
+					body.dark-mode .content-article h2 {border-left: [##_var_etc-color-d_##]ff 12px solid !important;border-bottom: 0px solid [##_var_etc-color-d_##]ff !important;}
+					body.dark-mode .content-article h3 {border-left: [##_var_etc-color-d_##]cc 10px solid !important;border-bottom: 0px solid [##_var_etc-color-d_##]cc !important;}
+					body.dark-mode .content-article h4 {border-left: [##_var_etc-color-d_##]88 8px solid !important;border-bottom: 0px solid [##_var_etc-color-d_##]88 !important;}
+					body.dark-mode .comment-form .submit button, body.dark-mode .comment-form .submit .upload-image-label,
+					body.dark-mode .progress-bar-vertical, body.dark-mode .progress-bar-horizontal,
+					body.dark-mode .progress-bar-etc-vertical, body.dark-mode .progress-bar-etc-horizontal,
+					body.dark-mode .sidebar .close:before, body.dark-mode .sidebar .close:after {background-color:[##_var_etc-color-d_##]}
+					body.dark-mode .move-top-btn, body.dark-mode .move-comment-btn, body.dark-mode .top-button .menu button, body.dark-mode .sidebar .close, body.dark-mode .top-button .profile button,
+					body.dark-mode .share-btn, body.dark-mode .dark-mode-on-btn, body.dark-mode .dark-mode-off-btn, body.dark-mode .font-size-up-btn, body.dark-mode .font-size-down-btn, body.dark-mode .toast-wrap
+					{border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55 !important}
+					body.dark-mode .search input {border-bottom: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;}
+					body.dark-mode article .another_category.another_category_color_gray a, body.dark-mode .comment-list ul li .author-meta .control button:before,
+					body.dark-mode .comment-list .tt_more_preview_comments_text, body.dark-mode .content-box .content-arrow {
+						color:[##_var_etc-color-d_##] !important;
+					}
+					body.dark-mode .sidebar .category ul li ul li {
+						border-bottom: [##_var_border-size_##]px dotted [##_var_etc-color-d_##]55;
+					}
+					body.dark-mode .comment-list ul li ul li:after {
+						background: linear-gradient(90deg, [##_var_etc-color_##]55, transparent 50%);
+					}
+					body.dark-mode .content-box {
+						background-color: [##_var_sidebar-color-d_##]99;
+						color: [##_var_sidebar-text-color-d_##];
+					}
+					body.dark-mode .content-box a {
+						color: [##_var_sidebar-text-color-d_##];
+					}
+					body.dark-mode .content-comment {
+						background-color: [##_var_etc-color-d_##]33;
+					}
+					body.dark-mode .content-article u {
+						text-decoration-color: [##_var_etc-color-d_##]99;
+					}
+					body.dark-mode .content-close-btn:after {
+						color: [##_var_etc-color-d_##]ff;
+					}
+
+					/* solid style */
+					<s_if_var_sidebar-solid-style>
+						body.dark-mode .comment-form .field {
+							border: 0px;
+						}
+						body.dark-mode .comment-form .field input[type=password] {
+							border-top: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+							border-left: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+							border-right: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+						body.dark-mode .comment-form .field input[type=text] {
+							border-top: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+							border-left: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+
+						body.dark-mode .container_postbtn .postbtn_like,
+						body.dark-mode .container_postbtn .btn_menu_toolbar {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55 !important;
+						}
+						body.dark-mode .comment-list, body.dark-mode .comment-list ul li ul li {
+							border-top: [##_var_border-size_##]px dotted [##_var_etc-color-d_##]55;
+						}
+						body.dark-mode .sidebar .category, body.dark-mode .sidebar .notice, body.dark-mode .sidebar .recent, body.dark-mode .sidebar .profile-info, 
+						body.dark-mode .sidebar .popular, body.dark-mode .sidebar .recent-comment, body.dark-mode .sidebar .tags, body.dark-mode #tistorySnsLayer.layer_post,
+						body.dark-mode .sidebar .count, body.dark-mode .sidebar .module_plugin, body.dark-mode .archives, body.dark-mode .comment-form textarea,
+						body.dark-mode .comment-list .tt_more_preview_comments_text, body.dark-mode .sidebar .best-post, body.dark-mode .sidebar .d-day,
+						body.dark-mode figure.fileblock, body.dark-mode #tt-body-page figure.fileblock {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+					</s_if_var_sidebar-solid-style>
+					<s_if_var_content-solid-style>
+						body.dark-mode section .content-wrapper {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+					</s_if_var_content-solid-style>
+					<s_if_var_title-solid-style>
+						body.dark-mode .content-title {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+					</s_if_var_title-solid-style>
+					<s_if_var_toc-solid-style>
+						body.dark-mode .floating-toc-new, body.dark-mode .book-toc {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+					</s_if_var_toc-solid-style>
+					<s_if_var_opengraph-solid-style>
+						body.dark-mode figure[data-ke-type='opengraph'], body.dark-mode #tt-body-page figure[data-ke-type='opengraph'] {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55 !important;
+						}
+					</s_if_var_opengraph-solid-style>
+					<s_if_var_cover-solid-style>
+						body.dark-mode .cover-list ul li, body.dark-mode .post-item a, body.dark-mode .cover-special ul li, body.dark-mode article > .inner > ul li {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+					</s_if_var_cover-solid-style>
+					<s_if_var_ads-solid-style>
+						body.dark-mode #ad-top-left, body.dark-mode #ad-top-right, body.dark-mode #ad-bottom-left, body.dark-mode #ad-bottom-right {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55;
+						}
+					</s_if_var_ads-solid-style>
+					<s_if_var_image-solid-style>
+						body.dark-mode figure.imageblock, body.dark-mode #tt-body-page figure.imageblock,
+						body.dark-mode figure.imagegridblock > div > span > img, body.dark-mode #tt-body-page figure.imagegridblock > div > span > img {
+							border: [##_var_border-size_##]px solid [##_var_etc-color-d_##]55 !important;
+						}
+					</s_if_var_image-solid-style>
+				</s_if_var_etc-color-d>
+			</s_if_var_use-dark-mode-color>
+			
+			<s_if_var_forced-font-color>
+				body.dark-mode .content-article p span:not(#toggle),
+				body.dark-mode .content-article li,
+				body.dark-mode blockquote[data-ke-style='style3'], body.dark-mode #tt-body-page blockquote[data-ke-style='style3'],
+				body.dark-mode table, body.dark-mode table span {
+					color: #d6d6d6 !important;
+					background-color: transparent !important;
+				}
+			</s_if_var_forced-font-color>
+
+			<s_if_var_thum-img>
+				.thum:before, .cover-list ul li figure:before, article > .inner > ul li figure:before {
+					background-image:url('[##_var_thum-img_##]');
+					background-size:[##_var_thum-img-size_##];
+					opacity:[##_var_thum-img-opacity_##];
+				}
+			</s_if_var_thum-img>
+			<s_if_var_grid-title-lines>
+				.post-item .title {-webkit-line-clamp:[##_var_grid-title-lines_##];}
+			</s_if_var_grid-title-lines>
+			<s_if_var_grid-excerpt-lines>
+				.post-item .excerpt {-webkit-line-clamp:[##_var_grid-excerpt-lines_##]}
+			</s_if_var_grid-excerpt-lines>
+			<s_if_var_grid-height-fixed>
+				.post-item .title {height:calc([##_var_grid-title-lines_##] * 27px);}
+				.post-item .excerpt {height:calc([##_var_grid-excerpt-lines_##] * 23px);}
+				.post-item .meta {height:21px;}
+				@media screen and (max-width: 767px) {
+					.post-item .title {height:calc([##_var_grid-title-lines_##] * 25px);}
+					.post-item .excerpt {height:calc([##_var_grid-excerpt-lines_##] * 21px);}
+					.post-item .meta {height:16px;}
+				}
+			</s_if_var_grid-height-fixed>
+			
+			<s_if_var_category-header-style-1>
+				.sidebar .category .category_list .link_item:before {content: "[##_var_category-header-style-1_##]"}
+			</s_if_var_category-header-style-1>
+			<s_if_var_category-header-style-2>
+				.sidebar .category .sub_category_list .link_sub_item:before {content: "[##_var_category-header-style-2_##]"}
+			</s_if_var_category-header-style-2>
+			<s_if_var_category-header-style-3>
+				.fold:before {content: "[##_var_category-header-style-3_##]" !important}
+			</s_if_var_category-header-style-3>
+			<s_if_var_toc-header-style-1>
+				#toc > li:before {content: "[##_var_toc-header-style-1_##]" !important}
+				#toc > li a:after {content:"\f060" !important;font-size:0.8em;margin-left:5px;opacity:0;}
+				#toc > li a.selected:after {opacity:1;}
+			</s_if_var_toc-header-style-1>
+			<s_if_var_toc-header-style-2>
+				#toc > li ul li:before {content: "[##_var_toc-header-style-2_##]" !important}
+				#toc > li ul li a:after {content:"\f060" !important;font-size:0.8em;margin-left:5px;opacity:0;}
+				#toc > li ul li a.selected:after {opacity:1;}
+			</s_if_var_toc-header-style-2>
+			<s_if_var_toc-header-style-3>
+				#toc > li ul li ul li:before {content: "[##_var_toc-header-style-3_##]" !important}
+				#toc > li ul li ul li a:after {content:"\f060" !important;font-size:0.8em;margin-left:5px;opacity:0;}
+				#toc > li ul li ul li a.selected:after {opacity:1;}
+			</s_if_var_toc-header-style-3>
+			<s_not_var_width-toc-yn>
+				.book-toc {width:fit-content}
+			</s_not_var_width-toc-yn>
+			<s_not_var_toc-width-scroll>
+				.floating-toc-new #toc-body #toc {
+					width: max-content;
+				}
+			</s_not_var_toc-width-scroll>
+			<s_if_var_content-middle-yn>
+				section .content-wrapper {max-width:[##_var_article-max-width_##]px;}
+				header .inner {max-width:calc([##_var_article-max-width_##]px + 40px);}
+				footer .inner {max-width:calc([##_var_article-max-width_##]px + 40px);}
+				article {width:calc([##_var_article-max-width_##]px - 341px<s_if_var_content-solid-style> - [##_var_border-size_##]px</s_if_var_content-solid-style>);}
+				.cover-special ul li img {
+					width: calc(([##_var_article-max-width_##]px - 356px<s_if_var_content-solid-style> - [##_var_border-size_##]px</s_if_var_content-solid-style>) * 0.5);
+					height: calc(([##_var_article-max-width_##]px - 356px<s_if_var_content-solid-style> - [##_var_border-size_##]px</s_if_var_content-solid-style>) * 0.5);
+				}
+				@media (max-width: calc([##_var_article-max-width_##]px + 42px)) {					
+					#aside-top-blank {
+						display: none !important;
+					}
+					section .content-wrapper {
+						width: initial !important;
+						padding: 10px;
+					}
+					.cover-special ul li img {
+						width: calc((100vw - 48px<s_if_var_cover-solid-style> - [##_var_border-size_##]px</s_if_var_cover-solid-style>) * 0.5) !important;
+						height: calc((100vw - 48px<s_if_var_cover-solid-style> - [##_var_border-size_##]px</s_if_var_cover-solid-style>) * 0.5) !important;
+					}
+					.top-button {
+						position: fixed;
+					}
+					.top-button .profile {
+						display: none;
+					}
+					.top-button .menu {
+						display: block;
+						position: relative;
+						float: left;
+						margin-left: 14px;
+					}
+					.top-button .menu button {
+						display: flex;
+						overflow: hidden;
+						width: 32px;
+						height: 32px;
+						border-radius: 50%;
+						background-color: #fff;
+						align-items: center;
+						justify-content: center;
+					}
+					.top-button .menu button:before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						opacity: 0.1;
+						border-radius: 50%;
+					}
+					.top-button .menu button:after {
+						content: "\f0c9";
+						position: absolute;
+						visibility: visible;
+						font-family: 'SUITE-Regular', 'Font_Awesome_5_Free';
+					}
+					article {
+						max-width: [##_var_article-max-width_##]px;
+						width: initial !important;
+						float: none !important;
+						width: auto;
+						padding-left: 0px;
+					}
+					.mobile-menu aside {
+						right: 0;
+						padding-left: 1px;
+						padding-right: 1px;
+					}
+					.mobile-menu aside:after {
+						content: "";
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						z-index: -1;
+						opacity: 0.1;
+					}
+					.sidebar {
+						position: fixed;
+						top: 0;
+						right: -313px;
+						z-index: 202;
+						float: none;
+						overflow-y: auto;
+						overflow-x: hidden;
+						width: 313px;
+						height: 100%;
+						padding: 70px 0 0 0;
+						background-color: #fff;
+						box-sizing: border-box;
+						transition: left 0.3s;
+						-webkit-transition: right 0.3s;
+					}
+					.sidebar .close {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						display: block;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						text-indent: -999em;
+						outline: none;
+					}
+					.sidebar .close span {display: none;}
+					.sidebar .close:before,
+					.sidebar .close:after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 16px;
+						height: 1px;
+						margin: 0 0 0 -8px;
+					}
+					.sidebar .close:before {
+						transform: rotate(-45deg);
+					}
+					.sidebar .close:after {
+						transform: rotate(45deg);
+					}
+
+					.sidebar .profile {
+						display: block;
+						position: relative;
+						margin-bottom: -40px;
+					}
+					.sidebar .profile:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						z-index: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #f5f5f5;
+						padding-right: 28px;
+					}
+					.sidebar .profile ul {
+						position: relative;
+						z-index: 10;
+						text-align: center;
+					}
+					.sidebar .profile ul li {
+						display: inline-block;
+						padding: 16px 0 18px;
+						font-size: 0.875em;
+						color: #555;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li a {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:before {
+						content: "";
+						display: inline-block;
+						width: 1px;
+						height: 7px;
+						margin: 0 30px 0 26px;
+						background-size: 200px auto;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:first-child:before {
+						content: none;
+					}
+					.content-title h1 {
+						-webkit-line-clamp: 3;
+					}
+					.content-title .title-box {
+						height: 99px;
+					}
+					.comment-list ul li ul li .author-meta {
+						padding-left: 95px;
+					}
+					.comment-list ul li .author-meta .date {
+						display: block;
+						margin-left: -13px;
+					}
+					.comment-list ul li ul li p {
+						padding-left: 25px;
+					}
+					.comment-list ul li p {
+						padding: 25px 0 15px 5px;
+					}
+					.comment-list ul li ul li {
+						padding: 15px 0 0 0;
+					}
+					.comment-list ul li {
+						padding: 15px 0 0 0;
+					}
+					.more-reply {
+						margin-bottom: 0;
+					}
+				}
+				@media (max-width: 1079px) {
+					#aside-top-blank {
+						display: none !important;
+					}
+					.cover-special ul li img {
+						width: calc((100vw - 48px<s_if_var_cover-solid-style> - [##_var_border-size_##]px</s_if_var_cover-solid-style>) * 0.5) !important;
+						height: calc((100vw - 48px<s_if_var_cover-solid-style> - [##_var_border-size_##]px</s_if_var_cover-solid-style>) * 0.5) !important;
+					}
+					.top-button {
+						position: fixed;
+					}
+					.top-button .profile {
+						display: none;
+					}
+					.top-button .menu {
+						display: block;
+						position: relative;
+						float: left;
+						margin-left: 14px;
+					}
+					.top-button .menu button {
+						display: flex;
+						overflow: hidden;
+						width: 32px;
+						height: 32px;
+						border-radius: 50%;
+						background-color: #fff;
+						align-items: center;
+						justify-content: center;
+					}
+					.top-button .menu button:before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						opacity: 0.1;
+						border-radius: 50%;
+					}
+					.top-button .menu button:after {
+						content: "\f0c9";
+						position: absolute;
+						visibility: visible;
+						font-family: 'SUITE-Regular';
+					}
+					article {
+						float: none !important;
+						width: auto;
+						padding-left: 0px;
+						padding-right: 0px;
+					}
+					.mobile-menu aside {
+						right: 0;
+						padding-left: 1px;
+						padding-right: 1px;
+					}
+					.mobile-menu aside:after {
+						content: "";
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						z-index: -1;
+						opacity: 0.1;
+					}
+					.sidebar {
+						position: fixed;
+						top: 0;
+						right: -313px;
+						z-index: 202;
+						float: none;
+						overflow-y: auto;
+						overflow-x: hidden;
+						width: 313px;
+						height: 100%;
+						padding: 70px 0 0 0;
+						background-color: #fff;
+						box-sizing: border-box;
+						transition: left 0.3s;
+						-webkit-transition: right 0.3s;
+					}
+					.sidebar .close {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						display: block;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						text-indent: -999em;
+						outline: none;
+					}
+					.sidebar .close span {display: none;}
+					.sidebar .close:before,
+					.sidebar .close:after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 16px;
+						height: 1px;
+						margin: 0 0 0 -8px;
+					}
+					.sidebar .close:before {
+						transform: rotate(-45deg);
+					}
+					.sidebar .close:after {
+						transform: rotate(45deg);
+					}
+
+					.sidebar .profile {
+						display: block;
+						position: relative;
+						margin-bottom: -40px;
+					}
+					.sidebar .profile:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						z-index: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #f5f5f5;
+						padding-right: 28px;
+					}
+					.sidebar .profile ul {
+						position: relative;
+						z-index: 10;
+						text-align: center;
+					}
+					.sidebar .profile ul li {
+						display: inline-block;
+						padding: 16px 0 18px;
+						font-size: 0.875em;
+						color: #555;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li a {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:before {
+						content: "";
+						display: inline-block;
+						width: 1px;
+						height: 7px;
+						margin: 0 30px 0 26px;
+						background-size: 200px auto;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:first-child:before {
+						content: none;
+					}
+					.content-title h1 {
+						-webkit-line-clamp: 3;
+					}
+					.content-title .title-box {
+						height: 99px;
+					}
+					.comment-list ul li ul li .author-meta {
+						padding-left: 95px;
+					}
+					.comment-list ul li .author-meta .date {
+						display: block;
+						margin-left: -13px;
+					}
+					.comment-list ul li ul li p {
+						padding-left: 25px;
+					}
+					.comment-list ul li p {
+						padding: 25px 0 15px 5px;
+					}
+					.comment-list ul li ul li {
+						padding: 15px 0 0 0;
+					}
+					.comment-list ul li {
+						padding: 15px 0 0 0;
+					}
+					.more-reply {
+						margin-bottom: 0;
+					}
+					#blog-menu {
+						float: none;
+					}
+				}
+				@media (max-width: 767px) {
+					.cover-special ul li img {
+						width: calc(100vw - 30px) !important;
+						height: calc(100vw - 30px) !important;
+						float: none;
+					}
+				}
+				.floating-toc-new {
+					max-width: calc((100vw - [##_var_article-max-width_##]px - 140px) / 2);
+					min-width: 50px;
+				}
+			</s_if_var_content-middle-yn>
+			<s_not_var_content-middle-yn>
+				article {
+					width: calc(100vw - 330px - 395px<s_if_var_cover-solid-style> - [##_var_border-size_##]px</s_if_var_cover-solid-style>);
+					padding-left: 30px;
+					max-width: calc([##_var_article-max-width_##]px - 310px<s_if_var_cover-solid-style> + ([##_var_border-size_##]px / 2)</s_if_var_cover-solid-style>);
+				}
+				section .content-wrapper {
+					margin-left: 10px;
+					margin-right: 330px;
+					max-width: [##_var_article-max-width_##]px;
+				}
+				header .inner, footer .inner {
+					margin-left: 10px;
+					margin-right: 330px;
+					max-width: [##_var_article-max-width_##]px;
+				}
+				@media (max-width: 1400px) {
+					article {
+						width: calc(100vw - 395px<s_if_var_cover-solid-style> - [##_var_border-size_##]px</s_if_var_cover-solid-style>);
+					}
+					section .content-wrapper {
+						margin-right: 1px;
+					}
+				}
+				@media (max-width: 1079px) {
+					#aside-top-blank {
+						display: none !important;
+					}
+					.cover-special ul li img {
+						width: calc((100vw - 50px) * 0.5);
+						height: calc((100vw - 50px) * 0.5);
+					}
+					.top-button {
+						position: fixed;
+					}
+					.top-button .profile {
+						display: none;
+					}
+					.top-button .menu {
+						display: block;
+						position: relative;
+						float: left;
+						margin-left: 14px;
+					}
+					.top-button .menu button {
+						display: flex;
+						overflow: hidden;
+						width: 32px;
+						height: 32px;
+						border-radius: 50%;
+						background-color: #fff;
+						align-items: center;
+						justify-content: center;
+					}
+					.top-button .menu button:before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						opacity: 0.1;
+						border-radius: 50%;
+					}
+					.top-button .menu button:after {
+						content: "\f0c9";
+						position: absolute;
+						visibility: visible;
+						font-family: 'SUITE-Regular','Font_Awesome_5_Free';
+					}
+					article {
+						float: none !important;
+						width: auto;
+						padding-left: 0px;
+						padding-right: 0px;
+					}
+					header .inner, footer .inner {
+						margin-right: 10px;
+					}
+					.mobile-menu aside {
+						right: 0;
+						padding-left: 1px;
+						padding-right: 1px;
+					}
+					.mobile-menu aside:after {
+						content: "";
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						z-index: -1;
+						opacity: 0.1;
+					}
+					.sidebar {
+						position: fixed;
+						top: 0;
+						right: -313px;
+						z-index: 202;
+						float: none;
+						overflow-y: auto;
+						overflow-x: hidden;
+						width: 313px;
+						height: 100%;
+						padding: 70px 0 0 0;
+						background-color: #fff;
+						box-sizing: border-box;
+						transition: left 0.3s;
+						-webkit-transition: right 0.3s;
+					}
+					.sidebar .close {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						display: block;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						text-indent: -999em;
+						outline: none;
+					}
+					.sidebar .close span {display: none;}
+					.sidebar .close:before,
+					.sidebar .close:after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 16px;
+						height: 1px;
+						margin: 0 0 0 -8px;
+					}
+					.sidebar .close:before {
+						transform: rotate(-45deg);
+					}
+					.sidebar .close:after {
+						transform: rotate(45deg);
+					}
+
+					.sidebar .profile {
+						display: block;
+						position: relative;
+						margin-bottom: -40px;
+					}
+					.sidebar .profile:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						z-index: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #f5f5f5;
+						padding-right: 28px;
+					}
+					.sidebar .profile ul {
+						position: relative;
+						z-index: 10;
+						text-align: center;
+					}
+					.sidebar .profile ul li {
+						display: inline-block;
+						padding: 16px 0 18px;
+						font-size: 0.875em;
+						color: #555;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li a {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:before {
+						content: "";
+						display: inline-block;
+						width: 1px;
+						height: 7px;
+						margin: 0 30px 0 26px;
+						background-size: 200px auto;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:first-child:before {
+						content: none;
+					}
+					.content-title h1 {
+						-webkit-line-clamp: 3;
+					}
+					.content-title .title-box {
+						height: 99px;
+					}
+					.comment-list ul li ul li .author-meta {
+						padding-left: 95px;
+					}
+					.comment-list ul li .author-meta .date {
+						display: block;
+						margin-left: -13px;
+					}
+					.comment-list ul li ul li p {
+						padding-left: 25px;
+					}
+					.comment-list ul li p {
+						padding: 25px 0 15px 5px;
+					}
+					.comment-list ul li ul li {
+						padding: 15px 0 0 0;
+					}
+					.comment-list ul li {
+						padding: 15px 0 0 0;
+					}
+					.more-reply {
+						margin-bottom: 0;
+					}
+					#blog-menu {
+						float: none;
+					}
+				}
+				@media (max-width: 767px) {
+					.cover-special ul li img {
+						width: calc(100vw - 30px) !important;
+						height: calc(100vw - 30px) !important;
+						float: none;
+					}
+				}
+			</s_not_var_content-middle-yn>
+			<s_if_var_fix-ads-space>
+				#upper .revenue_unit_wrap {
+					height: 334px !important;
+					margin-top: 0px;
+					margin-bottom: 10px;
+				}
+				#lower .revenue_unit_wrap {
+					height: 334px !important;
+					margin-top: 10px;
+				}
+				.sidebar .revenue_unit_wrap .adsense {
+					width: 300px !important;
+					height: 600px !important;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.sidebar .revenue_unit_wrap .adfit {
+					width: 300px !important;
+					height: 255px !important;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.tt_article_useless_p_margin .revenue_unit_wrap .revenue_unit_item.adsense {
+					height: 334px !important;
+				}
+				.tt_article_useless_p_margin .revenue_unit_wrap .revenue_unit_item.dable {
+						height: 432px !important;
+				}
+			</s_if_var_fix-ads-space>
+			<s_if_var_hide-sidebar>
+				@media (max-width: 100vw) {
+					#aside-top-blank {
+						display: none !important;
+					}
+					.cover-special ul li img {
+						max-width: calc(([##_var_article-max-width_##]px - 15px) * 0.5);
+						max-height: calc(([##_var_article-max-width_##]px - 15px) * 0.5);
+						width: calc((100vw - 30px) * 0.5);
+						height: calc((100vw - 30px) * 0.5);
+					}
+					.top-button {
+						position: fixed;
+					}
+					.top-button .profile {
+						display: none;
+					}
+					.top-button .menu {
+						display: block;
+						position: relative;
+						float: left;
+						margin-left: 14px;
+					}
+					.top-button .menu button {
+						display: flex;
+						overflow: hidden;
+						width: 32px;
+						height: 32px;
+						border-radius: 50%;
+						background-color: #fff;
+						align-items: center;
+						justify-content: center;
+					}
+					.top-button .menu button:before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						opacity: 0.1;
+						border-radius: 50%;
+					}
+					.top-button .menu button:after {
+						content: "\f0c9";
+						position: absolute;
+						visibility: visible;
+						font-family: 'SUITE-Regular', 'Font_Awesome_5_Free';
+					}
+					article {
+						float: none !important;
+						width: auto;
+						padding-left: 0px;
+					}
+					.mobile-menu aside {
+						right: 0;
+						padding-left: 1px;
+					}
+					.mobile-menu aside:after {
+						content: "";
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						z-index: -1;
+						opacity: 0.1;
+					}
+					.sidebar {
+						position: fixed;
+						top: 0;
+						right: -313px;
+						z-index: 1000;
+						float: none;
+						overflow-y: auto;
+						overflow-x: hidden;
+						width: 313px;
+						height: 100%;
+						padding: 70px 0 0 0;
+						background-color: #fff;
+						box-sizing: border-box;
+						transition: left 0.3s;
+						-webkit-transition: right 0.3s;
+					}
+					.sidebar .close {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						display: block;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						text-indent: -999em;
+						outline: none;
+					}
+					.sidebar .close span {display: none;}
+					.sidebar .close:before,
+					.sidebar .close:after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 16px;
+						height: 1px;
+						margin: 0 0 0 -8px;
+					}
+					.sidebar .close:before {
+						transform: rotate(-45deg);
+					}
+					.sidebar .close:after {
+						transform: rotate(45deg);
+					}
+
+					.sidebar .profile {
+						display: block;
+						position: relative;
+						margin-bottom: -40px;
+					}
+					.sidebar .profile:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						z-index: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #f5f5f5;
+						padding-right: 28px;
+					}
+					.sidebar .profile ul {
+						position: relative;
+						z-index: 10;
+						text-align: center;
+					}
+					.sidebar .profile ul li {
+						display: inline-block;
+						padding: 16px 0 18px;
+						font-size: 0.875em;
+						color: #555;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li a {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:before {
+						content: "";
+						display: inline-block;
+						width: 1px;
+						height: 7px;
+						margin: 0 30px 0 26px;
+						background-size: 200px auto;
+						vertical-align: middle;
+					}
+					.sidebar .profile ul li:first-child:before {
+						content: none;
+					}
+				}
+			</s_if_var_hide-sidebar>
+			<s_not_var_list-meta-yn>
+				.cover-list ul li .excerpt, article > .inner > ul li .excerpt {
+					-webkit-line-clamp: 3;
+				}
+			</s_not_var_list-meta-yn>
+			<s_not_var_list-thum-yn>
+				.cover-list ul li .title, .cover-list ul li .excerpt, .cover-list ul li .meta,
+				article > .inner > ul li .title, article > .inner > ul li .excerpt, article > .inner > ul li .meta {
+					max-width: 100%;
+					padding-left: 5px;
+				}
+			</s_not_var_list-thum-yn>
+		</style>
+		<script>
+			window.$ = window.jQuery = window.tjQuery;
+			var pageLoaded = false;
+			function adPush() {
+				//try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			}
+			function adPushDelay() {
+				(new Promise(function(resolve, reject) {
+					var timer = 0;
+					timer = setInterval(function() {
+						if(pageLoaded) {
+							clearInterval(timer);
+							resolve();
+						}
+					}, 200);
+				})).then(function(){
+					setTimeout(function() {
+						//try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					}, 500);
+				});
+			}
+		</script>
+	</head>
+	<body id="[##_body_id_##]">
+		<script src="./images/preload.min.js"></script>
+		<s_t3>
+			<div id="wrapper">
+				<!-- 블로그 로딩 코드 start -->
+				<s_if_var_loading-screen>
+					<script type="text/javascript">
+						if(location.href.indexOf('#') > -1) {
+							$('#wrapper').addClass('loaded');
+						}
+						var doneFlag = false;
+						var loadingTimer = 0;
+						var wrapperObserver = new MutationObserver(function(mutations) {
+							$('#wrapper').css('height','');
+						});
+						var config = {
+							attributes: true,
+							childList: true,
+							characterData: true
+						};
+						var wrapper = document.getElementById('wrapper');
+
+						wrapperObserver.observe(wrapper, config);
+
+						function afterLoaded(forceDo) {
+							if(!doneFlag || forceDo) {
+								wrapperObserver.disconnect();
+								if(location.href.indexOf('#') == -1) {
+									$('#wrapper').addClass('loaded');
+								}
+								$('#wrapper').off('scroll touchmove mousewheel');
+								$("#waiting").fadeOut();
+								setTimeout(function() {
+									doneFlag = true;
+									smoothScroll();
+								}, 500);
+								/*
+									var allIns = $('ins');
+									for(var i=0; i < allIns.length; i++) {
+										if((allIns.eq(i).height() == 0) && allIns.eq(i).parent().height() != 0) {
+											if('^HTML^BODY^'.indexOf(allIns.eq(i).parent().prop('tagName')) == -1) {
+												allIns.eq(i).parent().css('display','none');
+											}
+										}
+									}
+									*/
+							}
+						}
+
+						$('#wrapper').on('scroll touchmove mousewheel', function(event) {
+							event.preventDefault();
+							event.stopPropagation();
+							return false;
+						});
+
+						$(function() {
+							$("#waiting").show();
+							loadingTimer = setTimeout(function(){
+								loadingTimer = 0;
+								afterLoaded(true);
+							}, 3000);
+						});
+
+						$(window).on('load', function() {
+							if(loadingTimer != 0) {
+								clearTimeout(loadingTimer);
+								afterLoaded();
+							}
+						});
+					</script>
+				</s_if_var_loading-screen>
+				<s_not_var_loading-screen>
+					<script>
+						$(function() {$('#wrapper').addClass('loaded');});
+					</script>
+				</s_not_var_loading-screen>
+				<!-- 블로그 로딩 코드 end -->
+				<div class="top-button">
+					<div class="profile">
+						<button type="button">[##_blog_image_##]</button>
+						<nav>
+							<ul>
+								<li><a href="[##_owner_url_##]">관리</a></li>
+								<li><a href="[##_owner_url_##]/entry/post ">글쓰기</a></li>
+								<li class="login"><a href="#">로그인</a></li>
+								<li class="logout"><a href="#">로그아웃</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="menu">
+						<button type="button"></button>
+					</div>
+				</div>
+				<header>
+					<div class="inner">
+						<p>
+							<a class="title" href="[##_blog_link_##]">
+								<s_if_var_blog-logo-image>
+									<img class="title-image" src="[##_var_blog-logo-image_##]" alt="[##_title_##]" >
+								</s_if_var_blog-logo-image>
+								<s_not_var_blog-logo-image>
+									[##_title_##]
+								</s_not_var_blog-logo-image>
+							</a>
+						</p>
+						<nav id="blog-menu">
+							[##_blog_menu_##]
+						</nav>
+					</div>
+				</header>
+				<section style="z-index:110;">
+					<div class="progress-bar-ani">
+						<div class="progress-bar-horizontal" <s_not_var_progress-top>style="display:none;"</s_not_var_progress-top>></div>
+						<div class="progress-bar-vertical" <s_not_var_progress-left>style="display:none;"</s_not_var_progress-left>></div>
+						<div class="progress-bar-etc-horizontal" <s_not_var_progress-bottom>style="display:none;"</s_not_var_progress-bottom>></div>
+						<div class="progress-bar-etc-vertical" <s_not_var_progress-right>style="display:none;"</s_not_var_progress-right>></div>
+					</div>
+					<div class="floating-toc-new" style="display:none;"></div>
+					<div class="content-wrapper">
+						<aside class="sidebar">
+							<div class="inner">
+								<!-- 여백 만들기 -->
+								<div id="aside-top-blank" style="display:none;width:100%;"></div>
+								<s_sidebar>
+									<s_sidebar_element>
+										<!-- 구글 검색바 -->
+										<s_if_var_google-searchbar-ads>
+											<div style="margin-bottom:30px;height:calc(32px + ([##_var_border-size_##]px * 2));">
+												<script async src="https://cse.google.com/cse.js?cx=[##_var_google-searchbar-ads_##]"></script>
+												<div class="gcse-searchbox"></div>
+											</div>
+										</s_if_var_google-searchbar-ads>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 검색바 -->
+										<div class="search">
+											<input type="text" id="search_default" value="" placeholder="검색 내용을 입력하세요." onkeypress="if (event.keyCode == 13) { search_default() }">
+											<button type="submit" onclick="search_default()">검색</button>
+										</div>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 배경음악 -->
+										<div class="module module_plugin">
+											<h2 id="bgm-title">
+												<span class="bgm-header">&#xe077;</span>
+												<span class="bgm-title-wrap">
+													<span class="bgm-title-box">
+														<span id="current-bgm">플레이 버튼을 눌러 주세요</span>
+													</span>
+												</span>
+												<button class="bgm-btn" onclick="bgmMute()" style="margin:auto;" id='bgm-mute'>
+													&#xf6a9; <!-- mute btn -->
+												</button>
+											</h2>
+											<div class="bgm-box">
+												<button class="bgm-btn" onclick="nextBgm('-')" style="margin:auto;">
+													&#xf048; <!-- prev btn -->
+												</button>
+												<button class="bgm-btn" onclick="toggleBgm()" id='bgm-switch' style="margin:auto;">
+													<span id="bgm-status">&#xf04b;</span> <!-- play btn -->
+												</button>
+												<button class="bgm-btn" onclick="nextBgm('+')" style="margin:auto;">
+													&#xf051; <!-- next btn -->
+												</button>
+												<button class="bgm-btn" onclick="bgmVolume('+')" style="margin:auto;">
+													&#xf028; <!-- volume up btn -->
+												</button>
+												<button class="bgm-btn" onclick="bgmVolume('-')" style="margin:auto;">
+													&#xf027; <!-- volume down btn -->
+												</button>
+											</div>
+										</div>
+									</s_sidebar_element>
+																		
+<!--
+									<s_sidebar_element> 
+										<!-- 번역 서비스 -->
+<!--										<div class="module module_plugin">
+											<div class="lang-box">
+												<h2>다국어 번역</h2>
+												<!-- GTranslate: https://gtranslate.io/ -->
+<!--												<a href="#" onclick="doGTranslateCustom('ko|ko');return false;" title="한국어" class="gflag nturl">
+													<img class="flag" src="./images/ko.png" height="24" width="24" alt="한국어" loading="lazy" />
+												</a>
+												<s_if_var_en-yn>
+													<a href="#" onclick="doGTranslateCustom('ko|en');return false;" title="영어" class="gflag nturl">
+														<img class="flag" src="./images/en.png" height="24" width="24" alt="영어" loading="lazy" />
+													</a>
+												</s_if_var_en-yn>
+												<s_if_var_cn-yn>
+													<a href="#" onclick="doGTranslateCustom('ko|zh-CN');return false;" title="중국어 간체" class="gflag nturl">
+														<img class="flag" src="./images/zh-CN.png" height="24" width="24" alt="중국어 간체" loading="lazy" />
+													</a>
+												</s_if_var_cn-yn>
+												<s_if_var_tw-yn>
+													<a href="#" onclick="doGTranslateCustom('ko|zh-TW');return false;" title="중국어 번체" class="gflag nturl">
+														<img class="flag" src="./images/zh-TW.png" height="24" width="24" alt="중국어 번체" loading="lazy" />
+													</a>
+												</s_if_var_tw-yn>
+												<s_if_var_ja-yn>
+													<a href="#" onclick="doGTranslateCustom('ko|ja');return false;" title="일본어" class="gflag nturl">
+														<img class="flag" src="./images/ja.png" height="24" width="24" alt="일본어" loading="lazy" />
+													</a>
+												</s_if_var_ja-yn>
+												<s_if_var_es-yn>
+													<a href="#" onclick="doGTranslateCustom('ko|es');return false;" title="스페인어" class="gflag nturl">
+														<img class="flag" src="./images/es.png" height="24" width="24" alt="스페인어" loading="lazy" />
+													</a>
+												</s_if_var_es-yn>
+												<style>
+													<!--
+													a.gflag {text-decoration:none !important;margin:auto;}
+													a.gflag:hover {text-decoration:none !important;}
+													#goog-gt-tt {display:none !important;}
+													.goog-te-banner-frame {display:none !important;}
+													.goog-te-menu-value:hover {text-decoration:none !important;}
+													body {top:0 !important;}
+													#google_translate_element2 {display:none!important;}
+													-->
+<!--												</style>
+												<div id="google_translate_element2"></div>
+											</div>
+										</div>
+									</s_sidebar_element>
+-->									
+									<s_sidebar_element>
+										<!-- 다크 모드 -->
+										<s_not_var_forced-dark-mode>
+											<div class="module module_plugin">
+												<div class="dark-mode-box">
+													<h2>다크 모드</h2>
+													<button class="dark-mode-btn-dark" onclick="setDarkMode('+')" >&#xf186;</button> <!-- moon -->
+													<button class="dark-mode-btn-default" onclick="setDarkMode('-')">&#xf185;</button> <!-- sun -->
+												</div>
+											</div>
+										</s_not_var_forced-dark-mode>
+									</s_sidebar_element>
+<!--
+									<s_sidebar_element>
+										<!-- 글자크기 -->
+<!--										<div class="module module_plugin">
+											<div class="change-font-box">
+													<h2>글자 크기</h2>
+													<button class="change-font-btn" onclick="changeFontSize('+')" >&#xf00e;</button> <!-- size up -->
+<!--													<button class="change-font-btn" onclick="changeFontSize('-')">&#xf010;</button> <!-- size down -->
+<!--													<button class="change-font-btn" onclick="changeFontSize('')">&#xf3e5;</button> <!-- default -->
+<!--											</div>
+										</div>
+									</s_sidebar_element> -->
+
+									<s_sidebar_element>
+										<!-- 디데이 -->
+										<div class="d-day">
+											<h2>D-Day</h2>
+											<ul>
+												<s_if_var_d-day-date-1>
+													<s_if_var_d-day-text-1>
+														<li class="d-day-box"><span id="d-day1" class="d-day-cnt"></span><span class="d-day-text">[##_var_d-day-text-1_##]</span></li>
+													</s_if_var_d-day-text-1>
+												</s_if_var_d-day-date-1>
+												<s_if_var_d-day-date-2>
+													<s_if_var_d-day-text-2>
+														<li class="d-day-box"><span id="d-day2" class="d-day-cnt"></span><span class="d-day-text">[##_var_d-day-text-2_##]</span></li>
+													</s_if_var_d-day-text-2>
+												</s_if_var_d-day-date-2>
+												<s_if_var_d-day-date-3>
+													<s_if_var_d-day-text-3>
+														<li class="d-day-box"><span id="d-day3" class="d-day-cnt"></span><span class="d-day-text">[##_var_d-day-text-3_##]</span></li>
+													</s_if_var_d-day-text-3>
+												</s_if_var_d-day-date-3>
+												<s_if_var_d-day-date-4>
+													<s_if_var_d-day-text-4>
+														<li class="d-day-box"><span id="d-day4" class="d-day-cnt"></span><span class="d-day-text">[##_var_d-day-text-4_##]</span></li>
+													</s_if_var_d-day-text-4>
+												</s_if_var_d-day-date-4>
+												<s_if_var_d-day-date-5>
+													<s_if_var_d-day-text-5>
+														<li class="d-day-box"><span id="d-day5" class="d-day-cnt"></span><span class="d-day-text">[##_var_d-day-text-5_##]</span></li>
+													</s_if_var_d-day-text-5>
+												</s_if_var_d-day-date-5>
+											</ul>
+										</div>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 고정 추천 글 -->
+										<div class="best-post">
+											<h2>[##_var_best-post-h2_##]</h2>
+											<ul>
+												<s_if_var_best-post-title-1>
+													<s_if_var_best-post-src-1>
+														<li><a href="[##_var_best-post-src-1_##]">[##_var_best-post-title-1_##]</a></li>
+													</s_if_var_best-post-src-1>
+												</s_if_var_best-post-title-1>
+												<s_if_var_best-post-title-2>
+													<s_if_var_best-post-src-2>
+														<li><a href="[##_var_best-post-src-2_##]">[##_var_best-post-title-2_##]</a></li>
+													</s_if_var_best-post-src-2>
+												</s_if_var_best-post-title-2>
+												<s_if_var_best-post-title-3>
+													<s_if_var_best-post-src-3>
+														<li><a href="[##_var_best-post-src-3_##]">[##_var_best-post-title-3_##]</a></li>
+													</s_if_var_best-post-src-3>
+												</s_if_var_best-post-title-3>
+												<s_if_var_best-post-title-4>
+													<s_if_var_best-post-src-4>
+														<li><a href="[##_var_best-post-src-4_##]">[##_var_best-post-title-4_##]</a></li>
+													</s_if_var_best-post-src-4>
+												</s_if_var_best-post-title-4>
+												<s_if_var_best-post-title-5>
+													<s_if_var_best-post-src-5>
+														<li><a href="[##_var_best-post-src-5_##]">[##_var_best-post-title-5_##]</a></li>
+													</s_if_var_best-post-src-5>
+												</s_if_var_best-post-title-5>
+												<s_if_var_best-post-title-6>
+													<s_if_var_best-post-src-6>
+														<li><a href="[##_var_best-post-src-6_##]">[##_var_best-post-title-6_##]</a></li>
+													</s_if_var_best-post-src-6>
+												</s_if_var_best-post-title-6>
+												<s_if_var_best-post-title-7>
+													<s_if_var_best-post-src-7>
+														<li><a href="[##_var_best-post-src-7_##]">[##_var_best-post-title-7_##]</a></li>
+													</s_if_var_best-post-src-7>
+												</s_if_var_best-post-title-7>
+												<s_if_var_best-post-title-8>
+													<s_if_var_best-post-src-8>
+														<li><a href="[##_var_best-post-src-8_##]">[##_var_best-post-title-8_##]</a></li>
+													</s_if_var_best-post-src-8>
+												</s_if_var_best-post-title-8>
+												<s_if_var_best-post-title-9>
+													<s_if_var_best-post-src-9>
+														<li><a href="[##_var_best-post-src-9_##]">[##_var_best-post-title-9_##]</a></li>
+													</s_if_var_best-post-src-9>
+												</s_if_var_best-post-title-9>
+											</ul>
+										</div>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 프로필 -->
+										<div class="profile-info">
+											<s_if_var_profile-title-show><h2>[##_var_profile-title_##]</h2></s_if_var_profile-title-show>
+											<div style="padding:10px;">
+												<s_if_var_profile-image>
+													<img src="[##_var_profile-image_##]" alt="[##_title_##]" style="width:100%;">
+												</s_if_var_profile-image>
+												<s_not_var_profile-image>
+													<img src="./images/logo.svg" style="width:100%;">
+												</s_not_var_profile-image>
+												<p class="profile-desc">[##_var_profile-description_##]</p>
+												<p class="profile-details">[##_var_profile-more-details_##]</p>
+											</div>
+										</div>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 카테고리 -->
+										<div class="category">
+											<h2><a href="/category">카테고리</a></h2>
+											[##_category_list_##]
+										</div>
+									</s_sidebar_element>
+<!--									
+									<s_sidebar_element>
+										<!-- 공지사항 -->
+<!--										<s_rct_notice>
+											<div class="notice">
+												<h2>공지사항</h2>
+												<ul>
+													<s_rct_notice_rep>
+														<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></li>
+													</s_rct_notice_rep>
+												</ul>
+											</div>
+										</s_rct_notice>
+									</s_sidebar_element>
+-->
+									<s_sidebar_element>
+										<!-- 인기 글 -->
+										<div class="popular content-item">
+											<h2>인기 글</h2>
+											<ul>
+												<s_if_var_infeed-google-ads-side-p>
+													<script>
+														var popularCnt = 0;
+													</script>
+												</s_if_var_infeed-google-ads-side-p>
+												<s_rctps_popular_rep>
+													<s_if_var_infeed-google-ads-side-p>
+														<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+														<script>
+															if(popularCnt != 0 && popularCnt%[##_var_infeed-repeat-cnt-side_##] == 0) {
+																document.write('<li><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="[##_var_infeed-data-ad-layout-key-side_##]" data-ad-client="[##_var_data-ad-client_##]" data-ad-slot="[##_var_infeed-data-ad-slot-side_##]"></ins></li>');
+																adPush();
+															}
+															popularCnt += 1;
+														</script>
+													</s_if_var_infeed-google-ads-side-p>
+													<li>
+														<a href="[##_rctps_rep_link_##]">
+															<span class="thum">
+																<s_rctps_rep_thumbnail>
+																	<img src="//i1.daumcdn.net/thumb/C70x70/?fname=[##_rctps_rep_thumbnail_##]" alt="" />
+																</s_rctps_rep_thumbnail>
+															</span>
+															<span class="title">[##_rctps_rep_title_##]</span>
+															<span class="date">[##_rctps_rep_simple_date_##]</span>
+														</a>
+													</li>
+												</s_rctps_popular_rep>
+											</ul>
+										</div>
+									</s_sidebar_element>
+
+									<s_sidebar_element>
+										<!-- 최근 글 -->
+										<div class="recent content-item">
+											<h2>최근 글</h2>
+											<ul>
+												<s_if_var_infeed-google-ads-side-r>
+													<script>
+														var recentCnt = 0;
+													</script>
+												</s_if_var_infeed-google-ads-side-r>
+												<s_rctps_rep>
+													<s_if_var_infeed-google-ads-side-r>
+														<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+														<script>
+															if(recentCnt != 0 && recentCnt%[##_var_infeed-repeat-cnt-side_##] == 0) {
+																document.write('<li><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="[##_var_infeed-data-ad-layout-key-side_##]" data-ad-client="[##_var_data-ad-client_##]" data-ad-slot="[##_var_infeed-data-ad-slot-side_##]"></ins></li>');
+																adPush();
+															}
+															recentCnt += 1;
+														</script>
+													</s_if_var_infeed-google-ads-side-r>
+													<li>
+														<a href="[##_rctps_rep_link_##]">
+															<span class="thum">
+																<s_rctps_rep_thumbnail>
+																	<img src="//i1.daumcdn.net/thumb/C70x70/?fname=[##_rctps_rep_thumbnail_##]" alt="" />
+																</s_rctps_rep_thumbnail>
+															</span>
+															<span class="title">[##_rctps_rep_title_##]</span>
+															<span class="date">[##_rctps_rep_simple_date_##]</span>
+														</a>
+													</li>
+												</s_rctps_rep>
+											</ul>
+										</div>
+									</s_sidebar_element>
+<!--
+									<s_sidebar_element>
+										<!-- 멀티플렉스 광고 -->
+<!--										<s_if_var_sidebar-data-ad-slot>
+											<div class="module module_plugin" style="overflow:hidden;padding-top:5px;">
+												<div id="recommend-ads" class="revenue_unit_item adsense">
+													<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+													<ins class="adsbygoogle"
+															style="display:inline-block;transform:scale(1.15);padding-top:55px;"
+															data-ad-client="[##_var_data-ad-client_##]"
+															data-ad-slot="[##_var_sidebar-data-ad-slot_##]"></ins>
+												</div>
+												<script>
+													adPush();
+												</script>
+											</div>
+										</s_if_var_sidebar-data-ad-slot>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 쿠팡 광고 -->
+<!--										<s_not_var_sidebar-data-ad-slot>
+											<s_if_var_sidebar-coupang-id>
+												<div class="module module_plugin" style="overflow:hidden;padding-top:5px;">
+													<div id="recommend-ads" class="revenue_unit_item adsense">
+														<iframe src="https://ads-partners.coupang.com/widgets.html?id=[##_var_sidebar-coupang-id_##]&template=carousel&trackingCode=[##_var_sidebar-coupang-tracking-code_##]&subId=&width=280&height=900" width="280" height="900" frameborder="0" scrolling="yes" referrerpolicy="unsafe-url"></iframe>
+													</div>
+												</div>
+											</s_if_var_sidebar-coupang-id>
+										</s_not_var_sidebar-data-ad-slot>
+									</s_sidebar_element>
+-->
+									<s_sidebar_element>
+										<!-- 최근댓글 -->
+										<div class="recent-comment">
+											<h2>최근 댓글</h2>
+											<ul>
+												<s_rctrp_rep>
+													<li><a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a></li>
+												</s_rctrp_rep>
+											</ul>
+										</div>
+									</s_sidebar_element>
+<!--
+									<s_sidebar_element>
+										<!-- 태그 -->
+<!--										<div class="tags">
+											<h2>태그</h2>
+											<s_random_tags>
+												<a href="[##_tag_link_##]">[##_tag_name_##]</a>
+											</s_random_tags>
+										</div>
+									</s_sidebar_element>
+-->
+									<s_sidebar_element>
+										<!-- 글 보관함 -->
+										<div class="archives">
+											<h2>글 보관함</h2>
+											<ul>
+												<s_archive_rep>
+													<li><a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a></li>
+												</s_archive_rep>
+											</ul>
+										</div>
+									</s_sidebar_element>
+									<s_sidebar_element>
+										<!-- 전체 방문자 -->
+										<div class="count">
+											<h2>방문자 통계</h2>
+											<p class="total">[##_count_total_##]</p>
+											<p style="font-size:0.95em;font-weight:bold;">오늘 : [##_count_today_##]</p>
+											<p>어제 : [##_count_yesterday_##]</p>
+										</div>
+									</s_sidebar_element>
+								</s_sidebar>
+							</div>
+						</aside>
+						<article>
+							<s_if_var_google-searchbar-ads>
+								<div class="gcse-searchresults"></div>
+							</s_if_var_google-searchbar-ads>
+							<div id="upper">
+								[##_revenue_list_upper_##]
+							</div>
+							<s_cover_group>
+								<s_cover_rep>
+									<s_cover name='mynem-cover-grid'>
+										<h2 class="header">[##_cover_title_##]</h2>
+										<div class="inner">
+											<s_cover_item>
+												<div class="post-item">
+													<a href="[##_cover_item_url_##]">
+														<s_if_var_grid-thum-yn>
+															<span class="thum">
+																<s_cover_item_thumbnail>
+																	<img src="//i1.daumcdn.net/thumb/C300x300/?fname=[##_cover_item_thumbnail_##]" alt="" loading="lazy">
+																</s_cover_item_thumbnail>
+															</span>
+														</s_if_var_grid-thum-yn>
+														<span class="title">[##_cover_item_title_##]</span>
+														<s_if_var_grid-excerpt-yn>
+															<span class="excerpt">[##_cover_item_summary_##]</span>
+														</s_if_var_grid-excerpt-yn>
+														<s_if_var_grid-meta-yn>
+															<s_cover_item_article_info>
+																<span class="meta">
+																	<span class="category">[##_cover_item_category_##]</span>
+																	<span class="date">[##_cover_item_simple_date_##]</span>
+																	<s_if_var_show-cover-comments>
+																		<span class="comment">&#xf4ad; [##_cover_item_comment_count_##]</span>
+																	</s_if_var_show-cover-comments>
+																</span>
+															</s_cover_item_article_info>
+														</s_if_var_grid-meta-yn>
+													</a>
+												</div>
+											</s_cover_item>
+										</div>
+									</s_cover>
+									<s_cover name='mynem-cover-list'>
+										<h2 class="header">[##_cover_title_##]</h2>
+										<div class="cover-list">
+											<ul>
+												<s_if_var_infeed-google-ads>
+													<script>
+														var cnt = 0;
+													</script>
+												</s_if_var_infeed-google-ads>
+												<s_cover_item>
+													<s_if_var_infeed-google-ads>
+														<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+														<script>
+															var layoutKey = "";
+															var slot = "";
+															if(window.innerWidth > 767) {
+																slot = "[##_var_infeed-data-ad-slot-big_##]";
+																layoutKey = "[##_var_infeed-data-ad-layout-key-big_##]";
+															} else {
+																slot = "[##_var_infeed-data-ad-slot-small_##]";
+																layoutKey = "[##_var_infeed-data-ad-layout-key-small_##]";
+															}
+															if(cnt != 0 && cnt%[##_var_infeed-repeat-cnt_##] == 0) {
+																document.write('<li><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="'+layoutKey+'" data-ad-client="[##_var_data-ad-client_##]" data-ad-slot="'+slot+'"></ins></li>');
+																adPush();
+															}
+															cnt += 1;
+														</script>
+													</s_if_var_infeed-google-ads>
+													<li>
+														<a href="[##_cover_item_url_##]">
+															<s_if_var_list-thum-yn>
+																<figure>
+																	<s_cover_item_thumbnail>
+																		<img src="//i1.daumcdn.net/thumb/C300x300/?fname=[##_cover_item_thumbnail_##]" alt="" loading="lazy">
+																	</s_cover_item_thumbnail>
+																</figure>
+															</s_if_var_list-thum-yn>
+															<span class="title">[##_cover_item_title_##]</span>
+															<span class="excerpt">[##_cover_item_summary_##]</span>
+															<s_cover_item_article_info>
+																<s_if_var_list-meta-yn>
+																	<span class="meta">
+																		<span class="category">[##_cover_item_category_##]</span>
+																		<span class="date">[##_cover_item_simple_date_##]</span>
+																		<s_if_var_show-cover-comments>
+																			<span class="comment">&#xf4ad; [##_cover_item_comment_count_##]</span>
+																		</s_if_var_show-cover-comments>
+																	</span>
+																</s_if_var_list-meta-yn>
+															</s_cover_item_article_info>
+														</a>
+													</li>
+												</s_cover_item>
+											</ul>
+										</div>
+									</s_cover>
+									<s_cover name='mynem-cover-special'>
+										<h2 class="header">[##_cover_title_##]</h2>
+										<div class="cover-special">
+											<ul>
+												<s_cover_item>
+													<li>
+														<a href="[##_cover_item_url_##]" class="btn view">
+															<s_cover_item_thumbnail><img src="//i1.daumcdn.net/thumb/C600x600/?fname=[##_cover_item_thumbnail_##]"></s_cover_item_thumbnail>
+															<span class="box">
+																<s_cover_item_article_info>
+																	<span class="category">[##_cover_item_category_##]</span>
+																	<span class="meta">
+																		<span class="date">[##_cover_item_simple_date_##]</span>
+																		<s_if_var_show-cover-comments>
+																			<span class="comment">&#xf4ad; [##_cover_item_comment_count_##]</span>
+																		</s_if_var_show-cover-comments>
+																	</span>
+																</s_cover_item_article_info>
+																<span class="title">[##_cover_item_title_##]</span>
+																<span class="excerpt">[##_cover_item_summary_##]</span>
+															</span>
+														</a>
+													</li>
+												</s_cover_item>
+											</ul>
+										</div>
+									</s_cover>
+								</s_cover_rep>
+							</s_cover_group>
+							<s_page_rep>
+								<div class="content-title">
+									<div class="inner">
+										<h1>[##_article_rep_title_##]</h1>
+										<span class="meta">
+											<span class="author">[##_article_rep_author_##]</span>
+											<span class="date">[##_article_rep_simple_date_##]</span>
+										</span>
+									</div>
+								</div>
+								<div class="content-article">
+									<div itemprop="articleBody">
+										[##_article_rep_desc_##]
+									</div>
+								</div>
+							</s_page_rep>
+
+							<s_notice_rep>
+								<div class="content-title notice">
+									<div class="inner">
+										<div class="title-box">
+											<h1>[##_notice_rep_title_##]</h1>
+										</div>
+										<span class="meta">
+											<span class="author">[##_notice_rep_author_##]</span>
+											<span class="date">[##_notice_rep_simple_date_##]</span>
+										</span>
+									</div>
+								</div>
+								<div class="content-article">
+									[##_notice_rep_desc_##]
+								</div>
+							</s_notice_rep>
+
+							<s_list>
+								<div class="post-header">
+									<h1><span>[##_list_conform_##]</span><em>[##_list_count_##]</em></h1>
+								</div>
+								<s_list_empty>
+									<div class="no-content">
+										<ul>
+											<li>조회된 내용이 없습니다.</li>
+										</ul>
+									</div>
+								</s_list_empty>
+							</s_list>
+							
+							<div class="inner">
+								<s_article_protected>
+									<s_not_var_index-page-grid><ul></s_not_var_index-page-grid>
+										<s_index_article_rep>
+											<s_if_var_index-page-grid><div class="post-item protected"></s_if_var_index-page-grid><s_not_var_index-page-grid><li class="protected"></s_not_var_index-page-grid>
+												<a href="[##_article_rep_link_##]">
+													<s_if_var_index-page-grid>
+														<span class="thum" <s_not_var_grid-thum-yn>style="display:none;"</s_not_var_grid-thum-yn>>
+													</s_if_var_index-page-grid>
+													<s_not_var_index-page-grid>
+														<figure <s_not_var_list-thum-yn>style="display:none;"</s_not_var_list-thum-yn>>
+													</s_not_var_index-page-grid>
+													<s_if_var_index-page-grid></span></s_if_var_index-page-grid><s_not_var_index-page-grid></figure></s_not_var_index-page-grid>
+													<span class="title">[##_article_rep_title_##]</span>
+													<span class="excerpt">보호되어 있는 글 입니다.</span>
+													<span class="meta"
+														<s_if_var_index-page-grid><s_not_var_grid-meta-yn>style="display:none;"</s_not_var_grid-meta-yn></s_if_var_index-page-grid>
+														<s_not_var_index-page-grid><s_not_var_list-meta-yn>style="display:none;"</s_not_var_list-meta-yn></s_not_var_index-page-grid>
+													>
+														<span class="date">[##_article_rep_simple_date_##]</span>
+													</span>
+												</a>
+											<s_if_var_index-page-grid></div></s_if_var_index-page-grid><s_not_var_index-page-grid></li></s_not_var_index-page-grid>
+										</s_index_article_rep>
+									<s_not_var_index-page-grid></ul></s_not_var_index-page-grid>
+
+									<s_permalink_article_rep>
+										<div class="content-article">
+											<form class="protected_form" onsubmit="{reloadEntry(14);return false;}">
+												<h2>보호되어 있는 글입니다.</h2>
+												<p>내용을 보시려면 비밀번호를 입력하세요.</p>
+												<input type="password" id="entry14password" name="entry14password" value="" placeholder="비밀번호">
+												<button type="submit" class="btn">확인</button>
+											</form>
+										</div>
+									</s_permalink_article_rep>
+								</s_article_protected>
+
+								<s_not_var_index-page-grid>
+									<s_if_var_infeed-google-ads>
+										<script>
+											var cnt = 0;
+										</script>
+									</s_if_var_infeed-google-ads>
+								</s_not_var_index-page-grid>
+								<s_article_rep>
+									<s_not_var_index-page-grid>
+										<s_if_var_infeed-google-ads>
+											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											<script>
+												var layoutKey = "";
+												var slot = "";
+												if(window.innerWidth > 767) {
+													slot = "[##_var_infeed-data-ad-slot-big_##]";
+													layoutKey = "[##_var_infeed-data-ad-layout-key-big_##]";
+												} else {
+													slot = "[##_var_infeed-data-ad-slot-small_##]";
+													layoutKey = "[##_var_infeed-data-ad-layout-key-small_##]";
+												}
+												if(cnt != 0 && cnt%[##_var_infeed-repeat-cnt_##] == 0) {
+													document.write('<ul><li><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="'+layoutKey+'" data-ad-client="[##_var_data-ad-client_##]" data-ad-slot="'+slot+'"></ins></li></ul>');
+													adPush();
+												}
+												cnt += 1;
+											</script>
+										</s_if_var_infeed-google-ads>
+									</s_not_var_index-page-grid>
+									<s_not_var_index-page-grid><ul></s_not_var_index-page-grid>
+										<s_index_article_rep>
+											<s_if_var_index-page-grid><div class="post-item"></s_if_var_index-page-grid><s_not_var_index-page-grid><li></s_not_var_index-page-grid>
+												<a href="[##_article_rep_link_##]">
+													<s_if_var_index-page-grid>
+														<span class="thum" <s_not_var_grid-thum-yn>style="display:none;"</s_not_var_grid-thum-yn>>
+													</s_if_var_index-page-grid>
+													<s_not_var_index-page-grid>
+														<figure <s_not_var_list-thum-yn>style="display:none;"</s_not_var_list-thum-yn>>
+													</s_not_var_index-page-grid>
+														<s_article_rep_thumbnail>
+															<img src="//i1.daumcdn.net/thumb/C300x300/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="" loading="lazy">
+														</s_article_rep_thumbnail>
+													<s_if_var_index-page-grid></span></s_if_var_index-page-grid><s_not_var_index-page-grid></figure></s_not_var_index-page-grid>
+													<span class="title">[##_article_rep_title_##]</span>
+													<span class="excerpt"
+														<s_if_var_index-page-grid><s_not_var_grid-excerpt-yn>style="display:none;"</s_not_var_grid-excerpt-yn></s_if_var_index-page-grid>
+													>
+														[##_article_rep_summary_##]
+													</span>
+													<span class="meta"
+														<s_if_var_index-page-grid><s_not_var_grid-meta-yn>style="display:none;"</s_not_var_grid-meta-yn></s_if_var_index-page-grid>
+														<s_not_var_index-page-grid><s_not_var_list-meta-yn>style="display:none;"</s_not_var_list-meta-yn></s_not_var_index-page-grid>
+													>
+														<span class="category">[##_article_rep_category_##]</span>
+														<span class="date">[##_article_rep_simple_date_##]</span>
+														<s_rp_count>
+															<span class="comment">&#xf4ad; [##_article_rep_rp_cnt_##]</span>
+														</s_rp_count>
+													</span>
+												</a>
+											<s_if_var_index-page-grid></div></s_if_var_index-page-grid><s_not_var_index-page-grid></li></s_not_var_index-page-grid>
+										</s_index_article_rep>
+									<s_not_var_index-page-grid></ul></s_not_var_index-page-grid>
+									
+									<s_permalink_article_rep>
+										<div class="content-title">
+											<div class="inner">
+												<span class="category">[##_article_rep_category_##]</span>
+												<div class="title-box">
+													<h1>[##_article_rep_title_##]</h1>
+												</div>
+												<span class="meta">
+													<span class="author">[##_article_rep_author_##]</span>
+													<span class="date">[##_article_rep_simple_date_##]</span>
+													<s_ad_div>
+														<a href="[##_s_ad_m_link_##]">수정</a>
+														<a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+													</s_ad_div>
+												</span>
+											</div>
+										</div>
+
+										<div class="content-article">
+											<!-- 상단 광고 2개 삽입 start -->
+											<s_if_var_content-google-ads>
+												<div class="top-ads">
+													<div id="ad-top-left" class="revenue_unit_item adsense">
+														<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+														<ins class="adsbygoogle top-left"
+																 data-ad-client="[##_var_data-ad-client_##]"
+																 data-ad-slot="[##_var_content-data-ad-slot-1_##]"
+																 data-ad-format="rectangle"
+																 data-full-width-responsive="true"
+																 style="width:336px;"></ins>
+														<script>
+															if($(window).width() < 710) {
+																$('#ad-top-left').remove();
+															} else {
+																adPush();
+															}
+														</script>
+													</div>
+													<div id="ad-top-right" class="revenue_unit_item adsense">
+														<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+														<ins class="adsbygoogle top-right"
+																 data-ad-client="[##_var_data-ad-client_##]"
+																 data-ad-slot="[##_var_content-data-ad-slot-2_##]"
+																 data-ad-format="rectangle"
+																 data-full-width-responsive="true"
+																 style="width:336px;"></ins>
+														<script>
+															adPush();
+														</script>
+													</div>
+												</div>
+											</s_if_var_content-google-ads>
+											<!-- 상단 광고 2개 삽입 end -->
+											<div itemprop="articleBody">
+												[##_article_rep_desc_##]
+											</div>
+										</div>
+										<div style="margin-top:30px;"></div>
+										<s_tag_label>
+											<div class="tags">
+												<h2>태그</h2>
+												[##_tag_label_rep_##]
+											</div>
+										</s_tag_label>
+										<div style="margin-top:30px;"></div>
+										<s_if_var_related-google-ads>
+											<div class="related-articles">
+												<h2>[##_var_related-ad-title_##]</h2>
+												<div class="related-articles-wrap">
+													<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+													<ins class="adsbygoogle"
+															 style="display:block"
+															 data-ad-format="autorelaxed"
+															 data-ad-client="[##_var_data-ad-client_##]"
+															 data-ad-slot="[##_var_related-data-ad-slot_##]"></ins>
+													<script>
+														adPush();
+													</script>
+												</div>
+											</div>
+											<div style="margin-top:30px;"></div>
+										</s_if_var_related-google-ads>
+										<!-- 하단 광고 2개 삽입 start -->
+										<s_if_var_content-bottom-google-ads>
+											<div class="bottom-ads">
+												<div id="ad-bottom-left" class="revenue_unit_item adsense">
+													<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+													<ins class="adsbygoogle bottom-left"
+															 data-ad-client="[##_var_data-ad-client_##]"
+															 data-ad-slot="[##_var_content-bottom-data-ad-slot-1_##]"
+															 data-ad-format="rectangle"
+															 data-full-width-responsive="true"
+															 style="width:336px;"></ins>
+													<script>
+														adPush();
+													</script>
+												</div>
+												<div id="ad-bottom-right" class="revenue_unit_item adsense">
+													<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+													<ins class="adsbygoogle bottom-right"
+															 data-ad-client="[##_var_data-ad-client_##]"
+															 data-ad-slot="[##_var_content-bottom-data-ad-slot-2_##]"
+															 data-ad-format="rectangle"
+															 data-full-width-responsive="true"
+															 style="width:336px;"></ins>
+													<script>
+														if($(window).width() < 710) {
+															$('#ad-bottom-right').remove();
+														} else {
+															adPush();
+														}
+													</script>
+												</div>
+											</div>
+											<div style="margin-top:30px;"></div>
+										</s_if_var_content-bottom-google-ads>
+										<!-- 하단 광고 2개 삽입 end -->
+										<div style="margin-top:30px;"></div>
+										<div class="comments">
+											<h2>댓글<span class="count"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></h2>
+											<s_rp>
+												<s_rp_input_form>
+													<div class="comment-form">
+														<s_rp_member>
+															<div class="field">
+																<s_rp_guest>
+																	<input type="text" name="[##_rp_input_name_##]" placeholder="이름" value="[##_guest_name_##]">
+																	<input type="password" name="[##_rp_input_password_##]" maxlength="8" placeholder="비밀번호" value="[##_rp_admin_check_##]">
+																</s_rp_guest>
+																<div class="secret">
+																	<input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
+																	<label for="secret" tabindex="0">비밀글</label>
+																</div>
+															</div>
+														</s_rp_member>
+														<textarea name="[##_rp_input_comment_##]" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+														<div class="submit">
+															<button type="submit" class="btn" onclick="[##_rp_onclick_submit_##]">등록</button>
+														</div>
+													</div>
+												</s_rp_input_form>
+
+												<s_rp_container>
+													<div class="comment-list">
+														<ul class="comment-reverse">
+															<s_rp_rep>
+																<li id="[##_rp_rep_id_##]">
+																	<div class="author-meta">
+																		<img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+																		<span class="nickname">[##_rp_rep_name_##]</span>
+																		<span class="date">[##_rp_rep_date_##]</span>
+																		<span class="control">
+																			<button type="button">더보기</button>
+																			<div class="link">
+																				<a href="[##_rp_rep_link_##]">댓글주소</a>
+																				<a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+																			</div>
+																		</span>
+																	</div>
+																	<p>[##_rp_rep_desc_##]<br>
+																		<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="reply">답글</a></p>
+																	<s_rp2_container>
+																		<ul>
+																			<s_rp2_rep>
+																				<li id="[##_rp_rep_id_##]">
+																					<div class="author-meta">
+																						<img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+																						<span class="nickname">[##_rp_rep_name_##]</span>
+																						<span class="date">[##_rp_rep_date_##]</span>
+																						<span class="control">
+																							<button type="button">더보기</button>
+																							<div class="link">
+																								<a href="[##_rp_rep_link_##]">댓글주소</a>
+																								<a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+																							</div>
+																						</span>
+																					</div>
+																					<p>[##_rp_rep_desc_##]</p>
+																				</li>
+																			</s_rp2_rep>
+																		</ul>
+																	</s_rp2_container>
+																</li>
+															</s_rp_rep>
+														</ul>
+													</div>
+												</s_rp_container>
+											</s_rp>
+										</div>
+									</s_permalink_article_rep>
+								</s_article_rep>
+							</div>
+
+							<s_tag>
+								<div class="post-header">
+									<h1>태그</h1>
+								</div>
+								<div class="tags">
+									<s_tag_rep>
+										<a href="[##_tag_link_##]">[##_tag_name_##]</a>
+									</s_tag_rep>
+								</div>
+							</s_tag>
+
+							<s_guest>
+								<div class="comments">
+									<div class="post-header">
+										<h1>방명록</h1>
+									</div>
+
+									<s_guest_input_form>
+										<div class="comment-form">
+											<s_guest_member>
+												<div class="field">
+													<s_guest_form>
+														<input type="text" name="[##_guest_input_name_##]" placeholder="이름" value="[##_guest_name_##]">
+														<input type="password" name="[##_guest_input_password_##]" placeholder="암호" value="[##_guest_password_##]">
+													</s_guest_form>
+												</div>
+											</s_guest_member>
+											<textarea name="[##_guest_textarea_body_##]" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+											<div class="submit">
+												<button type="submit" class="btn" onclick="[##_guest_onclick_submit_##]">등록</button>
+											</div>
+										</div>
+									</s_guest_input_form>
+
+									<s_guest_container>
+										<div class="comment-list">
+											<ul>
+												<s_guest_rep>
+													<li id="[##_guest_rep_id_##]">
+														<div class="author-meta">
+															<img src="[##_guest_rep_logo_##]" class="avatar" alt="프로필사진">
+															<span class="nickname">[##_guest_rep_name_##]</span>
+															<span class="date">[##_guest_rep_date_##]</span>
+															<span class="control">
+																<button type="button">더보기</button>
+																<div class="link">
+																	<a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+																</div>
+															</span>
+														</div>
+														<p>[##_guest_rep_desc_##]<br>
+															<a href="#" class="reply" onclick="[##_guest_rep_onclick_reply_##]">답변</a></p>
+														<s_guest_reply_container>
+															<ul>
+																<s_guest_reply_rep>
+																	<li id="[##_guest_rep_id_##]">
+																		<div class="author-meta">
+																			<img src="[##_guest_rep_logo_##]" class="avatar" alt="프로필사진">
+																			<span class="nickname">[##_guest_rep_name_##]</span>
+																			<span class="date">[##_guest_rep_date_##]</span>
+																			<span class="control">
+																				<button type="button">더보기</button>
+																				<div class="link">
+																					<a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+																				</div>
+																			</span>
+																		</div>
+																		<p>[##_guest_rep_desc_##]</p>
+																	</li>
+																</s_guest_reply_rep>
+															</ul>
+														</s_guest_reply_container>
+													</li>
+												</s_guest_rep>
+											</ul>
+										</div>
+									</s_guest_container>
+								</div>
+							</s_guest>
+
+							<s_paging>
+								<div class="pagination">
+									<a [##_prev_page_##] class="prev [##_no_more_prev_##]">이전</a>
+									<s_paging_rep>
+										<a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+									</s_paging_rep>
+									<a [##_next_page_##] class="next [##_no_more_next_##]">다음</a>
+								</div>
+							</s_paging>
+							<!-- 메인 멀티플렉스 광고 -->
+							<s_if_var_main-google-ads>
+								<s_if_var_main-ad-title><h2>[##_var_main-ad-title_##]</h2></s_if_var_main-ad-title>
+								<div class="main-ads">
+									<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+									<ins class="adsbygoogle"
+										 style="display:block"
+										 data-ad-format="autorelaxed"
+										 data-ad-client="[##_var_data-ad-client_##]"
+										 data-ad-slot="[##_var_main-data-ad-slot_##]"></ins>
+									<script>
+										if(!checkMainPage()) {
+											var mainAds = $('.main-ads');
+											if(mainAds.prev().prop('tagName') == 'H2') {
+												mainAds.prev().remove();
+											}
+											mainAds.remove();
+										} else {
+											adPush();
+										}
+									</script>
+								</div>
+							</s_if_var_main-google-ads>
+							<div id="lower">
+								[##_revenue_list_lower_##]
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<footer>
+					<div class="inner">
+						<a href="#" class="page-top">TOP</a>
+						<p class="meta"><s_if_var_footer-text-1>[##_var_footer-text-1_##]</s_if_var_footer-text-1></p>
+						<p class="copyright"><s_if_var_footer-text-2>[##_var_footer-text-2_##]</s_if_var_footer-text-2></p>
+					</div>
+				</footer>
+			</div>
+			
+			<div class="floating-button">
+				<!-- 글자 크기 조절 버튼 -->
+				<s_if_var_change-font-size-floating>
+					<a class="font-size-up-btn" onclick="changeFontSize('+')"></a>
+					<a class="font-size-down-btn" onclick="changeFontSize('-')"></a>
+				</s_if_var_change-font-size-floating>
+
+				<!-- 다크모드 버튼 -->
+				<s_if_var_dark-mode-floating>
+					<s_not_var_forced-dark-mode>
+						<a class="dark-mode-on-btn" onclick="setDarkMode('-')" style="display:none;"></a>
+						<a class="dark-mode-off-btn" onclick="setDarkMode('+')" style="display:none;"></a>
+					</s_not_var_forced-dark-mode>
+				</s_if_var_dark-mode-floating>
+
+				<!-- 공유 버튼 -->
+				<a class="share-btn"></a>
+				<div id='custom-sns' class='layer_post'></div>
+				
+				<!-- 댓글 이동 버튼 -->
+				<a class="move-comment-btn" style="display:none;"></a>
+				
+				<!-- 상단 이동 버튼 -->
+				<a class="move-top-btn"></a>
+			</div>
+
+			<!-- 떠다니는 목차 -->
+			<div class="floating-toc"></div>
+
+			<!-- 토스트 메시지 -->
+			<div id="toast" class="toast-wrap" style="display:none;">
+				<div class="toast"></div>
+			</div>
+
+			<!-- 배경음악 태그 -->
+			<audio id='bgm' crossorigin='anonymous' muted></audio>
+
+			<!-- 1픽셀 이미지 -->
+			<img id="blank-img" src="./images/blank.png" style="display:none;">
+
+			<!-- 로딩 이미지 -->
+			<div id="waiting" style="display:none;">
+				<s_if_var_loading-screen-img>
+					<img src="[##_var_loading-screen-img_##]" class="loading-image">
+				</s_if_var_loading-screen-img>
+				<s_not_var_loading-screen-img>
+					<img src="./images/loading.gif" class="loading-image">
+				</s_not_var_loading-screen-img>
+			</div>
+
+			<!-- 이전/다음 글 박스 -->
+			<s_if_var_recommend-contents>
+				<div id="recommend-contents" class="recommend-contents-wrap" style="display:none;">
+					<div class="content-close-btn" onclick="recommendPostClose()"></div>
+					<div class="content-comment">
+						[##_var_content-comment_##]
+					</div>
+					<div class="recommend-contents-body">
+						<div class="content-box">
+							<div class="content-arrow">&#xf0d9;</div>
+							<div id="pre-content" class="pre-content"></div>
+						</div>
+						<div class="content-box">
+							<div id="next-content" class="next-content"></div>
+							<div class="content-arrow">&#xf0da;</div>
+						</div>
+					</div>
+				</div>
+			</s_if_var_recommend-contents>
+
+			<!-- 설정 값 -->
+			<input type='hidden' id='bgm-src-1' value="[##_var_bgm-src-1_##]">
+			<input type='hidden' id='bgm-title-1' value="[##_var_bgm-title-1_##]">
+			<input type='hidden' id='bgm-src-2' value="[##_var_bgm-src-2_##]">
+			<input type='hidden' id='bgm-title-2' value="[##_var_bgm-title-2_##]">
+			<input type='hidden' id='bgm-src-3' value="[##_var_bgm-src-3_##]">
+			<input type='hidden' id='bgm-title-3' value="[##_var_bgm-title-3_##]">
+			<input type='hidden' id='bgm-src-4' value="[##_var_bgm-src-4_##]">
+			<input type='hidden' id='bgm-title-4' value="[##_var_bgm-title-4_##]">
+			<input type='hidden' id='bgm-src-5' value="[##_var_bgm-src-5_##]">
+			<input type='hidden' id='bgm-title-5' value="[##_var_bgm-title-5_##]">
+			<input type='hidden' id='bgm-src-6' value="[##_var_bgm-src-6_##]">
+			<input type='hidden' id='bgm-title-6' value="[##_var_bgm-title-6_##]">
+			<input type='hidden' id='bgm-src-7' value="[##_var_bgm-src-7_##]">
+			<input type='hidden' id='bgm-title-7' value="[##_var_bgm-title-7_##]">
+			<input type='hidden' id='bgm-src-8' value="[##_var_bgm-src-8_##]">
+			<input type='hidden' id='bgm-title-8' value="[##_var_bgm-title-8_##]">
+			<input type='hidden' id='bgm-src-9' value="[##_var_bgm-src-9_##]">
+			<input type='hidden' id='bgm-title-9' value="[##_var_bgm-title-9_##]">
+			<input type='hidden' id='bgm-src-10' value="[##_var_bgm-src-10_##]">
+			<input type='hidden' id='bgm-title-10' value="[##_var_bgm-title-10_##]">
+			<input type='hidden' id='toast-after-like-yn' value="[##_var_toast-after-like-yn_##]">
+			<input type='hidden' id='toast-after-like' value="[##_var_toast-after-like-text_##]">
+			<input type='hidden' id='make-bell-yn' value="[##_var_make-bell-yn_##]">
+			<input type='hidden' id='make-bell' value="[##_var_make-bell-text_##]">
+			<input type='hidden' id='fold-comment-yn' value="[##_var_fold-comment-yn_##]">
+			<input type='hidden' id='fold-comment-num' value="[##_var_fold-comment-num_##]">
+			<input type='hidden' id='floating-toc-position' value="[##_var_floating-toc-position_##]">
+			<input type='hidden' id='bgm-autoplay-yn' value="[##_var_bgm-autoplay-yn_##]">
+			<input type='hidden' id='bgm-autoplay-mobile-yn' value="[##_var_bgm-autoplay-mobile-yn_##]">
+			<input type='hidden' id='init-bgm-volume' value="[##_var_init-bgm-volume_##]">
+			<input type='hidden' id='hide-sidebar' value="[##_var_hide-sidebar_##]">
+			<input type='hidden' id='fixed-header' value="[##_var_fixed-header_##]">
+			<input type='hidden' id='content-middle-yn' value="[##_var_content-middle-yn_##]">
+			<input type='hidden' id='fold-toc-yn' value="[##_var_fold-toc-yn_##]">
+			<input type='hidden' id='auto-toc-yn' value="[##_var_auto-toc-yn_##]">
+			<input type='hidden' id='use-floating-toc-yn' value="[##_var_use-floating-toc-yn_##]">
+			<input type='hidden' id='ignore-toc-yn' value="[##_var_ignore-toc-yn_##]">
+			<input type='hidden' id='auto-toc-position' value="[##_var_auto-toc-position_##]">
+			<input type='hidden' id='dark-mode' value="[##_var_dark-mode_##]">
+			<input type='hidden' id='default-dark-mode' value="[##_var_default-dark-mode_##]">
+			<input type='hidden' id='forced-dark-mode' value="[##_var_forced-dark-mode_##]">
+			<input type='hidden' id='lazy-loading' value="[##_var_lazy-loading_##]">
+			<input type='hidden' id='article-max-width' value="[##_var_article-max-width_##]">
+			<input type='hidden' id='progress-top' value="[##_var_progress-top_##]">
+			<input type='hidden' id='progress-left' value="[##_var_progress-left_##]">
+			<input type='hidden' id='progress-right' value="[##_var_progress-right_##]">
+			<input type='hidden' id='progress-bottom' value="[##_var_progress-bottom_##]">
+			<input type='hidden' id='toc-unfold-yn' value="[##_var_toc-unfold-yn_##]">
+			<input type='hidden' id='ads-toc-position' value="[##_var_ads-toc-position_##]">
+			<input type='hidden' id='use-fixed-ads-yn' value="[##_var_use-fixed-ads-yn_##]">
+			<input type='hidden' id='fold-category' value="[##_var_fold-category_##]">
+			<input type='hidden' id='fold-category-speed' value="[##_var_fold-category-speed_##]">
+			<input type='hidden' id='fold-category-target' value="[##_var_fold-category-target_##]">
+			<input type='hidden' id='adsense-refresh' value="[##_var_adsense-refresh_##]">
+			<input type='hidden' id='fixed-ads-type' value="[##_var_fixed-ads-type_##]">
+			<input type='hidden' id='border-size' value="[##_var_border-size_##]">
+			<input type='hidden' id='make-clipboard-link' value="[##_var_make-clipboard-link_##]">
+			<input type='hidden' id='alert-chromium' value="[##_var_alert-chromium_##]">
+			<input type='hidden' id='alert-chromium-text' value="[##_var_alert-chromium-text_##]">
+			<input type='hidden' id='article-google-ads' value="[##_var_article-google-ads_##]">
+			<input type='hidden' id='article-google-ads-type' value="[##_var_article-google-ads-type_##]">
+			<input type='hidden' id='article-google-ads-forced' value="[##_var_article-google-ads-forced_##]">
+			<input type='hidden' id='article-data-ad-slot-inarticle' value="[##_var_article-data-ad-slot-inarticle_##]">
+			<input type='hidden' id='article-data-ad-slot-display1' value="[##_var_article-data-ad-slot-display1_##]">
+			<input type='hidden' id='article-data-ad-slot-display2' value="[##_var_article-data-ad-slot-display2_##]">
+			<input type='hidden' id='article-google-ads-frequency' value="[##_var_article-google-ads-frequency_##]">
+			<input type='hidden' id='data-ad-client' value="[##_var_data-ad-client_##]">
+			<input type='hidden' id='auto-scroll-ads' value="[##_var_auto-scroll-ads_##]">
+			<input type='hidden' id='d-day-date-1' value="[##_var_d-day-date-1_##]">
+			<input type='hidden' id='d-day-date-2' value="[##_var_d-day-date-2_##]">
+			<input type='hidden' id='d-day-date-3' value="[##_var_d-day-date-3_##]">
+			<input type='hidden' id='d-day-date-4' value="[##_var_d-day-date-4_##]">
+			<input type='hidden' id='d-day-date-5' value="[##_var_d-day-date-5_##]">
+			<input type='hidden' id='floating-toc-subtitle-fold' value="[##_var_floating-toc-subtitle-fold_##]">
+			<input type='hidden' id='upload-images-yn' value="[##_var_upload-images-yn_##]">
+			<input type='hidden' id='imgur-client-id' value="[##_var_imgur-client-id_##]">
+			<input type='hidden' id='toc-force-start' value="[##_var_toc-force-start_##]">
+		</s_t3>
+		<script src="./images/common.min.js"></script>
+		<script src="./images/jquery.toc.min.js"></script>
+		<script src="./images/custom.js"></script>
+		<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+			window.onload = function() {
+				pageLoaded = true;
+			}
+		</script>
+	</body>
+</html>
