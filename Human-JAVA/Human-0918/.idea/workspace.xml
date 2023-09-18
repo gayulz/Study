@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14608141-4a08-41fe-8301-e6775ad82759" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4조_질문하지말아조.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ANY4조_질문하지말아조.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0828_oraclestudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0904_oraclestudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0905_oraclestudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0906_oraclestudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0907_oracleStudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0908_oracleStudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0911_oracleStudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0912_1project.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0912_oracleStudy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0912_oracleStudy1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0829_oracleTasks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0906_oracleTasks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0907_oracleTasks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0910_oracleTASK.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0911_oracleTASK.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0911_oracleTASK1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/procedues.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/0904_BOOK.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/0912_project.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/4조_질문하지말아조_쿼리문.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/Project insert all.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/Project trigger.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/영화예매프로그램쿼리.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/트리거쿼리.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/프로시저구현.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2VYUSOhn1y1hgShFiuEKE1i0rik" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/yuuri/Study/Human-JAVA/Human-0918",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14608141-4a08-41fe-8301-e6775ad82759" name="Changes" comment="" />
+      <created>1695012506547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695012506547</updated>
+      <workItem from="1695012507545" duration="14824000" />
+      <workItem from="1695038448092" duration="1493000" />
+      <workItem from="1695050116099" duration="73000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
