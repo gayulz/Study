@@ -8,6 +8,5 @@ public class Task2 {
         int c = 56;
         float avgAbc = (a+b+c)/3;
         System.out.println(avgAbc);
-
     }
 }

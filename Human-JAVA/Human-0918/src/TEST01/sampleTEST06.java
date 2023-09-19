@@ -15,8 +15,8 @@ public class sampleTEST06 {
         int x = 30;
         int y = 24;
         int size = 20;
-        int xx=x + size;
-        int yy=y - size;
+        int xx = x + size;
+        int yy = y - size;
 
         //  현재 볼의 위치는 다음과 같고 볼의 크기는 다음과 같다.
         //  int ballx=40;
@@ -34,13 +34,21 @@ public class sampleTEST06 {
 //       x <= ballx <= xx , yy <= bally+3 <= y
 //       x <= ballx && ballx <= xx , yy <= bally && bally+3 <= y
 
-        if (x <= ballx && ballx+3 <= xx
-                && yy <= bally && bally+3 <= y) {
-            System.out.println("벙커 안에 있다");
+        if ((x <= ballx) && (ballx + 3 <= xx)) {
+            if ((yy <= bally) && (bally + 3 <= y)) {
+                System.out.println("벙커 안에 있다");
+            } else {
+                System.out.println("벙커 안에 없다");
+            }
         }
-        else {
-            System.out.println("벙커 안에 없다");
-        }
+
+
+
+        String r = (x <= x + size && y - size <= y) &&
+                (ballx + 3 <= x + size && bally + 3 <= y) ?  "벙커 안에 있다" : "벙커 안에 없다" ;
+        System.out.println(r);
+
+
 
     }
 }

@@ -42,5 +42,9 @@ public class Task7 {
                 System.out.println("차선에 없다 ");                                 // x 축과 y 축 전체 범위에 포함 되지 않을 경우 차선에 없다 라고 진행
             }
         }
+
+
+
+
     }
 }

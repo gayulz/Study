@@ -5,34 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14608141-4a08-41fe-8301-e6775ad82759" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4조_질문하지말아조.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ANY4조_질문하지말아조.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0828_oraclestudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0904_oraclestudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0905_oraclestudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0906_oraclestudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0907_oracleStudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0908_oracleStudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0911_oracleStudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0912_1project.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0912_oracleStudy.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/0912_oracleStudy1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0829_oracleTasks.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0906_oracleTasks.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0907_oracleTasks.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0910_oracleTASK.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0911_oracleTASK.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/0911_oracleTASK1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/TASKs/procedues.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/0904_BOOK.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/0912_project.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/4조_질문하지말아조_쿼리문.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/Project insert all.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/Project trigger.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/영화예매프로그램쿼리.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/트리거쿼리.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OracleStudy/project/프로시저구현.sql" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-0915/src/day_0915/Answer04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-0919/src/Tasks/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-0919/src/Tasks/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-0919/src/Tasks/Test03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TEST01/sample02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sample02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-0919/src/Task/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-0919/src/Task/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-0919/src/Task/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-0919/src/Task/Task7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +35,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/TEST01/sample02.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/TEST01/sampleTEST04.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/TEST01/sampleTEST06.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -61,21 +51,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/yuuri/Study/Human-JAVA/Human-0918",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yuuri/Study/Human-JAVA/Human-0918&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,10 +78,19 @@
       <workItem from="1695012507545" duration="14824000" />
       <workItem from="1695038448092" duration="1493000" />
       <workItem from="1695050116099" duration="73000" />
+      <workItem from="1695082125447" duration="638000" />
+      <workItem from="1695083527702" duration="2086000" />
+      <workItem from="1695101148977" duration="127000" />
+      <workItem from="1695101283994" duration="6429000" />
+      <workItem from="1695127508148" duration="153000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

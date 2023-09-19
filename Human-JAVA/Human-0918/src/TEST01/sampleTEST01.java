@@ -6,7 +6,7 @@ public class sampleTEST01 {
         // int point = 89
         // 40 점 미만이면 과락, 60점 미만이면 불합격, 60점 이상이면 합격이라고 출력하시오
 
-        int point = 39;
+        int point = 30;
 
         if (point >= 60) {
             System.out.println("합격");
