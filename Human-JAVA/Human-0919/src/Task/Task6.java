@@ -19,14 +19,5 @@ public class Task6 {
             Victory = "동점이예요"; }
         System.out.println(Victory);
 
-
-        int num1 = 0;
-        int num2 = 4;
-        int num3 = 3;
-
-        num1 = ( num2 > num3 ) ? 1 : 2;
-        System.out.println(num1);
-
-
     }
 }

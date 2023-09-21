@@ -20,8 +20,8 @@ public class Test03 {
         int bulletX = 3;
         int bulletY = 5;
 
-        double bulletavg = bulletY/bulletX;
-        double birdavg = birdy/birdx;
+        double bulletavg = (float)bulletY/bulletX;
+        double birdavg = (float)birdy/birdx;
 
         // 5/3 = 1.666666
         // 30/3 : 10 / 3 = 3.3 .....
