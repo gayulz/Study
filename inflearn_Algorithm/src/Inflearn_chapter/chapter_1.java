@@ -1,4 +1,4 @@
-import java.util.Locale;
+package Inflearn_chapter;
 import java.util.Scanner;
 
 class chapter_1 {

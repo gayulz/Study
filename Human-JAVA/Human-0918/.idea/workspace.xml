@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14608141-4a08-41fe-8301-e6775ad82759" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Human-0915/src/day_0915/Answer04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Human-0919/src/Tasks/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Human-0919/src/Tasks/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Human-0919/src/Tasks/Test03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TEST01/sample02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sample02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TEST01/sampleTEST06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TEST01/sampleTEST06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-0919/src/Task/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-0919/src/Task/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-0919/src/Task/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-0919/src/Task/Task7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-0919/src/Task/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-0919/src/Task/Task6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +72,8 @@
       <workItem from="1695101148977" duration="127000" />
       <workItem from="1695101283994" duration="6429000" />
       <workItem from="1695127508148" duration="153000" />
+      <workItem from="1695184765714" duration="597000" />
+      <workItem from="1695205737542" duration="43000" />
     </task>
     <servers />
   </component>

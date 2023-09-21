@@ -1,7 +1,7 @@
-import java.sql.SQLOutput;
+package Inflearn_chapter;
 import java.util.*;
 
-public class chapter_2 {
+public class chapter_2{
     public String solution(String str){
         String answer = "";
         for (int i = 0; i < str.length(); i++) {
