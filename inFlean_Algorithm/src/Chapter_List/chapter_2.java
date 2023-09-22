@@ -1,4 +1,4 @@
-package Inflearn_chapter;
+package Chapter_List;
 import java.util.*;
 
 public class chapter_2{
@@ -33,6 +33,6 @@ public class chapter_2{
         String input1 = in.next();
         System.out.println(T.solution(input1));
 
-        }
     }
+}
 

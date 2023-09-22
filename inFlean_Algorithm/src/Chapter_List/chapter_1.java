@@ -1,14 +1,13 @@
-package Inflearn_chapter;
+package Chapter_List;
 import java.util.Scanner;
-
 class chapter_1 {
-    public int solution(String input1, char input2){
+    public int solution(String input1, char input2) {
 
         int annwer = 0;
         input1 = input1.toUpperCase();
         input2 = Character.toUpperCase(input2);
         for (int i = 0; i < input1.length(); i++) {
-            if(input1.charAt(i) == input2) annwer++;
+            if (input1.charAt(i) == input2) annwer++;
         }
         return annwer;
     }
@@ -51,5 +50,5 @@ class chapter_1 {
 //        char c = kb.next().charAt(0);
 //        System.out.println(T.solution(str, c));
 
-
 }
+

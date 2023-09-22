@@ -1,4 +1,4 @@
-package Inflearn_chapter;
+package Chapter_List;
 import java.util.Scanner;
 public class chapter_3 {
     public String solution(String str) {

@@ -16,14 +16,15 @@ public class Test07 {
          문제>> 다음과 같이 출력하게 하시오.
         1+2+3+4+5+6+7+9+9+10=결과값
         */
+
         int tot = 0;
         for (int i = 1; i <= 10; i++) {
             if (i == 10){
                 tot+=i;
-                System.out.print(i+ "="+tot);
+                System.out.print(i+ " = "+tot);
             } else {
                 tot+=i;
-                System.out.print(i + "+");
+                System.out.print(i + " + ");
             }
         }
     }
