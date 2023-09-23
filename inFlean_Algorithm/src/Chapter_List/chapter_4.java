@@ -1,19 +1,27 @@
 package Chapter_List;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class chapter_4 {
+    public String solution(String[] str){
+        String answer = "";
+        for (int i = 0; i < str.length; i++) {
+            StringBuilder taskrevers = new StringBuilder(str[i]);
+            String revers = taskrevers.reverse().toString();
+            str[i] = revers;
+        }
+        Arrays.stream(str).forEach(System.out::println);
+        return answer;
+    }
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        chapter_4 T = new chapter_4();
         int cnt = in.nextInt();
-        String[] task = new String[cnt];
+        String[] str = new String[cnt];
         for (int i = 0; i < cnt; i++) {
-            task[i] = in.next();
-            StringBuffer taskrevers = new StringBuffer(task[i]);
-            String revers = taskrevers.reverse().toString();
-            task[i] = revers;
+            str[i] = in.next();
         }
-        for (int i = 0; i < cnt; i++) {
-            System.out.println(task[i]);
-        }
+        System.out.println(T.solution(str));
     }
 }

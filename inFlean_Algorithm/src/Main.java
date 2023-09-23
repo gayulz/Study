@@ -1,27 +1,25 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
-    public String solution(int cnt){
-        Scanner in = new Scanner(System.in);
-        String answer="";
-        String[] task = new String[cnt];
-        for (int i = 0; i < cnt; i++) {
-            task[i] = in.next();
-            StringBuffer taskrevers = new StringBuffer(task[i]);
+    public String solution(String[] str){
+        String answer = "";
+        for (int i = 0; i < str.length; i++) {
+            StringBuilder taskrevers = new StringBuilder(str[i]);
             String revers = taskrevers.reverse().toString();
-            task[i] = revers;
+            str[i] = revers;
         }
-
-        for (int i = 0; i < cnt; i++) {
-            System.out.println(task[i]);
-        }
+        Arrays.stream(str).forEach(System.out::println);
         return answer;
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
         Scanner in = new Scanner(System.in);
+        Main T = new Main();
         int cnt = in.nextInt();
-        System.out.println(T.solution(cnt));
+        String[] str = new String[cnt];
+        for (int i = 0; i < cnt; i++) {
+            str[i] = in.next();
+        }
+        System.out.println(T.solution(str));
     }
 }
