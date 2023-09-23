@@ -11,19 +11,19 @@ public class Test08 {
         결과 : 1 + 1 + 2 +3 + 5 + 8 + 13 + 21 = 합한 값
         */
 
-        int numF1 = 1 , numF2 = 1, numSum = 0;
+        int jun = 0 , pi = 1, Sum = 0;
 
-        for (int i = 0; i < 8; i++) {
-            int numTot = numF1 + numF2;
-            if (numF1 >= 21)  {
-                System.out.print(numF1);
-            } else {
-                System.out.print(numF1 + " + ");
-            }
-            numSum += numF1;
-            numF1 = numF2;
-            numF2 = numTot;
+        for (int i = 1; i <= 8; i++) {
+            int tot = jun + pi;
+//            if (pi >= 21)  {
+//                System.out.print(pi);
+//            } else {
+//                System.out.print(pi + " + ");
+//            }
+            Sum += pi;
+            jun = pi;
+            pi = tot;
         }
-        System.out.println(" = "+numSum);
+        System.out.println(" 합산 값 :  "+ Sum);
     }
 }

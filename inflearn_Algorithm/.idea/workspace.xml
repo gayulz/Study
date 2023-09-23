@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1a27d06-d796-4a9e-ae90-654147141060" name="Changes" comment="">
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Cache/Cache_Data/0a7188e88c333872_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Cache/Cache_Data/4117ed02ce5f2363_0" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Cache/Cache_Data/575d36d6984f9b7d_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Cache/Cache_Data/952df799908e311b_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Cache/Cache_Data/d65639ea6250328a_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Cache/Cache_Data/e85ac8952d7783d7_0" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Default/Code Cache/js/25dbf70203a90a7b_0" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/.com.apple.containermanagerd.metadata.plist" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/.CFUserTextEncoding" afterDir="false" />
@@ -277,6 +282,7 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/048C697069CEC31B966ED2F65CFD0A87EF19F1CF" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/04DF68B481A9B4F42146D48E28DF4813EF393483" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/04F4E85A65B6DB89D5F87D0E51050D0B2CC5A239" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/0501B17F66B1E0CF325DE0A2785EDC2C22E12A4A" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/0511D4425368FCD8E1A53390BF1459493F0B3209" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/053C6A2D5E28956C798A339FB95F48A0D16F65C6" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/056121BE0A1FC050332DF2CF4E201B982E51C3A1" afterDir="false" />
@@ -757,7 +763,6 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2E4F4CCC57A6B653F4FDFF3F4D4330D177228AF4" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2E6034D972505112B6082D24CCA44E8FB12F5F1D" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2E74CBD3F89305EB746C80E7BE8BCE9CF33C8F11" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2E77D084F6602357C1B9AAB41E5820185CC63B22" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2E824ADB0034A59D86DD81F04454BDC205F62274" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2EA3F880A0997C3F7C7D9E5A82BF7344C31F4BB6" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/2EB061EFC08F4ADE18823612E055F18DEBB61CF6" afterDir="false" />
@@ -1308,7 +1313,6 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5AE6F96EAB1E3AF6DF2E4E4F1475560B3791DD30" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5B0F7B27EB93EF9B31AC81E39D36F183D2A90D2B" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5B14D1AE1F9B118F62EB16FCE39F29BC9DCBDA94" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5B256704436339C6D8576D3DF4A17E5B6C08B08D" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5B405C6115816F007C41BDC7A2E5F35A176D8AC6" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5B7A5091058E9D38BC2003DDCDE32FE0399A8598" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/5B826B793C662A9BBB6B1CB274A64A024C910BEA" afterDir="false" />
@@ -1403,6 +1407,7 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/641E3EBB680AF06B6E331274146C81228C0D42B2" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/6421719AED006CFFF7C04E35B97EB847C32EAD07" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/642FA590B132F0D55A28AAC2B4605072A16B2CE7" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/6433BF25EEEC3700848D9E326D2C75875747AA0C" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/6436F448E72FF6896389309CFA3C82C1E9897CC4" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/6440A6DA4823EEA39E171E142AF2496B654527C3" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/644126E00346D33FB7AFDB2DA258011C1A2C1875" afterDir="false" />
@@ -2018,7 +2023,6 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/9751F39112EAAB63C67F8105B8D7C91C9BF29A3C" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/976CAC18666A03528CA12E33DDF34604E85C4D76" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/976F33564D2DD9F50313A7479935ECF7541E0CF4" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/978250B27111CE94E803274FC60D2AAAE042820A" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/97855A91C01286A414787231A0058109A404C91A" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/97A3D3717F375FCA1EAB92494F66F797831D2F3A" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/9805960779895FB6B43155FD71FFAA115A19C725" afterDir="false" />
@@ -2427,7 +2431,6 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BB7FAA855D9025836EAF35D0FAA726A26BB1CFC6" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BB8E74862EF4C720CD27CA2FA2B7BBD0F41108AB" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BB9B2523D0507C3328DBFA115853D63E8BF79360" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BBC2DA7C91FB0B77609F6D8AEBBB827B0D96313F" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BBD6951FFE32D5D8D34E8519DD7B7940FBEFD3A4" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BBE95C8F834998212EE6390584BB52532FA5A527" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/BBEAF3CC39293D1C7746AD847650666E914A6E49" afterDir="false" />
@@ -2492,7 +2495,6 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C1FD4E5F83355C214ABD926A68635252B8512E51" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C20106514329FCC82826F29E5C139618F18813D6" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C21740EF6CF30680B34301D070E0A06903089BB8" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C21F148C232A24A30CD62C9737836860C8D93E2F" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C225D9F8329B73474342AA4EC982E2BE516EB83A" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C22AA10CD7518E1D6A428B969B969141F469532F" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/C230A8A04906AF60649B79EB82AB381A1F7C2B27" afterDir="false" />
@@ -10961,6 +10963,8 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/1350E541EB2FCD1D0A5A8F02E776FEDE187F34A9" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/13CC99A2256D83A269ADAD6B1B9C2791B0ECA4A8" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/13EA82C58AC96D42992DA2641499178350AB6065" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/1519DC6E1BEF7FAFC8EFDF03158B6D40D86CED0A" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/1519DC6E1BEF7FAFC8EFDF03158B6D40D86CED0A-blob" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/15F83D9C7A2868A64D2CC664700E4F8919B7C065" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/1643EBE3181FC6C12A8DAC92577EDBA3B09F66CA" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/16ADB1C57B958BE7310D6B134BCF2794CC02D8B0" afterDir="false" />
@@ -10999,6 +11003,7 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/322AECF3A2652FD2B793C66BE94080C02716237F" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/322AECF3A2652FD2B793C66BE94080C02716237F-blob" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/326BB82437CE61BE45CBDDAC3C88445D860425DD" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/348BACFB26A859330536739FD45EDA248642320D" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/3C3D6E70F1374F229CEDC126C5D624B4D46CB2FD" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/3CD492EBA6EF382504B3FE5530163BAAF0C6B080" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/3D652F9545E16DD7A61AA0B040D9882F1B47CCE3" afterDir="false" />
@@ -11047,6 +11052,8 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/682758002CDCC1B88BD16B739070A8D0194140AE" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/69378A309ADD33A1AB8A91738042EFAB80D8F9F2" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/69F7FA9A333F8896D97823F203CD5D64D6E51AC3" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/6A6C30636DE93A874234E514C18C0A29DE4D3272" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/6A6C30636DE93A874234E514C18C0A29DE4D3272-blob" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/6D3000162FD2A59B198CEEFC1D3BCA3F1278A93F" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/6E0928D08C0F4F29D650EFD9D6843C524D9F0430" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/6F932BF4DC8D46F546384F9C759F3F41975647A9" afterDir="false" />
@@ -11066,6 +11073,7 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/79E4DA705768A714BDFFE73B324BF7E4102AE96D" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/7A2C1026ACD0DD2F14C3FF1BD63E4B7B10080CBD" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/7A2C1026ACD0DD2F14C3FF1BD63E4B7B10080CBD-blob" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/7B3DAF94D2EBAC831B8D4BC0C0B3021DEF90321E" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/7CCBE6580E40F62B8416A1482A7308B420B97855" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/7DC70E0D5029AE32227D5CDC84FFDC08763B25BC" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/81937E36F256FECC58C9A076B19567E585BDA7B0" afterDir="false" />
@@ -11216,6 +11224,7 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/FB738E9ECE19AA35193C5930782536586BEC98BC" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/FB738E9ECE19AA35193C5930782536586BEC98BC-blob" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/FBD43F780DB050DC3A3F8646FEA0AF9CFF62FBD0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/FF1DD40D127C3794DA4329AD0A8726E62B9D3350" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/FFC337EF1A31A052F5DE4F9898087A5DCE65275F" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/Resource/FFC337EF1A31A052F5DE4F9898087A5DCE65275F-blob" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/B0148C40BE06CB51D39CF2DFD75C70F40BC814ED/SubResources/21455361CC8A1463E4B2D2D5CBEC808944FC6E82" afterDir="false" />
@@ -14470,10 +14479,6 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KY9dfusyOAUkCSk6JUPEROCq3I2IK5F4ijDFR7KSRMg/KY9dfusyOAUkCSk6JUPEROCq3I2IK5F4ijDFR7KSRMg/LocalStorage/localstorage.sqlite3-shm" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KY9dfusyOAUkCSk6JUPEROCq3I2IK5F4ijDFR7KSRMg/KY9dfusyOAUkCSk6JUPEROCq3I2IK5F4ijDFR7KSRMg/LocalStorage/localstorage.sqlite3-wal" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KY9dfusyOAUkCSk6JUPEROCq3I2IK5F4ijDFR7KSRMg/KY9dfusyOAUkCSk6JUPEROCq3I2IK5F4ijDFR7KSRMg/origin" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/LocalStorage/localstorage.sqlite3" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/LocalStorage/localstorage.sqlite3-shm" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/LocalStorage/localstorage.sqlite3-wal" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/KrWz0KD9T75-2p6NK5m1KRfEdUkitw9GrkdRnlIO2fg/origin" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/L6oVtX_KURo9cf8pqu1JiYCxHr8AujVOMz0zexKf9NM/KN48Lhz2GZwenBiDBRklpj29eZ6faWgtdgHcM1bhHgY/origin" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/L6oVtX_KURo9cf8pqu1JiYCxHr8AujVOMz0zexKf9NM/L6oVtX_KURo9cf8pqu1JiYCxHr8AujVOMz0zexKf9NM/LocalStorage/localstorage.sqlite3" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Library/WebKit/WebsiteData/Default/L6oVtX_KURo9cf8pqu1JiYCxHr8AujVOMz0zexKf9NM/L6oVtX_KURo9cf8pqu1JiYCxHr8AujVOMz0zexKf9NM/LocalStorage/localstorage.sqlite3-shm" afterDir="false" />
@@ -15008,36 +15013,16 @@
       <change afterPath="$USER_HOME$/Library/Containers/com.apple.Safari/Data/Pictures" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Google/GoogleSoftwareUpdate/Actives/com.google.Chrome" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Saved Application State/com.apple.Safari.savedState" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/inFlean_Algorithm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/src/Chapter_List/chapter_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/src/Chapter_List/chapter_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/src/Chapter_List/chapter_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inFlean_Algorithm/src/Chapter_List/chapter_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Testing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0922/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0922/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0922/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0922/Human-0922.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0922/src/Study/study01.java" afterDir="false" />
       <change beforePath="$USER_HOME$/MyGit/JAVAStudy/PointerSearch" beforeDir="false" />
       <change beforePath="$USER_HOME$/MyGit/OracleStudy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Task01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Task01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Task04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Task04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Task05.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Task05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Test06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Test06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Test07.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Test07.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Test08.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-JAVA/Human-0921/src/TASK/Test08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inflearn_Algorithm.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inflearn_chapter/chapter_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inflearn_chapter/chapter_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inflearn_chapter/chapter_3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
