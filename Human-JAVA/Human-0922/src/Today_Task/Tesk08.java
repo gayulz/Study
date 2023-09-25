@@ -7,7 +7,7 @@ public class Tesk08 {
 
         String test = "abcdeabce";
         int cnt = 0;
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < test.length(); i++) {
             char aaa=test.charAt(i);
             if (aaa == 'a') {
                 cnt++;

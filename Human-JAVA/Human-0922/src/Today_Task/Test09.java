@@ -13,7 +13,7 @@ public class Test09 {
         1 이상이고 5000 보다 작은 모든 셀프 넘버들의 합을 구하라
         */
 
-        int cnt = 0;
+        int tot = 0;
         int bIn = 0;
         for (int i = 1; i <= 5000; i++) {
             for (int j = 0; j <=i ; j++) {
@@ -27,9 +27,10 @@ public class Test09 {
                 }
             }
             if ( i != bIn ){
-                cnt+=i;
+                tot+=i;
+                System.out.println(i);
             }
         }
-        System.out.println(cnt);
+        System.out.println(tot);
     }
 }

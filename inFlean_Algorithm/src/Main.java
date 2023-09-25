@@ -1,25 +1,29 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class Main {
-    public String solution(String[] str){
-        String answer = "";
-        for (int i = 0; i < str.length; i++) {
-            StringBuilder taskrevers = new StringBuilder(str[i]);
-            String revers = taskrevers.reverse().toString();
-            str[i] = revers;
+class Main {
+    public String solution(String str){
+        String answer;
+        char[] substr = str.toCharArray();
+        int lt = 0 , rt = str.length()-1;
+        while (lt < rt) {
+            if (!Character.isAlphabetic(substr[lt])) lt++;
+            else if (!Character.isAlphabetic(substr[rt])) rt--;
+            else {
+                char tmp = substr[lt];
+                substr[lt] = substr[rt];
+                substr[rt] = tmp;
+                lt++;
+                rt--;
+            }
         }
-        Arrays.stream(str).forEach(System.out::println);
-        return answer;
+        answer = String.valueOf(substr);
+        return  answer;
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         Main T = new Main();
-        int cnt = in.nextInt();
-        String[] str = new String[cnt];
-        for (int i = 0; i < cnt; i++) {
-            str[i] = in.next();
-        }
+        Scanner in = new Scanner(System.in);
+        String str = in.next();
         System.out.println(T.solution(str));
     }
 }
