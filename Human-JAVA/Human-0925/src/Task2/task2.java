@@ -8,18 +8,18 @@ public class task2 {
 
         // 선언부
         int[] arr= {45,23,25,64,3,24,48};
-        int max = 0;     // 가장 큰 값 저장
         int point = 0;      // 큰 값의 위치 저장
 
-        // 출력부
+        // 최고값 찾기
         System.out.println("arr의 배열 길이 : " + arr.length);
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+            if (arr[point] < arr[i]) {
                 point = i;
             }
         }
-        System.out.println("배열 중 가장 큰 값 : " + max);
+
+        // 최고값 출력
+        System.out.println("배열 중 가장 큰 값 : " + arr[point]);
         System.out.println("배열 중 가장 큰 값 위치 : " + point);
     }
 }

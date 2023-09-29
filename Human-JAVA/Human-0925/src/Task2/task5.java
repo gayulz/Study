@@ -6,23 +6,23 @@ public class task5 {
         //   배열에서 최대값과 최소값의 차이를 구하시오.
 
         // 선언부
-        int[] arr = {45,23,25,64,3,24,48};
+        int[] arr = {45, 23, 25, 64, 3, 24, 48};
         int max = 0;
-        int min = 0;
+        int min = 100;
 
-        // 출력부
-        for (int i = 0; i < arr.length; i++) {
-            int tmp=0;
-            if(arr[i] > max){
+        // 최대값 최소값 비교처리문
+        for(int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
-            } else {
-                tmp = min;
-                max = tmp;
+            }
+            if (arr[i] < min){
                 min = arr[i];
             }
         }
+
+        // 출력부
         System.out.println("배열의 최대 값 : " + max);
         System.out.println("배열의 최소 값 : " + min);
-        System.out.println("최대값과 최소값의 차이 : " + (max-min));
+        System.out.println("최대값과 최소값의 차이 : " + (max - min));
     }
 }
