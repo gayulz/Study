@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>boxModel 실습</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        }
+    div {
+        width: 80px;
+        height: 80px;
+        border: 2px solid red;
+        padding: 15px;
+        }
+    .pb {
+        width: 500px;
+        height: 320px;
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="pb">
+        <div>박스2</div>
+        <div>박스3</div>
+        <div>박스4</div>
+     </div>
+</body>
+</html>
