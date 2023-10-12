@@ -1,23 +1,35 @@
 package Chapter_List;
+import java.util.Scanner;
 
 public class chapter_8 {
-    public static <test> void main(String[] args) {
 
-        int[][] test = {
-                        {1,2,3,4,5,6} ,
-                        {7,8,9,10,11,12},
-                        {13,14,15,16,17,18},
-                        {19,20,21,22,23,24},
-                        {25,26,27,28,29,30},
-                        {31,32,33,34,35,36}
-                        };
-
-        for (int i = 0; i < test.length; i++) {
-            for (int j = 0; j < test.length; j++) {
-                int tmp = test[i][j];
-                System.out.print(" [" + tmp + "]" + j +"\t ");
+    public String solution(String str) {
+        String answer = str.toUpperCase();
+        String newAnswer = answer.replaceAll("[^a-zA-Z$]", "");
+        boolean flag = false;
+        int rtPoint = newAnswer.length()-1;
+        for (int i = 0; i < str.length(); i++) {
+            char tmp = newAnswer .charAt(i);
+            if ( i == newAnswer.length()/2 ){
+                break;
             }
-            System.out.println( i + "의 회차갱신");
+            if (tmp == newAnswer.charAt(rtPoint)){
+                flag = true;
+                rtPoint--;
+            } else {
+                flag = false;
+                break;
+            }
         }
+        if ( flag == false ) answer = "NO";
+        else if ( flag == true ) answer = "YES";
+        return answer;
+    }
+//    found7, time: study; Yduts; emit, 7Dnuof
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String str = in.nextLine();
+        chapter_8 T = new chapter_8();
+        System.out.println(T.solution(str));
     }
 }
