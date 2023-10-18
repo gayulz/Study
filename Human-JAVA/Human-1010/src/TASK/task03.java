@@ -1,7 +1,4 @@
 package TASK;
-
-import sun.font.FontRunIterator;
-
 public class task03 {
     public static void main(String[] args) {
         int[] p = {40,32,21,7};

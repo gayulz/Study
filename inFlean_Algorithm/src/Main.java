@@ -1,8 +1,8 @@
 import java.util.Scanner;
 class Main {
-    public String solution(String str) {
-        String answer = "";
-
+    public int solution(String str) {
+        String tmpStr = str.replaceAll("[a-zA-Z]","");
+        int answer = Integer.parseInt(tmpStr);
         return answer;
     }
 

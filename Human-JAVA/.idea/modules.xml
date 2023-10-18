@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Human-0915/Human-0915.iml" filepath="$PROJECT_DIR$/Human-0915/Human-0915.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0918/Human-0918.iml" filepath="$PROJECT_DIR$/Human-0918/Human-0918.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0919/Human-0919.iml" filepath="$PROJECT_DIR$/Human-0919/Human-0919.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0921/Human-0921.iml" filepath="$PROJECT_DIR$/Human-0921/Human-0921.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0922/Human-0922.iml" filepath="$PROJECT_DIR$/Human-0922/Human-0922.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0925/Human-0925.iml" filepath="$PROJECT_DIR$/Human-0925/Human-0925.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0926/Human-0926.iml" filepath="$PROJECT_DIR$/Human-0926/Human-0926.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-0927/Human-0927.iml" filepath="$PROJECT_DIR$/Human-0927/Human-0927.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-1004/Human-1004.iml" filepath="$PROJECT_DIR$/Human-1004/Human-1004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-1005/Human-1005.iml" filepath="$PROJECT_DIR$/Human-1005/Human-1005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-1006/Human-1006.iml" filepath="$PROJECT_DIR$/Human-1006/Human-1006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-1010/Human-1010.iml" filepath="$PROJECT_DIR$/Human-1010/Human-1010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Human-1011/Human-1011.iml" filepath="$PROJECT_DIR$/Human-1011/Human-1011.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Human-JAVA.iml" filepath="$PROJECT_DIR$/.idea/Human-JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/human-1013/human-1013.iml" filepath="$PROJECT_DIR$/human-1013/human-1013.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniproject/miniproject.iml" filepath="$PROJECT_DIR$/miniproject/miniproject.iml" />
+    </modules>
+  </component>
+</project>

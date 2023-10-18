@@ -9,5 +9,4 @@ public class Main {
         RollBook();
         new miniKeyGame(in.nextLine());
     }
-
 }
