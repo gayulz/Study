@@ -1,27 +1,23 @@
 package Chapter_List;
-
+import java.util.*;
 import java.util.Scanner;
 
 public class chapter_7 {
+    public String solution(String str){
+        String answer = "NO";
+        String tmp = new StringBuilder(str).reverse().toString();
+        if (str.equalsIgnoreCase(tmp)) answer = "YES";
+//        int len = str.length();
+//        for (int i = 0; i < len / 2; i++) {
+//            if (str.charAt(i)!=str.charAt(len-i-1)) return "NO";
+//        }
+
+        return answer;
+    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String str = in.next();
-        String tmpStr = str.toUpperCase();
-        boolean flag = false;
-        int rtPoint = tmpStr.length()-1;
-        for (int i = 0; i < str.length(); i++) {
-            char tmp = tmpStr.charAt(i);
-            if ( i == tmpStr.length()/2 ){
-                break;
-            }
-            if (tmp == tmpStr.charAt(rtPoint)){
-                flag = true;
-                rtPoint--;
-            } else {
-                flag = false;
-                break;
-            }
-        }
-        System.out.println(flag);
+        chapter_7 T = new chapter_7();
+        String str = in.nextLine();
+        System.out.println(T.solution(str));
     }
 }

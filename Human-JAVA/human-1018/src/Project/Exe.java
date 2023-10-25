@@ -42,6 +42,7 @@ public class Exe {
 
     }
 
+    // 입력 작업 메서드
     public void inContent() {
         System.out.print("입력할 컨텐츠 이름 : ");
         String contentName = in.nextLine();
@@ -57,70 +58,62 @@ public class Exe {
         System.out.println();
     }
 
+    // 수정 작업 메서드
+
     public void editContent() {
         String tmpC = "";
         String tmpO = "";
         boolean flag = true;
-        boolean subFlag = true;
+        boolean ckeck = true;
         while (flag) {
             System.out.println("1 : 컨텐츠 이름 수정\t2 : 컨텐츠의 OTT 이름 수정");
             System.out.print("번호를 입력하세요 >> ");
             int searchNum = in.nextInt();
             in.nextLine();
             System.out.println();
-            while (subFlag) {
-                if (searchNum == 1) {
-                    System.out.print("변경 전 컨텐츠 이름 입력 : ");
-                    tmpC = in.nextLine();
-                    System.out.print("변경 후 컨텐츠 이름 입력 : ");
-                    tmpO = in.nextLine();
-                    for (int j = 0; j < 10; j++) {
-                        if (movieList[j][0] != null) {
-                            if (movieList[j][0].equals(tmpC)) {
-                                System.out.println(" >> 변경 전 [" + movieList[j][0] + "]\t 변경 후 [" + tmpO + "] ");
-                                movieList[j][0] = tmpO;
-                                subFlag = false;
-                                break;
-                            }
+            if (searchNum == 1) {
+                System.out.print("변경 전 컨텐츠 이름 입력 : ");
+                tmpC = in.nextLine();
+                System.out.print("변경 후 컨텐츠 이름 입력 : ");
+                tmpO = in.nextLine();
+                for (int j = 0; j < 10; j++) {
+                    if (movieList[j][0] != null) {
+                        if (movieList[j][0].equals(tmpC)) {
+                            System.out.println(" >> 변경 전 [" + movieList[j][0] + "]\t 변경 후 [" + tmpO + "] ");
+                            movieList[j][0] = tmpO;
+                            flag = false;
+                            ckeck = false;
+                            break;
                         }
                     }
-                } else if (searchNum == 2) {
-                    System.out.print("등록된 OTT를 변경 할 컨텐츠 이름 입력 : ");
-                    tmpC = in.nextLine();
-                    System.out.print("변경 후 OTT 입력 : ");
-                    tmpO = in.nextLine();
-                    for (int j = 0; j < 10; j++) {
-                        if (movieList[j][0] != null) {
-                            if (movieList[j][0].equals(tmpC)) {
-                                System.out.println(" >> 변경 전 [" + movieList[j][1] + "]\t 변경 후 [" + tmpO + "] ");
-                                movieList[j][1] = tmpO;
-                                subFlag = false;
-                                break;
-                            }
+                }
+            } else if (searchNum == 2) {
+                System.out.print("등록된 OTT를 변경 할 컨텐츠 이름 입력 : ");
+                tmpC = in.nextLine();
+                System.out.print("변경 후 OTT 입력 : ");
+                tmpO = in.nextLine();
+                for (int j = 0; j < 10; j++) {
+                    if (movieList[j][0] != null) {
+                        if (movieList[j][0].equals(tmpC)) {
+                            System.out.println(" >> 변경 전 [" + movieList[j][1] + "]\t 변경 후 [" + tmpO + "] ");
+                            movieList[j][1] = tmpO;
+                            flag = false;
+                            ckeck = false;
+                            break;
                         }
                     }
-                } else break;
-            }
-            System.out.println();
-            if (subFlag == false) {
-                flag = false;
-            } else if (subFlag == true) {
-                System.out.println("입력하신 내용에 오류가 있습니다. \n처음 화면으로 돌아가기 [ 1 ] \t 수정 작업 재 시도 [ 2 ]");
-                System.out.print("번호를 입력 해 주세요 : ");
-                searchNum = in.nextInt();
-                if (searchNum == 1) {
-                    flag = false;
-                } else {
-                    System.out.println();
-                    tmpC = "";
-                    tmpO = "";
-                    searchNum = 0;
                 }
             }
+        }
+        if (ckeck == false){
+            System.out.println("처리 완료 되었습니다.");
+        } if (ckeck == true) {
+            System.out.println("요청하신 작업에 오류가 있어 처리하지 못했습니다.");
         }
         System.out.println();
     }
 
+    // 삭제 기능 메서드
     public String deleteContent() {
         System.out.print("삭제할 컨텐츠 이름을 입력하세요 : ");
         String contentName = in.nextLine();
@@ -136,6 +129,7 @@ public class Exe {
         return contentName;
     }
 
+    // 검색 기능 메서드
     public void searchContent() {
         System.out.print("검색할 영화 이름 : ");
         String searchName = in.nextLine();
@@ -151,6 +145,7 @@ public class Exe {
         System.out.println();
     }
 
+    // 전체 보기 메서드
     public void totalContent() {
         System.out.println();
         System.out.println("전체 컨텐츠 및 OTT 리스트 보기");
@@ -162,6 +157,7 @@ public class Exe {
         System.out.println();
     }
 
+    // 사용법 메서드
     public void info() {
         System.out.println("----------[          영화 컨텐츠와 영화컨텐츠가 등록된 OTT를 관리하는 프로그램            ]---------- ");
         System.out.println("----------[ 1. 입력(10개만 가능) | 2. 수정 | 3. 삭제 | 4. 검색 | 5. 전체보기 | 6. 종료 ]----------");

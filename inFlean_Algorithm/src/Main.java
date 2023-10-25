@@ -7,6 +7,7 @@ class Main {
     }
 
     public static void main(String[] args) {
+
         Main T = new Main();
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
