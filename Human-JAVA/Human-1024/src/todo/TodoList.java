@@ -71,21 +71,6 @@ public class TodoList {
     private void totalList() {
         // 일정 전체보기
         System.out.println("\t✔ 중요도가 높은 순서대로 보여집니다 ");
-        // 중요도가 높은 순 으로 바꿔주기
-        for (int i = 0; i < workList.length; i++) {
-            if (workList[i] != null) {
-                for (int j = 0; j < workList.length; j++) {
-                    Work tmp = new Work();
-                    if (workList[j] != null){
-                        if (workList[i].iptWork > workList[j].iptWork){
-                            tmp = workList[j];
-                            workList[j] = workList[i];
-                            workList[i] = tmp;
-                        }
-                    }
-                }
-            }
-        }
         // 전체 일정 출력
         for (int i = 0; i < workList.length; i++) {
             if (workList[i] != null){
@@ -184,9 +169,28 @@ public class TodoList {
                     break;
                 }
             }
+            listSort();
         } else {
             System.out.println("✘✘ 규칙 오류 / 등록되지 않습니다 ✘✘");
             dayTmp = null;
+        }
+    }
+
+    public void listSort() {
+        // 중요도가 높은 순 으로 바꿔주기
+        for (int i = 0; i < workList.length; i++) {
+            if (workList[i] != null) {
+                for (int j = 0; j < workList.length; j++) {
+                    Work tmp = new Work();
+                    if (workList[j] != null){
+                        if (workList[i].iptWork > workList[j].iptWork){
+                            tmp = workList[j];
+                            workList[j] = workList[i];
+                            workList[i] = tmp;
+                        }
+                    }
+                }
+            }
         }
     }
 

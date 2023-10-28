@@ -1,0 +1,10 @@
+	        for ( int k = 0; k<5; k++ ) {
+	        	for ( int i = 3; i>=1; i-- ) {
+	        		for ( int j = 0; j<5; j++ ) {
+	        			if ( border[i][j] == null ) {
+	        				border[i][j] = border[i-1][j];
+	        				border[i-1][j] = null;
+	        			}
+	        		}
+	        	}
+	        }
