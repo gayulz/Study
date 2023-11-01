@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class MemberAdd {
     MemberList memberList = MemberList.getInstance();
+    MemberFunctions mFnc = new MemberFunctions();
+
+    // 회원가입 클래스
 
     public void memberAdd() {
         Scanner in = new Scanner(System.in);
@@ -12,7 +15,7 @@ public class MemberAdd {
         System.out.println("회원가입");
         System.out.print(" >> 이름 입력 : ");
         String name = in.nextLine();
-        user = memberList.memberWho(name);
+        user = mFnc.memberWho(name);
         if (user == null) {
             System.out.print(" >> 비밀번호 입력 : ");
             String userPass = in.nextLine();

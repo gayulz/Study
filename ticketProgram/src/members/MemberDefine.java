@@ -1,10 +1,11 @@
 package members;
 
+// 회원을 정의하는 클래스
 public class MemberDefine {
-    String memberName = null;
-    String memberPass = null;
-    boolean memberTicketCheck = false;
-    int[] memberBuySeet = new int[5];
+    public String memberName = null;
+    public String memberPass = null;
+    public boolean memberTicketCheck = false;
+    public int[] memberBuySeet = new int[5];
     
     public void membersInfoPrt(){
         System.out.println("[   성함 ] : " + memberName);

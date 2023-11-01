@@ -2,12 +2,13 @@ package starter;
 import controller.MembershipMain;
 import members.MemberDefine;
 import members.MemberAdd;
+import members.MemberFunctions;
 import members.MemberList;
 import java.util.Scanner;
 
 public class Logins {
     MembershipMain membershipMain = MembershipMain.getInstance();
-    MemberList memberList = MemberList.getInstance();
+    MemberFunctions mFnc = new MemberFunctions();
     Scanner in = new Scanner(System.in);
     MemberAdd add = new MemberAdd();
     MemberDefine whoUser = null;
@@ -24,7 +25,7 @@ public class Logins {
                 case 2 : // 로그인
                     System.out.println(" 회원 이름을 입력하세요 : ");
                     String username = in.nextLine();
-                    whoUser = memberList.memberWho(username);
+                    whoUser = mFnc.memberWho(username);
                     if (whoUser != null) membershipMain.info(whoUser);
                     break;
                 case 3 : // 비회원 전용

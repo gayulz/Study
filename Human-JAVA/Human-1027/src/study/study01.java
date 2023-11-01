@@ -10,6 +10,5 @@ public class study01 {
         // public : 패키지가 달라도 접근 할 수 있다
         // default : 같은 패키지 안에서만 접근 가능 하다
         // private : 오직 내 클래스 안에서만 접근 가능하다
-
     }
 }

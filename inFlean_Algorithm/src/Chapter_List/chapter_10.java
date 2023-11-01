@@ -1,30 +1,34 @@
 package Chapter_List;
-
 import java.util.Scanner;
 
 public class chapter_10 {
-    public void solution(String str, char t) {
-        int cnt = 0;
-        char[] tmpStr = str.toCharArray();
-        int[] answer = new int[tmpStr.length];
-        for (int i = 0; i < tmpStr.length; i++) {
-            if (tmpStr[i] != t){
-                cnt++;
-                answer[i] = cnt;
+    public int[] solution(String str, char t) {
+        int[] answer = new int[str.length()];
+        int p = 1000;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == t) {
+                p = 0;
+                answer[i] = p;
             } else {
-                cnt = 0;
-                answer[i] = cnt;
+                p++;
+                answer[i] = p;
             }
         }
-        for (int i = 0; i < answer.length; i++) {
-            System.out.print(answer[i] + " ");
+        p=1000;
+        for (int i = str.length()-1; i >= 0 ; i--) {
+            if (str.charAt(i) == t) p = 0;
+            else {
+                p++;
+                answer[i] = Math.min(answer[i], p);
+            }
         }
+        return answer;
     }
     public static void main(String[] args) {
         chapter_10 T = new chapter_10();
         Scanner in = new Scanner(System.in);
-        String str = in.nextLine().toLowerCase();
+        String s = in.nextLine();
         char t = in.next().charAt(0);
-        T.solution(str, t);
+        for (int x : T.solution(s,t)) System.out.print(x + " ");
     }
 }

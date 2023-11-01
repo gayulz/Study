@@ -13,11 +13,4 @@ public class MemberList {
         }
         return listInstance;
     }
-
-    public MemberDefine memberWho(String name){
-        for (int i = 0; i < listArray.length; i++) {
-            if ( listArray[i].memberName.equals(name) ) return listArray[i];
-        }
-        return null;
-    }
 }
