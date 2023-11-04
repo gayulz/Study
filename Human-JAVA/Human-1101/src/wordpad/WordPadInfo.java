@@ -41,7 +41,6 @@ public class WordPadInfo {
                     break;
                 default:
                     System.out.println("등록된 번호가 아닙니다. 다시 입력하세요");
-
             }
         }
     }

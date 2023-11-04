@@ -1,0 +1,17 @@
+let classmates = [
+    { name : "철수", age : 13 , school : "다람쥐 초등학교" } , 
+    { name : "영희", age : 8 , school : "공룡 초등학교" } ,
+    { name : "훈이" , age : 11 , school : "거북이 초등학교" } ]
+
+classmates.length
+
+// 실제 요소의 큰 길이는 3개이기 때문에 길이가 3으로 나온다
+// 
+classmates.length
+// 3
+classmates[0]
+// {name: '철수', age: 13, school: '다람쥐 초등학교'}age: 13name: "철수"school: "다람쥐 초등학교"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+classmates[0].school
+// '다람쥐 초등학교'
+classmates[2].age
+// 11
