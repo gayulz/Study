@@ -62,7 +62,7 @@ public class FileManager {
         this.outEmInfo = new ArrayList<>();
         this.em = tmpEm;
         String[] outGuides = {"사원 번호 : ", "이    름 : ", "나    이 : ", "부    서 : ", "직    위 : "};
-        String[] emInfo = {String.valueOf(em.getEmAge()), em.getEmName(), String.valueOf(em.getEmAge()), em.getEmDept(), em.getEmJobTitle()};
+        String[] emInfo = {String.valueOf(em.getEmNum()), em.getEmName(), String.valueOf(em.getEmAge()), em.getEmDept(), em.getEmJobTitle()};
         for (int i = 0; i < emInfo.length; i++) {
             outEmInfo.add(outGuides[i] + emInfo[i]);
         }

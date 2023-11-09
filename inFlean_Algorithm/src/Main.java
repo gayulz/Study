@@ -1,34 +1,28 @@
 import java.util.Scanner;
 
 public class Main {
-    public int[] solution(String str, char t) {
-        int[] answer = new int[str.length()];
-        int p = 1000;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == t) {
-                p = 0;
-                answer[i] = p;
-            } else {
-                p++;
-                answer[i] = p;
-            }
-        }
-        p = 1000;
-        for (int i = str.length() - 1; i >= 0; i--) {
-            if (str.charAt(i) == t) p = 0;
-            else {
-                p++;
-                answer[i] = Math.min(answer[i], p);
-            }
-        }
-        return answer;
-    }
+//    public String solution(String speStr, int size){
+//        String answer = "";
+//        for (int i = 0; i < size; i++) {
+//            String tmp = speStr.substring(0,7).replace('#', '1').replace('*', '0');
+//            int num=Integer.parseInt(tmp, 2);
+//            // Integer.parseInt(tmp, 2) 하면 2진수를 아스키코드 번호로 바꿔준다....
+//            answer+=(char)num;
+//            speStr = speStr.substring(7);
+//        }
+//        return answer;
+//    }
 
     public static void main(String[] args) {
-        Main T = new Main();
-        Scanner in = new Scanner(System.in);
-        String s = in.nextLine();
-        char t = in.next().charAt(0);
-        for (int x : T.solution(s, t)) System.out.print(x + " ");
+        int[] intTmp = { 3, 2, 1, 3, 2, 1, 3 };
+        String answer = "";
+        for (int i = 0; i < intTmp.length; i++) {
+            if ( i == 0 ) answer+=String.valueOf(intTmp[i] + " ");
+            else{
+                if ( intTmp[i] > intTmp[i-1] ) answer+=String.valueOf(intTmp[i] + " ");
+            }
+        }
+        System.out.println(answer);
+
     }
 }

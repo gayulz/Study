@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Human-1106:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Human_1106_jar</output-path>
+    <root id="archive" name="Human-1106.jar">
+      <element id="module-output" name="Human-1106" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/ojdbc6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/ojdbc8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/ojdbc11.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
