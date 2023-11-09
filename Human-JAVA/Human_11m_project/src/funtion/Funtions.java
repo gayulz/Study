@@ -25,6 +25,7 @@ public class Funtions {
         return null;
     }
 
+
     public void memberInfoPrt(MembersDTO member){
         this.prMember = member;
         System.out.println("-------------< Information >-------------");
