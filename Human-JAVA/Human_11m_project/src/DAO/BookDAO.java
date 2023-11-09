@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 
 public class BookDAO {
     boolean trueConn = AccessDAO.getConnection();
-
     public void bookinsert() {
         if (trueConn == true) {
             Connection conn = AccessDAO.getConn();

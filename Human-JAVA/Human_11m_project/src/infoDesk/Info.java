@@ -33,7 +33,7 @@ public class Info {
                     else System.out.println("회원 정보를 확인 할 수 없습니다");
                     break;
                 case 3 : // 비회원전용
-                    // 아직 미구현
+
                     break;
                 case 4 : // 프로그램 종료
                     System.out.println("프로그램을 종료합니다");
