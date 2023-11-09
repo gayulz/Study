@@ -1,4 +1,5 @@
 package infoDesk;
+import DAO.AccessDAO;
 import DTO.MembersDTO;
 import funtion.Funtions;
 import membershipRounge.MemberMain;
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 // todo : 프로그램 시작 후 메뉴선택 클래스
 public class Info {
     private Funtions fn = new Funtions();
+    private AccessDAO driver = AccessDAO.getInstance();
     // 회원 멤버리스트
     private static ArrayList<MembersDTO> memberList = new ArrayList<>();
     private MembersDTO member = null;

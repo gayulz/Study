@@ -10,12 +10,11 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public class AccessDAO {
-    private static String url = "jdbc:oracle:thin:@localhost:1521:XE";
+    private static String url = "jdbc:oracle:thin:@192.168.0.70:1521:orcl";
     private static String username = "system";
     private static String pass = "oracle";
     private static Connection conn = null;
     private static PreparedStatement psmt = null;
-    private static ResultSet rs = null;
     private static AccessDAO self = null;
     private static ArrayList<MembersDTO> memberList = Info.getMemberList();
 
@@ -64,7 +63,6 @@ public class AccessDAO {
     /*
     Getter && Setter Area
      */
-
     public static Connection getConn() {
         return conn;
     }
@@ -75,18 +73,6 @@ public class AccessDAO {
 
     public static PreparedStatement getPsmt() {
         return psmt;
-    }
-
-    public static void setPsmt(PreparedStatement psmt) {
-        AccessDAO.psmt = psmt;
-    }
-
-    public static ResultSet getRs() {
-        return rs;
-    }
-
-    public static void setRs(ResultSet rs) {
-        AccessDAO.rs = rs;
     }
 
 }
