@@ -1,9 +1,9 @@
 package infoDesk;
 import DAO.AccessDAO;
+import DAO.MembersDAO;
 import DTO.MembersDTO;
 import funtion.Funtions;
 import membershipRounge.MemberMain;
-
 import java.util.ArrayList;
 
 // todo : 프로그램 시작 후 메뉴선택 클래스
@@ -51,6 +51,9 @@ public class Info {
         while ( loginCnt < 3 ){
             String tmpId = fn.OutText("아이디");
             String tmpPw = fn.OutText("비밀번호");
+            MembersDAO dao = new MembersDAO();
+            this.member = dao.viewAll(tmpId, tmpPw);
+
             this.member = fn.isMappingMember(tmpId, tmpPw);
             if (member != null){
                 System.out.println(member.getName()+"님 반갑습니다 정상 로그인 되었습니다");
