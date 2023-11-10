@@ -29,4 +29,8 @@ public class BookDTO {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    public void bookPrt() {
+        System.out.println("책이름 : " + this.book + "\n저자 :" + this.author);
+    }
 }
