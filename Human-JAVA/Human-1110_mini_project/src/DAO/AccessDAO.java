@@ -4,9 +4,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class AccessDAO {
-    private final static String url = "jdbc:oracle:thin:@192.168.0.70:1521:orcl";
+    private final static String url = "jdbc:oracle:thin:@localhost:1521:XE";
     private final static String username = "system";
-    private final static String pass = "1111";
+    private final static String pass = "oracle";
     private static Connection conn = null;
     private static PreparedStatement psmt = null;
     private static AccessDAO self = null;
