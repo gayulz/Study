@@ -3,6 +3,7 @@ package DTO;
 public class BookDTO {
     private String book = null;
     private String author = null;
+    private int rec = 0;
 
     public int getRec() {
         return rec;
@@ -12,7 +13,6 @@ public class BookDTO {
         this.rec = rec;
     }
 
-    private int rec = 0;
 
     public String getBook() {
         return book;

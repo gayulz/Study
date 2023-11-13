@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public class BookDAO {
-
     // DB에 도서를 추가하는 메서드
     public static void bookInsertDB(BookDTO BDTO) {
         Boolean trueConn = AccessDAO.getConnection();

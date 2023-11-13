@@ -1,5 +1,4 @@
 package DAO;
-import java.lang.reflect.Member;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -7,8 +6,7 @@ import java.util.ArrayList;
 
 import DTO.MembersDTO;
 import DTO.ReviewDTO;
-public class ReviewDAO {
-
+public class ReviewDAO{
     // 리뷰 삭제 메서드
     public static void reviewDel(int delReviewNum){
         Boolean trueConn = AccessDAO.getConnection();

@@ -9,7 +9,7 @@ class Oracle_Driver {
     static {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-//            System.out.println("Driver Load Success");
+            System.out.println("Driver Load Success");
         } catch (Exception e) {
             System.out.println("Driver Load Fail");
         }

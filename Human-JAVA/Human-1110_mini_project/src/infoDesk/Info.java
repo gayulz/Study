@@ -13,13 +13,13 @@ import java.sql.ResultSet;
 
 // todo : 프로그램 시작 후 메뉴선택 클래스
 public class Info {
-    private Funtions fn = new Funtions();
-    MembersDAO dao = new MembersDAO();
     // 회원 멤버리스트
     private MembersDTO member = null;
     private MemberMain memberMain = MemberMain.getInstance();
     private Admin adminSelf = Admin.getInstanse();
     private AccessDAO driver = AccessDAO.getInstance();
+    private Funtions fn = new Funtions();
+    private MembersDAO dao = new MembersDAO();
 
     // 로그인/회원가입/비회원전용/관리자로그인 메뉴를 출력
     public Info() {

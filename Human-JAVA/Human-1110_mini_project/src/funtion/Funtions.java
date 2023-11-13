@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 public class Funtions {
-    static Scanner in = new Scanner(System.in);
+    private static Scanner in = new Scanner(System.in);
     private static ArrayList<ReviewDTO> rList = null;
     private static ReviewDAO rDAO = new ReviewDAO();
 
