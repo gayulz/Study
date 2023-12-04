@@ -45,10 +45,14 @@ public class CustomerDTO {
         // -가 있거나 부족하더라도 해당 포멧을 유지하며 데이터에 저장되어야한다
         // 정규화식 사용하여 숫자만 우선 추출하고 서브스트링 후 입력
 
-        // 숫마만 추출
+        // 숫자만 추출
         String tempNum = customerPhone.replaceAll("[^0-9]","");
-
-        this.customerPhone = customerPhone;
+        if (tempNum.length() == 11) {
+            for (int i = 0; i < 3; i++) {
+                String subTemp = tempNum.substring(0,3);
+                this.customerPhone += subTemp + "-";
+            }
+        }
     }
 
     public String getPassword() {
