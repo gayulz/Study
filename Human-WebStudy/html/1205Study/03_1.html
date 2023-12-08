@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: block;
+            width: 800px;
+            margin: 0;
+            padding: 10px;
+        }
+
+        #header {
+            /* 선택자를 아이디로 찾는다 */
+            width: 800px;
+            line-height: 50px;
+            text-align: center;
+            background-color: rgb(0, 255, 42);
+
+        }
+
+        div {
+            width: 380px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(26, 255, 0);
+        }
+
+        #nav {
+            /* 의미 메뉴 */
+            width: 800px;
+            height: 50px;
+            background-color: rgb(248, 232, 0);
+            text-align: center;
+
+        }
+
+        #article {
+            /* 홈페이지에서 주제를 표현할 영역 */
+            width: 500px;
+            height: 700px;
+            background-color: rgb(42, 93, 165);
+
+        }
+
+        .nav2 {
+            /*의미 메뉴*/
+            /*class속성으로 선택하기*/
+            width: 295px;
+            height: 348px;
+            background-color: rgb(236, 17, 218);
+            overflow: hidden;    
+        }
+
+        #footer {
+            /* 회사정보*/
+            width: 800px;
+            height: 50px;
+            background-color: rgb(123, 236, 17);
+        }
+
+        h1 {
+            border: solid 2px;
+            border-color: rgb(255, 255, 255);
+        }
+
+        ul li {
+            background-color: rgb(255, 55, 0);
+            display: inline-block;
+            margin-right: 75px;
+            border: solid 2px;
+            width: 150px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul li:hover {
+            background-color: rgb(250, 170, 219);
+        }
+
+        #none {
+            width: 293px;
+            height: 700px;
+        }
+
+    </style>
+    <script>
+        function test() {
+            var a = document.getElementsByTagName("div")[0];
+            a.style.backgroundColor = "green"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>휴먼 프로그래머스</h1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="http://www.naver.com">[naver]</a></li>
+            <li><a href="http://www.google.com">[google]</a></li>
+            <li><a href="http://www.yahoo.com"></a>[yahoo]</li>
+        </ul>
+    </div>
+    <div id="article"></div>
+    <div id="none">
+        <div class="nav2">
+            <div>&nbsp; i&nbsp;d <input type="text"></div>
+            <div> pass <input type="password"> </div>
+            <div>
+                <input type="button" value="Login">
+                <input type="button" value="join">
+            </div>
+        </div>
+        <div class="nav2"></div>
+    </div>
+    <div id="footer"></div>
+    <span>안녕</span>
+    <span>오늘</span>
+    <button onclick="test()">click</button>
+
+</body>
+
+</html>

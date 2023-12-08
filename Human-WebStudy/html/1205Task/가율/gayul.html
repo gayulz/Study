@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="slider.css">
+    <style>
+        /* 각자 영역에 대한 내용 */
+        #rightContext {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 95%;
+            height: 100%;
+            border-radius: 15px;
+            padding: 20px;
+            border-style: double;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1> My Lounges </h1>
+        </header>
+        <section>
+            <div class="context" id="westContext">
+                <br>
+                <button class="backBtn" type="button" onclick="history.back();"> 뒤로 가기 </button>
+                <p>
+                <img src="./temp/춘식.png" width="100%">
+                <hr>
+                <h2> For my bright and shining life </h2>
+                <hr>
+                <button class="mainButton" type="button">
+                    <img src="./temp/춘식2.png" onclick="location.href='https://yurizzy.tistory.com'" width="100%">
+                </button>
+                </p>
+                <p>
+                </p>
+            </div>
+            <div class="rightSection">
+                <div class="context" id="rightContext">
+                    <h2> 🏕️ I like to travel ✈️ </h2>
+                    <div class="slides">
+                        <img class="travel" src="./temp/t2.jpeg">
+                        <img class="travel" src="./temp/t1.jpeg">
+                        <img class="travel" src="./temp/t3.jpeg">
+                        <img class="travel" src="./temp/t5.jpeg">
+                        <img class="travel" src="./temp/t4.jpeg">
+                        <img class="travel" src="./temp/t6.jpeg">
+                        <img class="travel" src="./temp/t7.jpeg">
+                        <img class="travel" src="./temp/t8.jpeg">
+                        <img class="travel" src="./temp/t9.jpeg">
+                    </div>
+                </div>
+
+                <div class="context" id="rightContext">
+                    <h2> 🦄 I like jpop singers 🦄 </h2>
+                    <div class="slides">
+                        <img class="sing" src="./temp/gen.png">
+                        <img class="sing" src="./temp/kenshi.png">
+                        <img class="sing" src="./temp/yuuri1.png">
+                        <img class="sing" src="./temp/gen1.png">
+                        <img class="sing" src="./temp/kenshi1.png">
+                        <img class="sing" src="./temp/gen2.png">
+                        <img class="sing" src="./temp/kenshi2.png">
+                        <img class="sing" src="./temp/gen3.png">
+                        <img class="sing" src="./temp/kenshi1.png">
+                        <img class="sing" src="./temp/yuuri3.png">
+                    </div>
+                    <h2> What do you like? 😎</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</body>
+
+</html>

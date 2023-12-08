@@ -12,7 +12,9 @@ import java.util.Objects;
 public class SearchFrame implements mainSettingInf, ActionListener {
     // 싱글톤 구간
     private SearchFrame(){}
-    private static class holderInstance{ public static final SearchFrame INSTANCE = new SearchFrame();}
+    private static class holderInstance{
+        public static final SearchFrame INSTANCE = new SearchFrame();
+    }
     public static SearchFrame getInstance(){ return holderInstance.INSTANCE;}
 
     // 멤버변수
@@ -26,6 +28,7 @@ public class SearchFrame implements mainSettingInf, ActionListener {
     private JFrame frames;
     private Context contexts;
     private final JPanel background = mainSettingInf.getMainImg();
+
 
     // 오버라이드 구간
     @Override

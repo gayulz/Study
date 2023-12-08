@@ -18,7 +18,6 @@ public class Tools {
     private Font getBOLDfont(int size){
         return new Font("SUITE-ExtraBold", Font.BOLD, size);
     }
-
     Font getPlainfont(int size){
         return new Font("SUITE-ExtraBold", Font.PLAIN, size);
     }

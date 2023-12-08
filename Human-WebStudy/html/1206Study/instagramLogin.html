@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인스타그램 따라해보기</title>
+    <style>
+        body {
+            width: 1000px;
+            height: 800px;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        div {
+            float: left;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        article {
+            display: inline-block;
+            width: 49.7%;
+            height: 100%;
+        }
+
+        .logins {
+            display: inline;
+            width: 100%;
+            height: 30%;
+        }
+
+        #header {
+            display: block;
+            width: 100%;
+            height: 20%;
+        }
+
+        #nav {
+            display: inline-block;
+            width: 10%;
+            height: 80%;
+        }
+
+        #section {
+            display: inline-block;
+            width: 79%;
+            height: 80%;
+        }
+
+        #aside {
+            display: inline-block;
+            width: 10%;
+            height: 80%;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 20%;
+        }
+
+        #west {
+            display: flex;
+            float: left;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #north {
+            display: block;
+            margin-top: 20px;
+        }
+
+        #south {
+            height: 100%;
+            display: block;
+        }
+
+        #center {
+            display: block;
+            width: 100%;
+        }
+
+        li  {
+            color: gray;
+            font-size : 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"> </div>
+    <div id="nav"> </div>
+    <div id="section">
+        <article>
+            <div id="west">
+                <img src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/4234875e83f14b06bec973028d770313~tplv-6rr7idwo9f-image.image"
+                    width="100%" alt="">
+            </div>
+        </article>
+        <article>
+            <div class="logins" id="north">
+                <div id="west" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="https://freelogopng.com/images/all_img/1658587465instagram-name-logo.png" width="70%" alt="">
+                </div>
+            </div>
+            <div class="logins" id="center" style="height: 50%;">
+                <div class="logins" id="center" style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" id="id" placeholder="전화번호, 사용자 이름 또는 이메일" size="28" style="height: 30px;">
+                </div>
+                <div class="logins" id="center" style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" id="id" placeholder="비밀번호" size="28" style="height: 30px;">
+                </div>
+                <div class="logins" id="center" style="display: flex; justify-content: center; align-items: center;">
+                    <button type="button" style="width: 60%; height: 40px; background-color: rgb(106, 143, 213); 
+                    border-radius: 20px; color: white; border: none;"
+                    onClick="location.href='./success.html'"> 
+                        로그인 
+                    </button>
+                </div>
+            </div>
+            <div class="logins" id="south">
+                <div class="logins" id="center" style="display: flex; flex-direction: column; align-items: center;">
+                    <div>
+                        <tr style="display: flex; align-items: center;"> 비밀번호를 잃어버리셨나요? </tr>
+                    </div>
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F991159465C3D7D110F" style="width: 50%; height: 40px;">
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="aside"></div>
+     <div id="footer" style="text-align: center; margin : 20px;"> 
+         <li> Meta &nbsp;&nbsp; 소개 블로그 &nbsp;&nbsp; 채용 정보 &nbsp;&nbsp; 도움말 &nbsp;&nbsp; API &nbsp;&nbsp; 개인정보처리방침 &nbsp;&nbsp; 약관 &nbsp;&nbsp; 위치 &nbsp;&nbsp; Instagram Lite &nbsp;&nbsp; Threads &nbsp;&nbsp; 연락처 업로드 & 비사용자 &nbsp;&nbsp; Meta Verified &nbsp;&nbsp; 한국어 </li>  
+         <li> © 2023 Instagram from Meta </li>
+     </div>
+</body>
+
+</html>
