@@ -1,4 +1,6 @@
-![header](https://capsule-render.vercel.app/api?type=venom&color=auto&text=Hi,%20%Yuuri%20%20GitHub%20👋&animation=twinkling&fontSize=50&fontColor=000000&strokeWidth=1.5&stroke=660099&fontAlignY=40&fontAlign=70&height=250)
+
+
+![header](https://capsule-render.vercel.app/api?type=venom&color=timeGradient&text=Hi%20%there👋%20%Yuuri's%20%wellcom🫶&animation=twinkling&fontSize=40&fontColor=000000&strokeWidth=1&stroke=ffffff&fontAlignY=50&fontAlign=50&height=250)
 
 <h1>✍️ My Study File 📝  </h1>  
 
