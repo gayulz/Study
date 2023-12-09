@@ -1,4 +1,1 @@
-* linguist-vendored
-*.java linguist-vendored=false
-*.sql linguist-vendored=false
-*.Javascript linguist-vendored=false
+*.html linguist-detectable=false
