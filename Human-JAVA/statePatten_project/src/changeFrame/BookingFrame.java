@@ -55,7 +55,8 @@ public class BookingFrame implements mainSettingInf, ActionListener {
         customer.setCustomerPhone(phoneIn.getText());
         customer.setPassword(passIn.getText());
         customer.setPaymentInfo(payCombo.getSelectedItem().toString());
-        if (e.getSource() instanceof JButton) handler.handleButtonEvent((JButton) e.getSource(), frames, contexts);
+        if (e.getSource() instanceof JButton)
+            handler.handleButtonEvent((JButton) e.getSource(), frames, contexts);
     }
 
     // 버튼 등록 메서드

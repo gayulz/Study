@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .cPoint{
+            color : lightsalmon
+        }
+    </style>
+</head>
+<body>
+    <h1> 검색어 남기기 </h1>
+    <hr>
+    <div>
+        <span> 검색어 </span>
+        <input type="text" id="searchText"> 
+        <button onClick="addText()"> 검색 </button>
+    </div>
+    <hr>
+
+        <h1>검색어 목록</h1>
+        <div class="cList">
+        </div>
+ 
+</body>
+<script>
+    let text
+
+    function addText(){
+        text = document.querySelector("#searchText").value
+        createck(text)
+    }
+
+    function createck(text){
+        let searchDiv = document.querySelectorAll(".cList")
+        let createch = document.createElement("div").classList
+        createch.innerHTML = `<input type="checkbox" />${text}`
+        searchDiv[0].appendChild(createch)
+    }
+    
+</script>
+</html>

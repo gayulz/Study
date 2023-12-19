@@ -12,10 +12,13 @@ import java.util.Objects;
 public class SearchFrame implements mainSettingInf, ActionListener {
     // 싱글톤 구간
     private SearchFrame(){}
+
     private static class holderInstance{
         public static final SearchFrame INSTANCE = new SearchFrame();
     }
-    public static SearchFrame getInstance(){ return holderInstance.INSTANCE;}
+    public static SearchFrame getInstance(){
+        return holderInstance.INSTANCE;
+    }
 
     // 멤버변수
     private static UserNeedsRoomSearch sendObject;
@@ -55,11 +58,13 @@ public class SearchFrame implements mainSettingInf, ActionListener {
         frame.repaint();
     }
 
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() instanceof JCheckBox ) { handleCheckBoxEvent((JCheckBox) e.getSource());}
         else if (e.getSource() instanceof JComboBox) {handleComboBoxEvent((JComboBox<?>) e.getSource());}
         else if (e.getSource() instanceof JButton) {
+            System.out.println("SearchFrame : 핸들러 클래스로 이동");
             handler.handleButtonEvent((JButton) e.getSource(), frames, contexts);
         }
     }
@@ -169,6 +174,7 @@ public class SearchFrame implements mainSettingInf, ActionListener {
         background.add(pention);
         background.add(hotel);
     }
+
 
     //getter, setter
     public static UserNeedsRoomSearch getSendObject() {

@@ -1,0 +1,6 @@
+{
+    "github.copilot.editor.enableAutoCompletions": false,
+    "liveServer.settings.port": 5501,
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.preferredDarkColorTheme": "Material Theme Palenight High Contrast"
+}

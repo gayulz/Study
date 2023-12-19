@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        border: 0;
+    }
+
+    th,
+    td {
+        border: 1px solid #aaa;
+        background-clip: padding-box;
+        scroll-snap-align: start;
+    }
+
+    tbody tr:last-child th,
+    tbody tr:last-child td {
+        border-bottom: 0;
+    }
+
+    thead {
+        z-index: 1000;
+        position: relative;
+    }
+
+    th,
+    td {
+        padding: 0.6rem;
+        min-width: 6rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    thead th {
+        position: sticky;
+        top: 0;
+        border-top: 0;
+        background-clip: padding-box;
+    }
+
+    thead th.pin {
+        left: 0;
+        z-index: 1001;
+        border-left: 0;
+    }
+
+    tbody th {
+        background-clip: padding-box;
+        border-left: 0;
+    }
+
+    tbody {
+        z-index: 10;
+        position: relative;
+    }
+
+    tbody th {
+        position: sticky;
+        left: 0;
+    }
+
+    thead th,
+    tbody th {
+        background-color: #f8f8f8;
+    }
+</style>
+
+<body>
+    <h3> 협업 프로젝트 과제
+        1. 개인별 분석 2. 기술회의 3. 토론  4. 답하나 선정  5.제출
+    </h3>
+    <p> 문제1. 자바스크립트의 명령어를 해석하고 실행하는 프로그램은? </p>
+    <p> 문제2. getElementById, getElementByClass의 사용용도는? 차이점 </p>
+    <p> 문제3. 선택자란 무엇인가? </p>
+    <p> 문제4. 수업시간에 크롬의 개발자의 콘솔에서 자바스크립트 언어를 실행하는 이유는? </p>
+    <p> 문제5. 테스트 코드를 작성했던 경험을 1개씩 작성하시오. </p>
+    <p> 문제6. html 태크에서 자바스크립트를 호출한 방법 2가지를 정리하시오.</p>
+    <p> 문제7. quereyselector의 사용법을 연구하고 getElementById와의 차이점을 구별해 보세요</p>
+    <p> 문제8. quereyselectorAll의 사용법을 연구하고 getElementByClass와의 비슷한 점을 정리해 보세요</p>
+    <p> 문제9. 람다식에 대하여 설명하시오.</p>
+    <p> 문제10. 자바스크립트 function 과 method를 설명하시오</p>
+    <p> 문제11. var 와 let 차이를 설명하고 차이를 샘플 코드로 만들어서 증빙하시오.</p>
+    <p> 문제12. 아래에 2개의 테이블이 있다. 위 테이블에는 학생 명단이다. 학생의 체크박스를 추가하고 select버튼을 누르면
+        아래의 테이블로 이동하도록 한다. 순서는 상관이 없다. 
+        참고 자료 : https://hianna.tistory.com/443
+        -- javascript만 사용하시오
+    </p>
+    <p> 문제13. 문제12번 미션을 jquery 로 작성해 보세요 
+        참고 https://zetawiki.com/wiki/JQuery_%ED%85%8C%EC%9D%B4%EB%B8%94_%ED%96%89_%EC%B6%94%EA%B0%80/%EC%82%AD%EC%A0%9C
+
+
+    </p>
+    <table id="upperTable">
+        <thead>
+            <tr><td></td>
+                <td>학번</td>
+                <td>이름</td>
+                <td>학과</td>
+                <td>전공</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type=checkbox name=idx value="1"> </td>
+                <td>1111</td>
+                <td>홍길동</td>
+                <td>컴퓨터과학</td>
+                <td>전공</td>
+            </tr>
+            <tr><td><input type=checkbox name=idx value="2"></td>
+                <td>2222</td>
+                <td>이길동</td>
+                <td>간호학과</td>
+                <td>전공</td>
+            </tr>
+            <tr><td><input type=checkbox name=idx value="3"></td>
+                <td>3333</td>
+                <td>고길동</td>
+                <td>일어일문</td>
+                <td>전공</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="selectBtn">select</button>
+    <table id="lowerTable">
+        <thead>
+            <tr>
+                <td></td>
+                <td>학번</td>
+                <td>이름</td>
+                <td>학과</td>
+                <td>전공</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+    <button id="cancelBtn">cancel</button>
+</body>
+<script>
+    var upperTable , lowerTable
+    var selectBtn = document.querySelector("#selectBtn")
+    var cancelBtn = document.querySelector("#cancelBtn")
+
+    // selectBtn 클릭 이벤트 처리
+    selectBtn.addEventListener("click",moveSelectedRows = () => {
+        getTableState()
+        // 'upperTable' 모든 체크박스 찾기 
+        let checkBoxes = upperTable.querySelectorAll('input[type="checkbox"]')
+        // 체크박스 배열 길이 구함 
+        let length = checkBoxes.length;
+        // 체크박스 배열순회 
+        for (let i = 0; i < length; i++) {
+            let checkBox = checkBoxes[i];
+            // 체크박스 선택여부 확인
+            if (checkBox.checked) {
+            // true값 체크박스 조상찾기
+            let row = checkBox.closest('tr');
+            // 조상 찾아서 'lowerTable'의 tbody에 추가합니다
+            lowerTable.querySelector('tbody').appendChild(row)
+            }
+        }
+    })
+
+
+    // cancel버튼 이벤트 처리 
+    cancelBtn.addEventListener("click",cancelBtnAction = () => {
+        getTableState()
+        let checkBoxes = lowerTable.querySelectorAll('input[type=checkbox]')
+        let length = checkBoxes.length;
+        for(let i = 0; i < length; i++) {
+            let checkBox = checkBoxes[i]            
+            if (checkBox.checked){
+                let row = checkBox.closest('tr');
+                upperTable.querySelector('tbody').appendChild(row)
+            }
+        }
+    })
+
+
+    // 공통 사용 함수
+    function getTableState(){
+        // 'upperTable' ID 테이블 선택 
+        upperTable = document.getElementById('upperTable')
+        // 'lowerTable' ID 테이블 선택
+        lowerTable = document.getElementById('lowerTable')
+    }
+</script>
+
+</html>

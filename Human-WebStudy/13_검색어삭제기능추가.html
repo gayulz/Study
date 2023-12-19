@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ppoint {
+        color: red;
+    }
+</style>
+
+<body>
+    <h1> 검색어 남기기</h1>
+    <hr>
+    <span>검색어</span>
+    <input type="text" id="Text">
+    <button onclick="f_AppendText()">검색</button>
+
+    <hr>
+    <h1>검색어 목록</h1>
+    <div>
+
+    </div>
+    <button id="del" onclick="alldel()">선택삭제</button>
+</body>
+
+</html>
+<script>
+    function f_AppendText() {
+        // 값 찾아오기 
+        let a = document.querySelector('input').value  // input 태그의 값
+        // 넣을 위치의 div 값
+        let getDiv = document.querySelector('div')  // 목록 밑 div 태그로 추가로 생성할꺼임
+        //생성할 태그
+        let span = document.createElement('p')
+        //div의 자식으로 넣기
+        getDiv.append(span)
+        //생성할 태그의 텍스트값
+        span.innerHTML = "<input type=checkbox class=chk>" + a;
+    }
+    function alldel() {
+        let divMain = document.querySelector('div')
+        let divMainc = divMain.children
+
+        for (let i = 0; i < divMainc.length; i++) {
+            if (divMainc[i].children[0].checked) {
+                divMain.removeChild(divMain.children[i])
+                i--
+            }
+        }
+
+    }
+
+    //검색 버튼이 클릭하면 검색어를 추가하시오.
+    // 1. 어떻게 할 것인가를 나누고 개발자모드에서 테스트
+    //  순서1. 검색 버튼을 누르면 자바스크립트 함수를 호출한다.
+    //  순서2. 입력된 검색어를 가져온다.
+    //  순서3. 검색어 목록의 부모가 될 태그를 가져온다.
+    //  순서4. -- 어쩌구 저쩌구 ..
+    // 2. 테스트 된 코드를 여기에다가 작성.
+
+</script>

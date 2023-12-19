@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        border: 0;
+    }
+
+    th,
+    td {
+        border: 1px solid #aaa;
+        background-clip: padding-box;
+        scroll-snap-align: start;
+    }
+
+    tbody tr:last-child th,
+    tbody tr:last-child td {
+        border-bottom: 0;
+    }
+
+    thead {
+        z-index: 1000;
+        position: relative;
+    }
+
+    th,
+    td {
+        padding: 0.6rem;
+        min-width: 6rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    thead th {
+        position: sticky;
+        top: 0;
+        border-top: 0;
+        background-clip: padding-box;
+    }
+
+    thead th.pin {
+        left: 0;
+        z-index: 1001;
+        border-left: 0;
+    }
+
+    tbody th {
+        background-clip: padding-box;
+        border-left: 0;
+    }
+
+    tbody {
+        z-index: 10;
+        position: relative;
+    }
+
+    tbody th {
+        position: sticky;
+        left: 0;
+    }
+
+    thead th,
+    tbody th {
+        background-color: #f8f8f8;
+    }
+</style>
+
+<body>
+    <h3> 협업 프로젝트 과제
+        1. 개인별 분석 2. 기술회의 3. 토론 4. 답하나 선정 5.제출
+    </h3>
+    <p> 문제1. 자바스크립트의 명령어를 해석하고 실행하는 프로그램은? </p>
+    <p> 문제2. getElementById, getElementByClass의 사용용도는? 차이점 </p>
+    <p> 문제3. 선택자란 무엇인가? </p>
+    <p> 문제4. 수업시간에 크롬의 개발자의 콘솔에서 자바스크립트 언어를 실행하는 이유는? </p>
+    <p> 문제5. 테스트 코드를 작성했던 경험을 1개씩 작성하시오. </p>
+    <p> 문제6. html 태크에서 자바스크립트를 호출한 방법 2가지를 정리하시오.</p>
+    <p> 문제7. quereyselector의 사용법을 연구하고 getElementById와의 차이점을 구별해 보세요</p>
+    <p> 문제8. quereyselectorAll의 사용법을 연구하고 getElementByClass와의 비슷한 점을 정리해 보세요</p>
+    <p> 문제9. 람다식에 대하여 설명하시오.</p>
+    <p> 문제10. 자바스크립트 function 과 method를 설명하시오</p>
+    <p> 문제11. var 와 let 차이를 설명하고 차이를 샘플 코드로 만들어서 증빙하시오.</p>
+    <p> 문제12. 아래에 2개의 테이블이 있다. 위 테이블에는 학생 명단이다. 학생의 체크박스를 추가하고 select버튼을 누르면
+        아래의 테이블로 이동하도록 한다. 순서는 상관이 없다.
+        참고 자료 : https://hianna.tistory.com/443
+        -- javascript만 사용하시오
+    </p>
+    <p> 문제13. 문제12번 미션을 jquery 로 작성해 보세요
+        참고 https://zetawiki.com/wiki/JQuery_%ED%85%8C%EC%9D%B4%EB%B8%94_%ED%96%89_%EC%B6%94%EA%B0%80/%EC%82%AD%EC%A0%9C
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td>학번</td>
+                <td>이름</td>
+                <td>학과</td>
+                <td>전공</td>
+            </tr>
+        </thead>
+        <tbody id="oldItem">
+            <tr>
+                <td><input type=checkbox name=idx value="1"> </td>
+                <td>1111</td>
+                <td>홍길동</td>
+                <td>컴퓨터과학</td>
+                <td>전공</td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=idx value="2"></td>
+                <td>2222</td>
+                <td>이길동</td>
+                <td>간호학과</td>
+                <td>전공</td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=idx value="3"></td>
+                <td>3333</td>
+                <td>고길동</td>
+                <td>일어일문</td>
+                <td>전공</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <button onclick="selectionItem()">select</button>
+    <table >
+        <thead >
+            <tr>
+                <td></td>
+                <td>학번</td>
+                <td>이름</td>
+                <td>학과</td>
+                <td>전공</td>
+            </tr>
+        </thead>
+        <tbody id="selectItem">
+        </tbody>
+    </table>
+    <button onclick="deselectItem()">cancel</button>
+</body>
+
+</html>
+<script>
+    
+    function deselectItem(){
+        // 새로운 배열 생성 기존에 이동된 아이들은 모두 클래스명이 newChk로 되어있다
+        var delidx=new Array();
+        // 이동되었던 클래스명 newChk을 선택함 
+        var newChk = document.getElementsByClassName('newChk')
+        // newChk의 길이만큼 반복문 진행 
+        for (let i = 0; i < newChk.length; i++) {
+            // 순회를 돌면서 체크박스 체크가된 아이를 찾음 
+            if (newChk[i].checked) {
+                // 해당 삭제 배열에 체크된 노드를 넣는다 
+                delidx.push(i)                  
+                // 삭제될 노드의 밸류를 콘솔에 찍음 
+                console.log(i, newChk[i].value)
+                // 체크된 배열의 부모노드를 가져온다 
+                pnode = newChk[i].parentNode      // 0번 체크박스가 체크 되었다고 가정 함.
+                // 부모노드의 다음 형제노드에 텍스트를 gnumber에 대입한다 
+                var gnumber = pnode.nextElementSibling.innerText
+                // 다음 다음 형제 노드
+                var gname = pnode.nextElementSibling.nextElementSibling.innerText
+                // 다음 다음 다음 형제 노드 
+                var major = pnode.nextElementSibling.nextElementSibling.nextElementSibling.innerText
+                // 다음 다음 다음 다음 형제 노드 
+                var majormemo = pnode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerText
+
+                // 기존 테이블 선택 
+                var target_table = document.querySelector('#oldItem')
+                // 기존 테이블의 행을 추가하는데 위치는 체크된 노드의 밸류값으로 행을 추가한다 
+                const newrow = target_table.insertRow(newChk[i].value)
+                // 생성한 행에 열을 추가한다 
+                const newcell1 = newrow.insertCell(0);
+                const newcell2 = newrow.insertCell(1);
+                const newcell3 = newrow.insertCell(2);
+                const newcell4 = newrow.insertCell(3);
+                const newcell5 = newrow.insertCell(4);
+                // 해당 열에다가 데이터를 모두 넣는다 
+                newcell1.innerHTML = '<input type=checkbox name=idx>'
+                newcell2.innerText = gnumber
+                newcell3.innerText = gname
+                newcell4.innerText = major
+                newcell5.innerText = majormemo
+            }
+        }
+        // 하단에 캔슬이 있는 테이블을 선택한다 
+        var target_table = document.querySelector('#selectItem')
+        // 삭제하고자 하는 배열의 길이부터 시작하여 0까지 작아지는 반복문을 순회한다 
+        for(let i=delidx.length-1 ; i >= 0; i--){
+            // 해당 인덱스 길이마다의 순회 횟수를 콘솔에 남김 
+            console.log(i);
+            // 캔슬이있는 테이블에 해당 행을 삭제한다 
+            target_table.deleteRow(delidx[i]);
+        }
+    }
+    
+    function selectionItem() {
+        // 삭제하는 배열 생성 
+        var delidx=new Array();
+        // idx 이름을 가진 요소를 배열로 가져옴 = 현재 체크박스만 name이 등록되어있음 
+        var a = document.getElementsByName('idx')
+        // 반복문 실행 __ 가져온 요소의 배열 길이만큼 순회한다 
+        for (let i = 0; i < a.length; i++) {
+            // a의 배열에 있는 요소들은 모두 체크박스인데 요소별 체크박스에 체크값이 true인 경우를 찾는다 
+            if (a[i].checked) {
+                // 체크가 true인 경우 삭제 배열에 추가한다 
+                delidx.push(i);
+                // 체크가 true인 요소의 부모 노드를 가져온다 
+                pnode = a[i].parentNode      // 0번 체크박스가 체크 되었다고 가정 함.
+                // 부모요소의 다음 형제노드의 텍스트를 gnumber에 넣는다(학번)
+                var gnumber = pnode.nextElementSibling.innerText
+                // 부모요소의 다음 다음 형제노드의 텍스트를 gname에 넣는다 (이름)
+                var gname = pnode.nextElementSibling.nextElementSibling.innerText
+                // 부모요소의 다음 다음 다음 형제노드의 텍스트를 major에 넣는다(학과)
+                var major = pnode.nextElementSibling.nextElementSibling.nextElementSibling.innerText
+                // 부모요소의 다음 다음 다음 다음 형제노드의 텍스트를 majormemo에 넣는다(전공)
+                var majormemo = pnode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerText
+
+                // ID가 selectItem의 테이블을 선택한다 = 데이터를 추가할 테이블임 
+                var target_table = document.querySelector('#selectItem')
+                // 데이터를 추가할 테이블에 행을 추가한다 
+                const newrow = target_table.insertRow()
+                // 추가된 행에 열을 추가한다 
+                const newcell1 = newrow.insertCell(0);
+                const newcell2 = newrow.insertCell(1);
+                const newcell3 = newrow.insertCell(2);
+                const newcell4 = newrow.insertCell(3);
+                const newcell5 = newrow.insertCell(4);
+                // 첫번째 열에 데이터를 대입한다 밸류는 해당 배열에 들어온 값을 기준으로 대입하고 클래스 이름은 newChk로 한다 
+                newcell1.innerHTML = '<input type=checkbox class=newChk value='+i+'>'
+                // 각 열에 데이터를 대입한다 
+                newcell2.innerText = gnumber
+                newcell3.innerText = gname
+                newcell4.innerText = major
+                newcell5.innerText = majormemo
+            }
+        }
+       // alert(delidx.length);
+        var originTable = document.querySelector('#oldItem')
+        for(let i=delidx.length-1 ; i >= 0; i--){
+            originTable.deleteRow(delidx[i]);
+        }
+    }
+
+</script>

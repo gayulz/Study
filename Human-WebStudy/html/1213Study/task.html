@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김가율</title>
+    <style>
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:0;
+            margin-top: 20px;
+            width: 1200px;
+            height:300px;
+            background-image: url("./back.png");
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: space-between;
+            width: 50%;
+            height: 100%;
+            margin-top: 20px;
+        }
+
+        form, input{
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            margin: 20px;
+        }
+
+        button, input {
+            margin:10px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1> 회원가입 </h1>
+        <div> 아이디  <input type="text" id="id" /> <button id="check"> 사용가능 확인 </button></div>
+        <div> 이름  <input type="text" id="name" /> </div>
+        <div> 전화번호  <input type="text" id="phone" /> </div>
+        <form action="to_server" method="get" id="joinform">
+            <input type="button" onClick="save()" value=" 가입 " id="submitBtn" disabled>
+            <input type="reset" value="초기화">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    // 아이디 유효성 체크
+    function checkId() {
+        const idInput = document.getElementById('id');
+        const idValue = idInput.value;
+        return idValue.length >= 8 && idValue.length <= 10;
+    }
+
+    // 이름 필수 입력 체크
+    function checkName() {
+        const nameInput = document.getElementById('name');
+        const nameValue = nameInput.value;
+        return nameValue.trim() !== '';
+    }
+
+    // 전화번호 형식 체크
+    function checkPhone() {
+        const phoneInput = document.getElementById('phone');
+        const phoneValue = phoneInput.value;
+        const phoneCheck = /^\d{3}-\d{4}-\d{4}$/;
+        return phoneCheck.test(phoneValue);
+    }
+
+    // 가입 버튼 활성화/비활성화
+    function summitBtnState() {
+        const submitBtn = document.getElementById('submitBtn');
+        const idValid = checkId();
+        const nameValid = checkName();
+        const phoneValid = checkPhone();
+
+        if (idValid && nameValid && phoneValid) {
+            submitBtn.disabled = false;
+        } else {
+            submitBtn.disabled = true;
+        }
+    }
+
+    // 아이디 유효성 체크 이벤트
+    document.getElementById('check').addEventListener('click', function () {
+        if (checkId()) {
+            alert('아이디가 유효합니다.');
+        } else {
+            alert('아이디는 8글자에서 10글자로 입력해야 합니다.');
+        }
+        summitBtnState();
+    });
+
+    // 이름 필수 입력 체크 이벤트
+    const nameInput = document.getElementById('name');
+    nameInput.addEventListener('blur', function () {
+        if (!checkName()) {
+            alert('이름을 반드시 입력해야 합니다.');
+        }
+        summitBtnState();
+    });
+
+    // 전화번호 형식 체크 이벤트
+    const phoneInput = document.getElementById('phone');
+    phoneInput.addEventListener('blur', function () {
+        if (!checkPhone()) {
+            alert('전화번호 형식은 000-1111-2222 여야 합니다.');
+        }
+        summitBtnState();
+    });
+
+    // 가입 버튼 클릭 시 실행
+    function save() {
+        if (checkId() && checkName() && checkPhone()) {
+            alert('회원가입 정보가 서버로 가입되었습니다.');
+            document.getElementById('joinform').reset(); // 폼 초기화
+            summitBtnState(); // 가입 버튼 비활성화
+            document.querySelector('#joinform').submit(); // 서버로 전송
+        } else {
+            alert('입력 정보를 확인해 주세요.');
+        }
+    }
+</script>

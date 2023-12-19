@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 300px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 1. id 및 비밀번호, 이름을 입력 할 수 있는 폼을 코딩하세요  
+            2. 유효성 체크 , 현재 클라이언트가 입력된 데이터와 설계 단계에 정의한 규칙과 일치하는 것인가를 판단
+                    > 클라이언트 입력 > js 유효성 체크 > 서버전송 > 서버에서 DB저장 
+        -->
+        <form action="to_server" method="get" id="joinform">
+            이름 : <input type="text" id="name">
+            아이디 : <input type="text" id="id">
+            패스워드 : <input type=password id="pass">
+            재확인 : <input type=password id="passcheck">
+            <input type="hidden" id="nochk" value="0">
+            <input type="button" onClick="chk()" value="유효성검사">
+            <input type="button" onClick="save()" value="전송">
+            <input type="reset" value="초기화">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    function save(){
+        let chkflag = document.querySelector("#nochk").value;
+        let id, pass, passcheck, name;
+        if(value == '0'){
+            console.log("유효성 검사 먼저 하세요")
+        } else {
+            document.querySelector('#joinform').submit();
+        }
+
+    }
+
+    function getValue(){
+        id = document.querySelector("#id").value;
+        pass = document.querySelector("#pass").value;
+        passcheck = document.querySelector("#passcheck").value
+        name = document.querySelector("#name").value;
+    }
+    
+    function chk(){
+        getValue();
+      //  alert("abc")  
+      // 유효성 체크 조건
+      // 유저 ID는 두글자 이상 && 비밀번호도 2글자 이상이여야 한다 
+        if(id.length < 2 || pass.length < 2 || passcheck != pass ){
+            console.log("아이디와 비밀번호는 2글자 이상이여야 합니다")
+            return false;
+        }
+        //서브밋을 여기에서 실행 
+        // document.querySelector('#joinForm').submit();
+    }
+</script>
