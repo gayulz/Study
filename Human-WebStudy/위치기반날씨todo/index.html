@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title> to do List </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="location-name-tag"> To do </h1>
+    <h5> 
+        위치 기반 날씨를 알려주는 Todo 사이트입니다<br> 
+        위치 동의 팝업에 '허용'을 눌러주세요 <br>
+        ✨ Developer 👩🏻‍💻 yuuri ✨</h5>
+    <div class="todo-container">
+        <input type="text" id="todo-input" placeholder="할 일을 입력하세요" onkeydown = "keyCodeCheck()" />
+        <ul id="todo-list"> </ul>
+    </div>
+    <div class="delete-btn-wrapper">
+        <button onclick="deleteAll()"> 전체 삭제 </button>
+    </div>
+</body>
+
+</html>

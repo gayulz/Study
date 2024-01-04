@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- 오라클 bean -->
+	<bean
+	class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+	id="dataSource">
+	<!-- 한 개가 빈 설정 / 객체 설정 / 객체를 만들어 달라고 하는 것 -->
+	<!-- class = class 명 -->
+	<!-- id = 변수명 -->
+		<property name="driverClassName"
+				  value="oracle.jdbc.driver.OracleDriver">
+				  <!-- 객체의 변수 -->
+				  <!-- name = class 변수명 ? -->
+				  <!--  value = 값 -->
+		</property>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+		<property name="username" value="system"></property>
+		<property name="password" value="oracle"></property>
+	</bean>	
+	<!-- factory bean : 쿼리문 만들어주는 객체 -->
+	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 						ref -> dataSource 객체를 참조한다. -->
+		<!--    						  = dataSource id -->
+		<property name="mapperLocations"
+				  value="classpath:/mapper/*Mapper.xml"></property>
+				  <!-- mapperLocations : mapper의 위치가 있는 곳
+				  						sql 정의하는 곳 -->
+				  <!-- * : 파일의 앞부분은 상관없지만 * 뒤에는 일치해라 라는 의미 -->
+	</bean>
+	<!-- sqlsessionTemplate spring과 연동하기 위한 객체 -->
+	<bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSession">
+		<constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+		<!-- 			생성자의 매개변수  	생성자 -->
+		<!-- constructor은 생략X-->
+	</bean>
+	<context:component-scan base-package="com.cafe.dao"/>
+</beans>

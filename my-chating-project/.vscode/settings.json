@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.fontFamily": "monospace",
+    "chat.editor.fontFamily": "MesloLSG NF",
+    "chat.editor.fontSize": 12,
+    "editor.codeLensFontFamily": "MesloLSG NF",
+    "editor.fontFamily": "MesloLSG NF"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cafe.dao.IF_bbsDAO">
+	<insert id="insertOne" parameterType="com.cafe.vo.BBSVO">
+		insert into bbs values
+		('n', bbs_seq.nextval, #{bbs_wr}, #{bbs_pass}, #{bbs_title}, #{bbs_comment},default)
+		<!-- parameterType 이 VO -->
+	</insert>
+</mapper>

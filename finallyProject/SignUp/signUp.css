@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100px;
+    height: auto;
+    display: block;
+    background-color: whitesmoke; 
+    font-family: 'SUITE-Regular';
+}
+
+.header{
+    margin-top: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerImg{
+    margin : 10px;
+    background-image: url('../image/project.png');
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+
+.header, .nav{
+    text-align: center;
+}
+
+section {
+    margin:10px 10px 10px 10px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+form{
+    width: 50%;
+    display: inline-block;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.inputs{
+    width: 400px;
+    margin-left: 30px;
+}
+
+button{
+    width: 150px;
+    border : none;
+    font-weight: bold;
+}
+
+
+.phoneNumber{
+    width: 20%;
+}

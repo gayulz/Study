@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+   <div>
+       <table>
+           <thead>
+           <tr>
+               <th> # </th>
+               <th> 이름 </th>
+           </tr>
+           </thead>
+           <tbody>
+           <!-- th:each 는 타임리프의 문법이고 반복문을 돌면서 진행한다-->
+           <tr th:each="member: ${members}">
+               <td th:text="${member.id}"></td>
+               <td th:text="${member.name}"></td>
+           </tr>
+           </tbody>
+       </table>
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100px;
+    height: auto;
+    display: block;
+    background-color: whitesmoke; 
+    font-family: 'SUITE-Regular';
+}
+
+.header{
+    margin-top: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerImg{
+    margin : 10px;
+    background-image: url('./image/project.png');
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header, .nav{
+    text-align: center;
+}
+
+section {
+    margin:10px 10px 10px 10px;
+    width: 99%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+
+.infoBox{
+    width: 100%;
+    height: 1000px;
+    background-image: url('./image/infoBox.png');
+    background-size: cover;
+    color : whitesmoke
+}
+
+#infoTitle{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.articleLogin{
+    margin-top: 130px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+button{
+    width: 200px;
+}
+
+.form-floating {
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    text-align: center;
+    color: lightsteelblue;
+}
+
+button{
+    width: 150px;
+    border : none;
+    font-weight: bold;
+}
+
+
+.phoneNumber{
+    width: 20%;
+}

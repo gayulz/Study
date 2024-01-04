@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="signUp.css">
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tmyfa04oa3"></script>
+    <title> where bad ? </title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="headerImg"></div>
+        <h1> 경기도 </h1> &nbsp;&nbsp;&nbsp;
+        <h3> 응급 연계 시스템 </h3>
+    </div>
+    <hr>
+    <section>
+        <br><br>
+        <h1> 회원가입 </h1>
+        <form action="/" method="post">
+            <br>
+            이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="입력" name="userName" class="inputs">
+            <hr>
+            소속단체명
+            <input type="text" placeholder="ㅇㅇ소방서 or ㅇㅇ업체명" name="userCompany"class="inputs">
+            <br>
+            <hr>
+            이메일 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="이메일을 입력하세요 abce@naver.com" name="userEmail" class="inputs">
+            <br>
+            <hr>
+            이메일 인증 
+            <input type="text" placeholder="입력된 이메일로 발송된 인증번호를 입력하세요" class="inputs">
+            <button>인증완료</button>
+            <br>
+            <hr>
+            비밀번호&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="비밀번호 입력(특수문자: `, ', &quot;, &, $ 사용불가)" name="userPass" class="inputs">
+            <hr>
+            <div>
+                연락처&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" class="phoneNumber"> - <input type="text" class="phoneNumber"> - <input type="text" class="phoneNumber"> 
+            </div>
+            <hr>
+            <button style="width: 100%;"> 회원가입 </button>
+        </form>
+    </section>
+</body>

@@ -1,0 +1,84 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: yuuri
+  Date: 12/26/23
+  Time: 5:21 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    <style>
+        body,
+        button {
+            display: block;
+            width: 600px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        input {
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        button {
+            height: 50px;
+        }
+
+        div {
+            display: block;
+        }
+
+        textarea {
+            width: 90%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<h1> 게시글 상세보기 </h1>
+<form class="addComm" action="/selectPost" method="post">
+
+    <div>
+        <input type="hidden" name="contactNum" value="${post.contactNum}"/>
+    </div>
+    <div>
+        작성자
+        <input type="text" name="contactWriter" value="${post.contactWriter}" readonly>
+    </div>
+    <div>
+        제목&nbsp;&nbsp;&nbsp;
+        <input type="text" name="contactTitle" value="${post.contactTitle}" readonly>
+    </div>
+    <div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="isComment" name="contactComment" id="exampleFormControlTextarea1"
+                      rows="10" readonly>${post.contactComment}</textarea>
+        </div>
+        <button type="submit"> 수정</button>
+    </div>
+</form>
+</body>
+
+</html>
+
+
