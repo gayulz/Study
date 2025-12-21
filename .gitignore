@@ -175,4 +175,7 @@ wedding-invitation/**
 gayulz/
 gayulz/**
 
+.obsidian
+.obsidian/**
+
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,macos,java,visualstudiocode
