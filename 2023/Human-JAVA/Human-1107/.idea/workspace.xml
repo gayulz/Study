@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b341237-8623-48a1-baeb-37eb02816fd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DayAndDBsample_sourceCODE/.idea/DayAndDBsample_sourceCODE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DayAndDBsample_sourceCODE/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DayAndDBsample_sourceCODE/DTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DayAndDBsample_sourceCODE/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DayAndDBsample_sourceCODE/myWordM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/artifacts/Human_1106_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/libraries/ojdbc6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/libraries/ojdbc61.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/libraries/ojdbc8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/sqlDataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/Human-1106.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/src/DAO/MemberDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/src/DTO/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Human-1107.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Functoins/Functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/tesk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boardDAO/BoardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boardDTO/BoardDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boardView/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/Human_11m_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DAO/AccessDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DAO/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DAO/MembersDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DAO/ReviewDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DTO/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DTO/MembersDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/DTO/ReviewDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/funtion/Funtions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/infoDesk/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/infoDesk/NoMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/membershipRounge/MemberMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_11m_project/src/program/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_Q/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_Q/Human_Q.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_Q/src/DAO/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_Q/src/DTO/DTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_Q/src/QandA/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human_Q/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/libraries/ojdbc6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/daywork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/Main/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/controller/CRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/controller/WorkAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/controller/WorkDel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/controller/WorkMod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/controller/WorkReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/controller/WorkStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/daywork/Functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../daywork/src/daywork/workDefine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ticketProgram/ticketProgram.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../소스자료/4. 업그레이드&amp;싱글톤&amp; finally 메서드 처리/.idea/4. 업그레이드&amp;싱글톤&amp; finally 메서드 처리.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../소스자료/4. 업그레이드&amp;싱글톤&amp; finally 메서드 처리/z4_DB_QandA_4/src/z4_DB_QandA_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../소스자료/Human-1107_TeacherSourceCode/src/Human-1107_TeacherSourceCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_02/Chapter_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1103/src/employees_program/activeProgram/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1103/src/employees_program/activeProgram/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1103/개발팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1103/경영팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1103/인사팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1103/인프라팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-baseball-6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../프로젝트PPT자료/1103_과제_명세서_김가율.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../프로젝트PPT자료/1103_과제_명세서_김가율.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../프로젝트PPT자료/~$1103_과제_명세서_김가율.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1106/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/Chapter_List.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/Chapter_List.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/session_01/chapter_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/controller/MembershipMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberDefine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/seetMain/SeetDefine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/seetMain/SeetFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/starter/Logins.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/starter/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/ticketProgram.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../주소값포인터참조.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../통합 문서1.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2XpZQxt9jgNaPAbV09lVev9mLjK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b341237-8623-48a1-baeb-37eb02816fd1" name="Changes" comment="" />
+      <created>1699327968674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699327968674</updated>
+      <workItem from="1699327969667" duration="21464000" />
+      <workItem from="1699357105302" duration="3441000" />
+      <workItem from="1699423814392" duration="4494000" />
+      <workItem from="1699438498127" duration="597000" />
+      <workItem from="1699444016444" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

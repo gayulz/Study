@@ -1,0 +1,54 @@
+#playBox{
+    display: inline-block;
+    width: 750px;
+    height: 550px;
+    background-color: rgb(236, 179, 104);
+    text-align: center;
+    overflow: hidden;
+}
+#subBox{
+    display: inline-block;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(185, 228, 69);
+    text-align: center;
+    overflow: hidden;
+}
+#dateBox{
+    border: solid 1px black;
+    background-color: antiquewhite;
+    height: 30px;
+    margin: 5px;
+}
+#playWindow{
+    width: 740px;
+    height: 500px;
+    margin: 5px;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: aqua;
+    overflow: hidden;
+}
+#miniMap{
+    display: inline-block;
+    width: 490px;
+    height: 250px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+#chattingView{
+    display: inline-block;
+    width: 490px;
+    height: 230px;
+    background-color: rgb(230, 78, 86);
+    margin: 5px;
+    margin-top: 0px;
+}
+#missionView{
+    display: inline-block;
+    width: 490px;
+    height: 50px;
+    background-color: rgb(235, 49, 225);
+    margin: 5px;
+    margin-bottom: 0px;
+}

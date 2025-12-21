@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d3eaac9-c735-4a68-bc1d-e8185bcd1b2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Human-1030/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/Human-1030.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/TEST/TEST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/main/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/member/MemberAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/stock/StockMainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/stock/StockToDefine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/task/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1030/src/task01/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Human-1031.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/member/Functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/member/MemberADM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/member/MemberDefine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/Human-1031study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/src/TestCode/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/src/TestCode/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/src/TestCode/MemberADM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/src/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1031study/src/member/MemberADM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test/console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test/user.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../소스자료/1029_seet/Desktop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../소스자료/1029_seet/out/production/Desktop/Desktop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1025/src/movietiket/LoginMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1025/src/movietiket/LoginMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1025/src/starter/TicketStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1025/src/starter/TicketStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1027/src/study/study01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1027/src/study/study01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 텍스트 문서 (2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 텍스트 문서.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../소스-회원관리 복사본.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/controller/MembershipMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ticketProgram/src/controller/MembershipMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberDefine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberDefine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/starter/Logins.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ticketProgram/src/starter/Logins.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2XVWdfxsfRmT9VXVW5fNR3w54a4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d3eaac9-c735-4a68-bc1d-e8185bcd1b2a" name="Changes" comment="" />
+      <created>1698714815308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698714815308</updated>
+      <workItem from="1698714816368" duration="17225000" />
+      <workItem from="1698739807909" duration="604000" />
+      <workItem from="1698749516016" duration="9846000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

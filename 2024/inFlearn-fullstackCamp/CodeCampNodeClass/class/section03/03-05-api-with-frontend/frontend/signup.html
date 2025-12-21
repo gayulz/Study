@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title> 회원가입 연습하기 </title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        function zzz(){
+            // 1. 입력한 휴대폰 번호 가져오기
+            const myPhone = document.getElementById('myPhone').value
+            console.log(`입력받은 번호 : ${myPhone}`)
+    
+            // 2. 핸드폰 번호를 인자로 api 요청하기 
+            // fetch , axios 를 사용하여 api 요청 
+            // fetch 는 내장되어있고 axios는 별도 다운 받아야한다 
+            // html 에서 다운받을때엔 cdn 을 상단에 script 태그로 명시하거나 npm을 통해서 다운받을 수 있다
+            axios.post("http://localhost:3000/tokens/phone", {
+                phone : myPhone
+            }).then((res) => {
+                console.log(res.data)
+                document.getElementById('result').innerText = res.data
+            })
+        }
+    </script>
+</head>
+<body>
+    휴대폰번호 : <input id="myPhone" type="text" /> <button type="button" onclick="zzz()"> 인증하기 </button>
+    <div id="result"> 인증상태 </div>
+    <button> 회원가입하기 </button>    
+</body> 
+</html>

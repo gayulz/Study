@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b1c3695-f146-43cc-9cc0-71d180a3d806" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/Human-1116Animal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/animal/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/animal/Animal_CAT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/animal/Animal_DOG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/animal/Animal_FISH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/controller/AnimalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/controller/Animal_List_Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/feed/CatFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/feed/DogFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/feed/feedInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1116Animal/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/Human-1117.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/AdminSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/GuiFuntions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/UserMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dao/FindDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dao/SaveDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dao/daoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dto/WordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/resource/Access.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/resource/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/test/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/Human-Sunday1119.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/BattleShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/ContainerShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/OilTankerShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/ShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/main/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/memo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/BattleShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/ContainerShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/OilTankerShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1. PPT자료/주말스터디.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1116/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1116/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1116/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1116/.idea/uiDesigner.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Y9LAtIL36Z9kZwCOUlRD29PbXL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b1c3695-f146-43cc-9cc0-71d180a3d806" name="Changes" comment="" />
+      <created>1699932708341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699932708341</updated>
+      <workItem from="1699932709336" duration="1203000" />
+      <workItem from="1699956523683" duration="8812000" />
+      <workItem from="1700006318353" duration="30400000" />
+      <workItem from="1700042651232" duration="377000" />
+      <workItem from="1700043672269" duration="11000" />
+      <workItem from="1700043711793" duration="827000" />
+      <workItem from="1700052768765" duration="596000" />
+      <workItem from="1700058653423" duration="598000" />
+      <workItem from="1700092682485" duration="901000" />
+      <workItem from="1700093601162" duration="602000" />
+      <workItem from="1700099343858" duration="129000" />
+      <workItem from="1700099480867" duration="252000" />
+      <workItem from="1700099744079" duration="598000" />
+      <workItem from="1700101261089" duration="597000" />
+      <workItem from="1700105311078" duration="597000" />
+      <workItem from="1700106918834" duration="936000" />
+      <workItem from="1700110942903" duration="3040000" />
+      <workItem from="1700399128640" duration="1267000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

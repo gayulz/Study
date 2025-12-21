@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5501/html/gameProject/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Document</title>
+    
+<link href="./Document_files/style.css" rel="stylesheet"></head>
+<!-- 그리드로 카드 판넬 만들어주기 -->
+<!-- 카드는 5 * 6 -->
+<body>
+    
+    <div class="container">
+        <div class="card" data-name="card1" style="order: 5;">
+            <img class="front" src="./Document_files/card1.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card1" style="order: 0;">
+            <img class="front" src="./Document_files/card1.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card2" style="order: 6;">
+            <img class="front" src="./Document_files/card2.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card2" style="order: 9;">
+            <img class="front" src="./Document_files/card2.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card3" style="order: 8;">
+            <img class="front" src="./Document_files/card3.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card3" style="order: 7;">
+            <img class="front" src="./Document_files/card3.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card4" style="order: 1;">
+            <img class="front" src="./Document_files/card4.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card4" style="order: 4;">
+            <img class="front" src="./Document_files/card4.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card5" style="order: 2;">
+            <img class="front" src="./Document_files/card5.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card5" style="order: 3;">
+            <img class="front" src="./Document_files/card5.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card6">
+            <img class="front" src="./Document_files/card6.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card6">
+            <img class="front" src="./Document_files/card6.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card7">
+            <img class="front" src="./Document_files/card7.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card7">
+            <img class="front" src="./Document_files/card7.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card8">
+            <img class="front" src="./Document_files/card8.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+        <div class="card" data-name="card8">
+            <img class="front" src="./Document_files/card8.svg">
+            <img class="back" src="./Document_files/cardBack.svg">
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script src="./Document_files/script.js"></script>
+<deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div><div class="dl-input-translation-container svelte-ju4595"><div></div></div></div></template></deepl-input-controller></body></html>

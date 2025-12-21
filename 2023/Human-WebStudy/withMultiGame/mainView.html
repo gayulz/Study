@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mainView.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+    <script type="module" src="./mainView.js"></script>
+    <script type="text/javascript" src="mainViewTimer.js"></script>
+
+
+</head>
+<body>
+    <div id="playBox">
+        <div id="dateBox">
+            <span id="gameDate">1</span><span>일차 - 밤 까지</span><span id="currentTime">10</span>
+            <button onclick="timerButton()">click</button>
+        </div>
+        <div id="playWindow">
+            <h2>플레이창</h2>
+            <div id="phaser-game"></div>
+            
+        </div>
+    </div>
+    <div id="subBox">
+        <div id="missionView">
+            <h3>미션 진행 상황</h3>
+        </div>
+        <div id="miniMap">
+            <h2>미니맵창</h2>
+        </div>
+        <div id="chattingView">
+            <h2>채팅창</h2>
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa980a09-752c-4a9d-8b69-f6d1b7119da9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/Human-1106.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1106/src/study/MemberDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ticketProgram/ticketProgram.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Chapter_List/chapter_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees_program/activeProgram/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees_program/activeProgram/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/개발팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/경영팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/인사팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/인프라팀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-baseball-6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../프로젝트PPT자료/1103_과제_명세서_김가율.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../프로젝트PPT자료/1103_과제_명세서_김가율.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../프로젝트PPT자료/~$1103_과제_명세서_김가율.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlean_Algorithm/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../inFlearn_fullstackCamp/Cyworld/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/controller/MembershipMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberDefine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/members/MemberList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/seetMain/SeetDefine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/seetMain/SeetFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/starter/Logins.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/src/starter/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ticketProgram/ticketProgram.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../주소값포인터참조.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../통합 문서1.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/employees_program/activeProgram/FileManager.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="temurin-1.8" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2XdsEMDnV1yVbWgsnOGXp4h0kw5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="employees_program.activeProgram" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa980a09-752c-4a9d-8b69-f6d1b7119da9" name="Changes" comment="" />
+      <created>1698970179144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698970179144</updated>
+      <workItem from="1698970180152" duration="602000" />
+      <workItem from="1698974426379" duration="10624000" />
+      <workItem from="1698988427812" duration="11596000" />
+      <workItem from="1699016721008" duration="8069000" />
+      <workItem from="1699027175843" duration="6734000" />
+      <workItem from="1699070210043" duration="10328000" />
+      <workItem from="1699082506591" duration="205000" />
+      <workItem from="1699096904320" duration="59000" />
+      <workItem from="1699096969590" duration="1000" />
+      <workItem from="1699230914877" duration="1177000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

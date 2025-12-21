@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a0e37df-5903-4487-ba51-bb67da56999a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Human-1116Animal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animal/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animal/Animal_CAT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animal/Animal_DOG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animal/Animal_FISH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/AnimalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Animal_List_Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/feed/CatFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/feed/DogFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/feed/feedInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/Human-1117.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/ActionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/AdminSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/GuiFuntions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/controller/UserMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dao/FindDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dao/SaveDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dao/daoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/dto/WordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/resource/Access.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/resource/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-1117/src/test/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/BackgroundImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/Part1Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/Part2Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/Part3Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/Part4Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/Part5Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/screenConfiguration/UserScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/Calendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/ComboBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itButton/Part1Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itButton/Part3Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itButton/buttonInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itCheckBox/JCheckBoxs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itCheckBox/jCheckBoxInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itLabel/Labels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itLabel/labelInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itTextFiled/JtextFileds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/itTextFiled/textFildInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-FinallyProject/src/swingPackage/setJLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/Human-Sunday1119.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/BattleShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/ContainerShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/OilTankerShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/factory/ShipFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/main/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/memo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/BattleShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/ContainerShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/OilTankerShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Human-Sunday1119/src/ship/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/controller/EtcFuntions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/controller/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dao/AddReservationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dao/ReturnCustomerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dao/SendSearchDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/BookingListDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/GetCustomerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/GetSearchObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/LodgingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/RoomInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/dto/SendSearchObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/resource/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finalProjectTest/src/resource/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/JFrameWithCardLayoutAndBackground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1. PPT자료/주말스터디.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1110_mini_project/1108JavaTASK.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1110_mini_project/1108JavaTASK.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1114_CarRental/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1114_CarRental/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1116/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1116/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Human-1116/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Human-1116/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/news.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YFHT62cxwdivpcPDekdTodfUdD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yuuri/Study/Human-JAVA/Human-1116Animal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a0e37df-5903-4487-ba51-bb67da56999a" name="Changes" comment="" />
+      <created>1700114411792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700114411792</updated>
+      <workItem from="1700114412787" duration="12907000" />
+      <workItem from="1700180251581" duration="3084000" />
+      <workItem from="1700183990740" duration="236000" />
+      <workItem from="1700184256381" duration="560000" />
+      <workItem from="1700289749271" duration="1328000" />
+      <workItem from="1700393096594" duration="690000" />
+      <workItem from="1700398190482" duration="122000" />
+      <workItem from="1700413989777" duration="593000" />
+      <workItem from="1700622303003" duration="4000" />
+      <workItem from="1700886724338" duration="613000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

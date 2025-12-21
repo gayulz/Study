@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <title>추천서 사이트</title>
+    <!-- bootstrap CDN key -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <div>
+                <h1> 분야별 필수도서 추천사이트 </h1>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <div>
+                    <input type="text" class="form-control" placeholder="아이디입력"
+                        aria-label="Recipient's username with two button addons"
+                        style="margin-left: 250px; width: 200px;">
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <div>
+                        <input type="text" class="form-control" placeholder="비밀번호 입력"
+                            aria-label="Recipient's username with two button addons"
+                            style="margin-left: -100px;width: 200px;">
+                    </div>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-warning">Login</button>
+                        &nbsp;&nbsp;
+                        <button type="button" class="btn btn-warning" onClick="location.href='./join.html'">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="section">
+                    <div id="article">
+                        <div class="flip-card-container" style="--hue: 220">
+                            <div class="flip-card">
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="./poster/poster1.png" alt="Brohm Lake">
+                                        <figcaption> S/W 개발자 필독서</figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li> 📌 분야별 추천 필독서 📌 </li>
+                                        <li> 개발자를 위한 필독서 모음 </li>
+                                        <li> 개발 공부합시다 </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-back">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="./poster/poster1.png" alt="Brohm Lake">
+                                    </figure>
+                                    <button onClick="location.href='./Book-IT.html'">Go to</button>
+
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <div class="flip-card-container" style="--hue: 170">
+                            <div class="flip-card">
+
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="./poster/poster2.png" alt="Brohm Lake">
+                                        <figcaption>Web 디자이너 필독서</figcaption>
+                                    </figure>
+
+                                    <ul>
+                                        <li> 📌 분야별 추천 필독서 📌 </li>
+                                        <li> 웹퍼블리셔를 위한 필독서 모음 </li>
+                                        <li> 디자인을 공부합시다 </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-back">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="./poster/poster2.png" alt="Brohm Lake">
+                                    </figure>
+
+                                    <button onClick="location.href='./Book-Design.html'">Go to</button>
+
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /flip-card-container -->
+                    </div>
+                    <div id="article">
+                        <!-- flip-card-container -->
+                        <div class="flip-card-container" style="--hue: 350">
+                            <div class="flip-card">
+                                <div class="card-front">
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="./poster/poster3.png" alt="Brohm Lake">
+                                        <figcaption>분야 추천 게시판</figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li> 👉 회원가입 및 로그인 필요 </li>
+                                        <li> 추천하는 분야를 건의하고 싶다면 </li>
+                                        <li> 게시판에 글을 작성해 주세요 </li>
+                                    </ul>
+                                </div>
+                                <div class="card-back">
+                                    <!-- only if the image is necessary -->
+                                    <figure>
+                                        <div class="img-bg"></div>
+                                        <img src="./poster/poster3.png" alt="Brohm Lake">
+                                    </figure>
+                                    <button onClick="location.href='./userContent.html'"> Go to</button>
+                                    <!-- can add svg here and remove these eight spans -->
+                                    <div class="design-container">
+                                        <span class="design design--1"></span>
+                                        <span class="design design--2"></span>
+                                        <span class="design design--3"></span>
+                                        <span class="design design--4"></span>
+                                        <span class="design design--5"></span>
+                                        <span class="design design--6"></span>
+                                        <span class="design design--7"></span>
+                                        <span class="design design--8"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /flip-card-container -->
+                    </div>
+                    <a href="https://abubakersaeed.netlify.app/designs/d4-flip-card" class="abs-site-link"
+                        rel="nofollow noreferrer" target="_blank">abs/designs/d4-flip-card</a>
+                </div>
+            </div>
+            <div id="footer" style="text-align: center;">
+                <p style="font-size: 12px; color : lightgray;">
+                    <br>
+                    COPYRIGHT© Human Study. PROJECT NAME : Book recommendations. All RIGHTS RESERVED.
+                </p>
+            </div>
+        </div>
+</body>
+
+</html>
