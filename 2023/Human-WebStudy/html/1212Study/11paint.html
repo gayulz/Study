@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- 인코딩 설정 꼭 확인해야한다 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 그림판을 만들꺼예용 </title>
+    <style>
+        #mypaint {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+    <!-- html 태그가 자바 스크립트를 호출 ver -->
+<body>
+    <div>
+        <canvas id="mypaint" width="300" height="400">
+
+        </canvas>
+    </div>
+    <div>
+        검정 <input type="radio" name="color" onclick="setColor(this.value)" value="black" checked>
+        빨강 <input type="radio" name="color" onclick="setColor(this.value)" value="red">
+        초록 <input type="radio" name="color" onclick="setColor(this.value)" value="green">
+    </div>
+    <div>
+        <!-- 펜의 굵기 조절 -->
+        펜 굵기 <input type="range" name="bold" min="1" max="30" value="1" id="pansize" onchange="setSize(this.value)" />
+    </div>
+</body>
+
+</html>
+<!--
+    개발 순서
+    1. UI 디자인 및 구현
+        - 기술 stack : html , css
+        - 주요 tag  : canvas
+        - tip 
+            객체를 공부 할 때는 어떤 객체인지 제공 메서드가 무엇인지 ? 
+    2. 자바스크립트로 기능 구현
+-->
+
+<script>
+    let drawPan = document.getElementById('mypaint'); // tag canvas 객체를 가져온다
+    let myctx = drawPan.getContext('2d'); // 2d로 그림을 그린다
+    let flag = false;
+    // 마우스 동작 리스너 정의
+    drawPan.addEventListener("mousedown", () => {
+        startDraw();
+    });
+    drawPan.addEventListener("mousemove", () => {
+        moveDraw();
+    });
+    drawPan.addEventListener("mouseup", () => {
+        endDraw();
+    })
+
+    // function 정의 --------------------------------------------------------------------------
+    function startDraw() {
+        myctx.beginPath();
+        flag = true;
+    }
+
+    function setColor(colors) {
+        myctx.strokeStyle = colors;
+    }
+
+    function setSize(sizes){
+        myctx.lineWidth = sizes;
+    }
+
+    function moveDraw() {
+        if (flag) {
+            let e = window.event;
+            myctx.lineTo(e.clientX - 8, e.clientY - 8);
+            myctx.stroke();
+        }
+    }
+    function endDraw() {
+        flag = false;
+    }
+
+</script>

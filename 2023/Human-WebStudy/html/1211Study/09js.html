@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .redText{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <!-- html 태그에서 자바 함수를 호출하고 자바 함수에서 html 태그의 내용을 제어하는 예제 -->
+
+    <div>
+        <form action="login.html" mothod="post">
+            ID <input type="text" id="id" name="id">
+            PASS <input type="text" id="pass" name="pass">
+            <input type="button" onClick="chk()" value="IDcheck">
+            <input type="submit" value="save">
+            <input type="reset" value="reset">
+        </form>
+
+        <div>
+            <span id="userinfo"> 없음 </span>
+        </div>
+        <hr>
+        <ul>
+            <li> <span> aaa </span></li>
+            <li> <span> bbb </span></li>
+            <li> <span> ccc </span></li>
+            <li> <span> ddd </span></li>
+            <li> <span> eee </span></li>
+        </ul>
+        <button onClick="tagselect()"> Tag 요소로 선택하기 </button>
+    </div>
+</body>
+</html>
+<script>
+    function chk(){
+        let id=document.getElementById("id").value;
+        let msg = document.getElementById("userinfo"); 
+        if(id.length<5){
+            msg.className="redText";
+            msg.innerHTML="사용불가"
+        }else{
+            msg.innerHTML= "<button> 사용가능 </button>" 
+        }
+    }
+
+    function tagselect(){
+        var tagList = document.getElementsByTagName("li");
+        console.log(tagList.length);
+        console.log(tagList[0]. innerHTML);
+        console.log(tagList[1]. innerText);
+        tagList[1].innerHTML="<button>  뉴 뉴 뉴 </button>";
+        tagList[2].innerHTML="<button>  뉴 뉴 뉴 </button>";
+    }
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- hive
+    css 위치는 상관없다 일반적으로 head 자식으로 한다
+    h1 을 selector 선택자 태그를 선택할 것 
+    -->
+    <style>
+    </style>
+    <script>
+        function test() {
+            var a = 10;
+            a = a + 20;
+            alert(a + "클릭함");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 제목 태그 , 검색 엔진 등 크롤러가 홈페이지에서 찾는 것이 h1 태그로 찾는다
+        페이지당 한번 씩 사용하면 노출이 될 가능성이 높다 -->
+    <h1> 휴먼 프로그래머스 </h1>
+    <button onclick="test()">클릭</button>
+</body>
+
+</html>

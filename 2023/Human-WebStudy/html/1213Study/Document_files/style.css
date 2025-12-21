@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lavender;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4개 열로 구성 */
+  grid-gap: 10px; /* 카드 사이 간격 */
+  padding: 10px;
+  /* 컨테이너 크기 조정 필요시 여기에 추가 */
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}

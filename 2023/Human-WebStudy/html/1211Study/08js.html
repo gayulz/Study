@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- js 영역과 html 태그에서 js 함수 호출하는 예제 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <span onClick="chk()"> 나를 눌러라 </span>
+    <button onClick="chk()"> 버튼 </button>
+
+</body>
+</html>
+<script>
+    // alert("자바스크립트 로딩하고 있어용") // js 로드 동작 확인
+    // var t = "231211 test";
+    // console.log(t);
+    // document.write(t);
+
+
+    function chk(){
+        document.write("chk click");
+        document.write("<button> 버튼 </button>")
+    }
+    chk();
+
+
+</script>

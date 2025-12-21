@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 1200px;
+            background-color: black;
+        }
+
+        div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1, h2{
+            font-size: 18px;
+            color: white;
+        }
+        p{ color: white; }
+
+        #topTitle {
+            flex-direction: row;
+            display: inline-block;
+            margin-top: 70px;
+            height: 9%;
+            text-align: left;
+        }
+
+        #subImg{
+            display: flex;
+            flex-direction: row;
+            margin-top: 0px;
+            height: 3%;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        #nullGround{
+            display: flex;
+            flex-direction: column;
+            height: 35%;
+        }
+
+        #westAside {
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            height: 100%;
+            border-right-style: solid;
+            border-right-color: rgb(48, 47, 47);
+        }
+
+        #eastSection {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #westArticle{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        #eastArticle{
+            width: 20%;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 130px;
+        }
+
+        #userProfile{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .postrounge{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+        }
+
+        #post{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 900px;
+        }
+        #postNorth{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 9%;
+            background-color: black;
+        }
+        #postCenter{
+            display: flex;
+        }
+        #postSouth{
+            display: flex;
+            width: 100%;
+            height: 60px;
+        }
+        #postContent{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 좌측 사이드 -->
+        <div id="westAside">
+            <div id="topTitle" align="center">
+                <img src="./instagram/메인타이틀.png" alt="instagram" style="width : 90%; margin-left: 2px;">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/홈.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 홈 </h1>
+                </div>
+            </div>             
+            <br>
+            <div id="subImg">
+                <img src="./instagram/돋보기.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 검색 </h1>
+                </div>
+            </div>               
+            <br>
+            <div id="subImg">
+                <img src="./instagram/위치.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 탐색 탭 </h1>
+                </div>
+            </div>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/릴스.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 릴스 </h1>
+                </div>
+            </div>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/화살표.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 메세지 </h1>
+                </div>
+            </div>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/하트.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 알림 </h1>
+                </div>
+            </div>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/게시글작성.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 만들기 </h1>
+                </div>
+            </div>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/사람.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 프로필 </h1>
+                </div>
+            </div>
+            <br>
+            <div id="nullGround"> 
+            </div>
+            <div id="subImg">
+                <img src="./instagram/스레드.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; Threads </h1>
+                </div>
+            </div>
+            <br>
+            <div id="subImg">
+                <img src="./instagram/메뉴더보기.png" alt="instagram" style="width:20%; margin-left: 20px;">
+                <div> 
+                    <h1> &nbsp;&nbsp;&nbsp; 더 보기 </h1>
+                </div>
+            </div>
+        </div>
+        <!-- 우측 세션 -->
+        <div id="eastSection">
+            <div id="westArticle">
+                <header>
+                    <div id="userProfile">
+                        <img src="./instagram/상단사람.png" style="width: 40%; height: 100%;"> <p>사람1</p> 
+                    </div>
+                    <div id="userProfile">
+                        <img src="./instagram/상단사람.png" style="width: 40%; height: 100%;"> <p>사람1</p> 
+                    </div>
+                    <div id="userProfile">
+                        <img src="./instagram/상단사람.png" style="width: 40%; height: 100%;"> <p>사람1</p> 
+                    </div>
+                    <div id="userProfile">
+                        <img src="./instagram/상단사람.png" style="width: 40%; height: 70%;"> <p>사람1</p>
+                    </div>
+                    <div id="userProfile">
+                        <img src="./instagram/상단사람.png" style="width: 40%; height: 70%;"> <p>사람1</p>
+                    </div>
+                    <div id="userProfile">
+                        <img src="./instagram/상단사람.png" style="width: 40%; height: 70%;"> <p>사람1</p>
+                    </div>   
+                </header>
+                <article>
+                    <div class="postrounge">
+                        <div id="post">
+                            <div id="postNorth">
+                                <img src="./instagram/사람.png"> <p> &nbsp; &nbsp; &nbsp; 춘식이 애미</p>
+                                <img src="./instagram/점점.png" style="height: 50%; margin-left: 500px;">
+                            </div>
+                            <div id="postCenter">
+                                <img src="./instagram/춘식.jpg" style="width: 100%;">
+                            </div>
+                            <div id="postSouth">
+                                <img src="./instagram/하트.png" style="height: 100%; margin-left: 10px; margin-top : 10px;">
+                                <img src="./instagram/말풍선.png" style="height: 100%; margin-left: 10px; margin-top : 10px;">
+                                <img src="./instagram/화살표.png" style="height: 100%; margin-left: 10px; margin-top : 10px;">
+                                <div id="nullGround" style="width: 100%; height: 100%;"></div>
+                                <img src="./instagram/플래그.png" style="height: 100%; margin-right: 10px; margin-top : 10px;">
+                            </div>
+                            <div id="postContent">
+                                <br>
+                                <h1> &nbsp;&nbsp; chunsik_luv님 여러 명이 좋아합니다 </h1>
+                                <p>&nbsp; 춘식어멈 : 와 너무 귀엽짜나 ~ ~ ~ </p>
+                                <p style="color: gray;">&nbsp; &nbsp; 더보기 </p>
+                                <p style="color: gray;">&nbsp; &nbsp; 댓글 2개 모두 보기 </p>
+                                <p style="color: gray;">&nbsp; &nbsp; 댓글 달기.. </p>
+                                <hr style="color: antiquewhite; width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
