@@ -319,13 +319,6 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,node
 
-wedding-invitation/
-/wedding-invitation/
-wedding-invitation/**
-
-/gayulz/
-gayulz/
-gayulz/**
 
 .obsidian
 .obsidian/**
