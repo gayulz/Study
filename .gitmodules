@@ -1,0 +1,6 @@
+[submodule "gayulz"]
+	path = gayulz
+	url = https://github.com/gayulz/gayulz.git
+[submodule "wedding-invitation"]
+	path = wedding-invitation
+	url = https://github.com/gayulz/wedding.git
