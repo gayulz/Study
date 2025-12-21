@@ -170,4 +170,9 @@ Temporary Items
 wedding-invitation/
 /wedding-invitation/
 wedding-invitation/**
+
+/gayulz/
+gayulz/
+gayulz/**
+
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,macos,java,visualstudiocode
