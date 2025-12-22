@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+    <!-- Root Context: defines shared resources visible to all other web components -->
+    <!-- 오라클 been -->
+    <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+        <property name="username" value="yuuri"></property>
+        <property name="password" value="1519"></property>
+    </bean>
+    <!-- factory bean 쿼리문 공장 -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+        <!-- 쿼리문을 담당 -->
+        <property name="dataSource" ref="dataSource"><!-- ref 의존관계 --> </property>
+        <property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>
+    </bean>
+
+    <!-- sqlsessrionTemlate spring과 연동하기 위한 객체 -->
+    <bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSession">
+        <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg> </bean>
+    <context:component-scan base-package="com.EMBAD.dao"/>
+    <context:component-scan base-package="com.EMBAD.service"/>
+
+    <!-- API Service Key 파일 경로 -->
+    <context:property-placeholder location="classpath:application.properties"/>
+
+    <!-- Email 발송을 위한 Bean 정의 -->
+    <bean id="mailSender2" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mail.host}" />
+        <property name="port" value="${mail.port}" />
+        <property name="username" value="${mail.username}"/>
+        <property name="password" value="${mail.password}"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+                <prop key="mail.smtp.starttls.enable">${mail.smtp.starttls.enable}</prop>
+                <prop key="mail.transport.protocol">${mail.transport.protocol}</prop>
+                <prop key="mail.debug">${mail.debug}</prop>
+                <prop key="mail.smtp.ssl.trust">${mail.smtp.ssl.trust}</prop>
+                <prop key="mail.smtp.ssl.protocols">${mail.smtp.ssl.protocols}</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

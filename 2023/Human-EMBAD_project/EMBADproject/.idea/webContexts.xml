@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/paramedicSite/chart.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/paramedicSite" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/paramedicSite/prmChartReception.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/paramedicSite" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/paramedicSite/prmPatientInfo.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/paramedicSite" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/signup.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/staffEditInfo.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.EMBAD.dao">
+    <select id="checkEmail" resultType="int" parameterType="String">
+        select count(*) from Staff Where staffEmail = #{email}
+    </select>
+    <insert id="chartInsert" parameterType="com.EMBAD.vo.EmergencyChart">
+        insert into EmergencyChart values(ptntNumber_seq.nextval,#{ptntGender},#{ptntAge},#{KTASlevel},#{ptntCause},#{ptntNote},#{ptntAid},#{staffNumber},#{hpid},default)
+    </insert>
+    <select id="myChartAll" resultType="com.EMBAD.vo.EmergencyChart" parameterType="String">
+        select * from (select * from EmergencyChart order by ptntDate DESC) desList where staffNumber=#{staffNumber}
+    </select>
+    <select id="dutyReceptionList" resultType="com.EMBAD.vo.EmergencyChart" parameterType="String">
+        select * from (select * from EmergencyChart order by ptntDate DESC) desList where hpid=#{hpid}
+    </select>
+    <select id="chartOne" parameterType="int" resultType="com.EMBAD.vo.EmergencyChart">
+        select e.*, s.staffName as staffName, s.staffPhone as staffPhone from EmergencyChart e , Staff s where e.Staffnumber = s.StaffNumber AND e.ptntNumber = #{ptntNumber}
+    </select>
+    <delete id="deleteChart" parameterType="int">
+        DELETE FROM EmergencyChart WHERE ptntNumber=#{ptntNumber}
+    </delete>
+</mapper>
+
+

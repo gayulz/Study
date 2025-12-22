@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: HS-Regular;
+  }
+  
+  
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;;
+    background-image: url('./cardGame/img/background.png');
+    background-size: cover;
+
+}
+.container {
+    margin-top : 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-gap: 10px;
+    padding: 10px;
+}
+  
+  
+#section {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#selectContainer{  
+    width: 220px;
+    height: 310px;
+    margin : 30px;
+}
+
+
+#matchCard {
+    border-style: solid;
+    width: 220px; 
+    height: 310px;
+    background-image: url("./cardGame/img/match.png");
+    background-size: cover;
+    border-radius: 15px;
+    transform : all 0.1s;
+}
+
+#defenseCard {
+    border-style: solid;
+    width: 220px; 
+    height: 310px;
+    background-image: url("./cardGame/img/defense.png");
+    background-size: cover;
+    border-radius: 15px;
+    transform : all 0.1s;
+}
+
+.overlay{
+    position: absolute;
+    width: 210px;
+    height: 310px;
+    background: linear-gradient(105deg, 
+    transparent 40%, 
+    rgba(255,219,112,0.8) 45%, 
+    rgba(132, 50, 255, 0.6) 50%, 
+    transparent 80%);
+    filter : brightness(1, 2) opactiy(0.8);
+    mix-blend-mode : color-dodge;
+    background-size: 150%;
+    background-position: 100%;
+    transition: all 0.1s;
+  }
+  
+
+#infoText{
+    margin-top: 50px;
+    color : white;
+    font-size: 30px;
+}

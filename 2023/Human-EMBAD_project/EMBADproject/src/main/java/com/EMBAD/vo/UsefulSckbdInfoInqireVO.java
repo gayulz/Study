@@ -1,0 +1,73 @@
+package com.EMBAD.vo;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class UsefulSckbdInfoInqireVO {
+    private String hvec;
+    private String hvoc;
+    private String hvcc;
+    private String hvncc;
+    private String hvccc;
+    private String hvicc;
+    private String hvgc;
+    private String hvdnm;
+    private String hvctayn;
+    private String hvmriayn;
+    private String hvangioayn;
+    private String hvventiayn;
+    private String hvventisoayn;
+    private String hvincuayn;
+    private String hvcrrtayn;
+    private String hvecmoayn;
+    private String hvoxyayn;
+    private String hvhypoayn;
+    private String hvamyn;
+    private String hv2;
+    private String hv3;
+    private String hv4;
+    private String hv5;
+    private String hv6;
+    private String hv7;
+    private String hv8;
+    private String hv9;
+    private String hv10;
+    private String hv11;
+    private String hv12;
+    private String hv13;
+    private String hv14;
+    private String hv15;
+    private String hv16;
+    private String hv17;
+    private String hv18;
+    private String hv19;
+    private String hv21;
+    private String hv22;
+    private String hv23;
+    private String hv24;
+    private String hv25;
+    private String hv26;
+    private String hv27;
+    private String hv28;
+    private String hv29;
+    private String hv30;
+    private String hv31;
+    private String hv32;
+    private String hv33;
+    private String hv34;
+    private String hv35;
+    private String hv36;
+    private String hv37;
+    private String hv38;
+    private String hv39;
+    private String hv40;
+    private String hv41;
+    private String hv42;
+    private String hv43;
+    private String dutyname;
+    private String phid;
+    private String dutytel3;
+    private String dutyAddr;
+}

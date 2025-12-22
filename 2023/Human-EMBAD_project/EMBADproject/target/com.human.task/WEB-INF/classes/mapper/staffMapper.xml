@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.EMBAD.dao.staffMapper">
+    <!-- 병원 관계자 insert 프로시저 -->
+    <select id="insertStaffData" parameterType="map" statementType="CALLABLE">
+        {Call InsertStaffData(
+                #{dutyname, mode=IN, jdbcType=VARCHAR},
+                #{hpid, mode=IN, jdbcType=VARCHAR},
+                #{staffEmail, mode=IN, jdbcType=VARCHAR},
+                #{staffName, mode=IN, jdbcType=VARCHAR},
+                #{staffPass, mode=IN, jdbcType=VARCHAR},
+                #{staffPhone, mode=IN, jdbcType=VARCHAR},
+                #{result, mode=OUT, jdbcType=INTEGER}
+              )}
+    </select>
+    <!-- 구급 리스트 select 쿼리문 -->
+    <select id="getPrmAllData" resultType="com.EMBAD.vo.PrmVO">
+        select*from Paramedics
+    </select>
+    <!-- 구급 insert문 -->
+    <insert id="insertPrmStaff" parameterType="com.EMBAD.vo.StaffVO">
+        insert into staff values(staffNumber_SEQ.NEXTVAL,null,null,#{prmNumber},#{prmName},#{staffEmail},#{staffName},#{staffPass},#{staffPhone})
+    </insert>
+    <!-- staff로그인 쿼리문 -->
+    <select id="selectIsEmail" parameterType="com.EMBAD.vo.StaffVO" resultType="com.EMBAD.vo.StaffVO">
+        select * from staff where staffEmail=#{staffEmail}
+    </select>
+    <!-- staff정보수정 쿼리문 -->
+    <update id="staffUpdate" parameterType="com.EMBAD.vo.StaffVO">
+        UPDATE Staff SET staffPass = #{staffPass}, staffPhone = #{staffPhone} WHERE staffEmail = #{staffEmail}
+    </update>
+</mapper>
