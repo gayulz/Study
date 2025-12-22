@@ -19,7 +19,7 @@ public class MyArrayList<E> implements MyList<E>{
     }
 
     public MyArrayList(int init){
-        elementData = new Object[DEFAULT_CAPACITY];
+        elementData = new Object[init];
     }
 
     @Override
@@ -81,19 +81,19 @@ public class MyArrayList<E> implements MyList<E>{
     }
 
     private void shiftLeftFrom(int index) {
-        for (int i = index; i < size; i++) {
+        for (int i = index; i < size -1; i++) {
             elementData[i] = elementData[i + 1];
         }
     }
 
     private void grow() {
         int oldCapacity = elementData.length;
-        int newCapacity = oldCapacity*2;
+        int newCapacity = oldCapacity * 2;
         elementData = Arrays.copyOf(elementData, newCapacity);
     }
 
     private void shiftRightFrom(int index) {
-        for (int i = size; i > index; size--) {
+        for (int i = size; i > index; i--) {
             elementData[i] = elementData[i - 1];
         }
     }
