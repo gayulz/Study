@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <section class="cart">
+    <div class="cart__information">
+      <ul>
+        <li>장바구니 상품은 최대 30일간 저장됩니다.</li>
+        <li>가격, 옵션 등 정보가 변경된 경우 주문이 불가할 수 있습니다.</li>
+        <li>오늘출발 상품은 판매자 설정 시점에 따라 오늘출발 여부가 변경될 수 있으니 주문 시 꼭 다시 확인해 주시기 바랍니다.</li>
+      </ul>
+    </div>
+    <table class="cart__list">
+      <form>
+        <thead>
+          <tr>
+            <td><input type="checkbox" id="allChk" onchange="allChk1()"></td>
+            <td>상품정보</td>
+            <td>옵션</td>
+            <td>상품금액</td>
+            <td>배송비</td>
+          </tr>
+          <tr id="hidden">
+            <td colspan="5"> 장바구니가 비어있습니다. 물건을 주문해주세요.</td>
+          </tr>
+        </thead>
+        <tbody id="cart__list" hidden>
+          <!-- 추가하는 공간 -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <!--
+              JQuery일때 사용 
+              <td colspan="2"><input type="checkbox"> <input type="button" class="cart__list__optionbtn"
+              id="deleteButton" value="선택상품삭제"> 
+             -->
+                <td colspan="2"><input type="checkbox"> <input type="button" class="cart__list__optionbtn"
+                onclick="delRow()" value="선택상품삭제">
+              <button class="cart__list__optionbtn">선택상품 찜</button>
+            </td>
+            <td></td>
+            <td style="text-align: center;"> 선택상품금액 <span id="allGoods"></span> + 총 배송비 <span id="allDlv"></span></td>
+            <td style="text-align: center; color: limegreen; border-left: 1px lightgray solid;"> 주문금액 <span
+                id="allPri"></span></td>
+          </tr>
+        </tfoot>
+      </form>
+    </table>
+
+    <table class="buyGoods">
+      <form>
+        <thead>
+          <tr>
+
+            <td>상품정보</td>
+            <td>옵션</td>
+            <td>상품 개당 금액</td>
+            <td>배송비</td>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr class="cart__list__detail">
+
+            <td style="width: 40%;"><input type="text" id="goodsInfo" size="40"></td>
+            <td class="cart__list__option" style="width: 27%;">
+              상품 주문 수량<input type="number" id="goodsCnt" min="1" value="1" style="width: 40px;">개
+            </td>
+            <td style="width: 15%;"><span class="price"><input type="text" id="goodsPrice" size="10">원</span>
+            </td>
+            <td style="width: 15%;"><input type="text" id="goodsDlv" size="10"></td>
+          </tr>
+
+        </tbody>
+
+      </form>
+    </table>
+    <div class="cart__mainbtns">
+      <button class="cart__bigorderbtn left">쇼핑 계속하기</button>
+      <button class="cart__bigorderbtn right" onclick="addRow()">주문하기</button>
+      <!--
+        JQuery일때 사용 
+        <button class="cart__bigorderbtn right" id="orderButton">주문하기</button> 
+      -->
+    </div>
+  </section>
+  <script src="./index.js"></script>
+  <!-- <script src="./jquery.js"></script> -->
+  <!-- <script src="./reindex.js"></script> -->
+</body>
+</html>

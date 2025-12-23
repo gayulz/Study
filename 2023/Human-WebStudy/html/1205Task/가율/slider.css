@@ -1,0 +1,28 @@
+.slides {
+    display:grid;
+    gap: 0.1rem;
+    grid-auto-flow:column;
+    overflow-y: hidden;
+    width: 600px;
+    height: 200px;
+    border-style: double;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:thin;
+}
+  
+.slides::-webkit-scrollbar {
+    display:none;
+}
+  
+.slides img {
+    scroll-snap-align: center;
+    height:30%;
+}
+
+.travel {
+    object-fit: cover;
+    width: 440px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
