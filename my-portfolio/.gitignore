@@ -49,3 +49,5 @@ lerna-debug.log*
 .CLAUDE.md 
 shrimp_data/
 shrimp_data.json
+.playwright-mcp/
+.claude/
