@@ -1,16 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Anton", sans-serif;
+  --font-sans: "Wanted Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Wanted Sans Variable", sans-serif;
   --color-hot-pink: #FF007F;
   --color-hot-pink-hover: #D6006A;
 }
 
 :root {
+  /* 라이트 모드 색상 */
   --bg-color: #F5F5F5;
+  --bg-secondary: #FFFFFF;
   --text-color: #1A1A1A;
+  --text-secondary: #6B7280;
+  --border-color: #E5E7EB;
+  --accent-color: #FF007F;
+}
+
+.dark {
+  /* 다크 모드 색상 (Villo 스타일) */
+  --bg-color: #121212;
+  --bg-secondary: #1E1E1E;
+  --text-color: #F0F0F0;
+  --text-secondary: rgba(240, 240, 240, 0.5);
+  --border-color: rgba(240, 240, 240, 0.1);
   --accent-color: #FF007F;
 }
 
@@ -19,6 +33,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
