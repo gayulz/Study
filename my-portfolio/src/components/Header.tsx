@@ -2,50 +2,53 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { cn } from "../lib/utils";
+import { useNavigation } from "../contexts/NavigationContext";
+import type { SectionName } from "../contexts/NavigationContext";
 
-const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
-  { name: "Education", href: "#education" },
-  { name: "Certifications", href: "#certifications" },
-  { name: "Writing", href: "#writing" },
-  { name: "Contact", href: "#contact" },
+const navItems: Array<{ name: string; section: SectionName }> = [
+	{ name: "Home", section: "home" },
+	{ name: "About", section: "about" },
+	{ name: "Projects", section: "projects" },
+	{ name: "Experience", section: "experience" },
+	{ name: "Education", section: "education" },
+	{ name: "Certifications", section: "certifications" },
+	{ name: "Writing", section: "writing" },
+	{ name: "Contact", section: "contact" },
 ];
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+	const { setActiveSection } = useNavigation();
+	const [isOpen, setIsOpen] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrolled(window.scrollY > 50);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	// 섹션 이동 핸들러
+	const handleNavClick = (section: SectionName) => {
+		setActiveSection(section);
+		setIsOpen(false); // 모바일 메뉴 닫기
+	};
 
   return (
     <>
       {/* Desktop: Left Sidebar */}
-      <aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md border-r border-gray-800 z-50 flex-col">
-        <div className="p-8">
-          <a href="#home" className="font-display text-3xl font-bold tracking-tighter hover:text-hot-pink transition-colors text-white block">
-            GAYUL KIM
-          </a>
-        </div>
-
-        <nav className="flex-1 px-8 py-4">
-          <ul className="space-y-2">
+      <aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md z-50 flex-col">
+        <nav className="flex-1 px-8 py-12">
+          <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="block py-3 text-sm font-medium uppercase tracking-wider hover:text-hot-pink hover:translate-x-2 transition-all text-white"
+                <button
+                  onClick={() => handleNavClick(item.section)}
+                  className="block py-2 text-base font-medium uppercase tracking-wider hover:text-hot-pink hover:translate-x-2 hover:scale-110 transition-all text-white w-full text-left"
                 >
                   {item.name}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
@@ -63,9 +66,9 @@ export default function Header() {
       >
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center">
-            <a href="#home" className="font-display text-2xl font-bold tracking-tighter hover:text-hot-pink transition-colors text-white">
+            <button onClick={() => handleNavClick('home')} className="font-display text-2xl font-bold tracking-tighter hover:text-hot-pink transition-colors text-white">
               GAYUL KIM
-            </a>
+            </button>
 
             <button
               className="p-2 text-white hover:text-hot-pink transition-colors"
@@ -87,14 +90,13 @@ export default function Header() {
             >
               <nav className="flex flex-col p-6 space-y-4">
                 {navItems.map((item) => (
-                  <a
+                  <button
                     key={item.name}
-                    href={item.href}
-                    className="text-lg font-display uppercase hover:text-hot-pink transition-colors text-white"
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => handleNavClick(item.section)}
+                    className="text-lg font-display uppercase hover:text-hot-pink transition-colors text-white text-left"
                   >
                     {item.name}
-                  </a>
+                  </button>
                 ))}
               </nav>
             </motion.div>

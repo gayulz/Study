@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <Section id="contact" className="mb-20" noBorder>
+    <Section id="contact" className="mb-20" noBorder variant="auto">
       <motion.h2
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}

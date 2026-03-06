@@ -3,7 +3,7 @@ import Section from "./ui/Section";
 
 export default function About() {
   return (
-    <Section id="about" className="relative overflow-hidden">
+    <Section id="about" className="relative overflow-hidden" variant="full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Text Content */}
         <motion.div

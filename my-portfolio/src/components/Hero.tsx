@@ -54,27 +54,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 cursor-pointer pointer-events-auto"
-        onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-      >
-        <motion.div
-          className="w-[1px] h-24 bg-gradient-to-b from-hot-pink to-transparent"
-          animate={{
-            opacity: [0.5, 1, 0.5],
-            scaleY: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      </motion.div>
     </div>
   );
 }
