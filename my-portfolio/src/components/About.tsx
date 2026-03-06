@@ -50,7 +50,7 @@ export default function About() {
           className="relative aspect-[3/4] bg-gray-200 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-2xl"
         >
           <img
-            src="/20230430_032558.jpg"
+            src="/image/20230430_032558.jpg"
             alt="Profile"
             className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
           />

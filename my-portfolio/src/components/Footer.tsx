@@ -75,12 +75,6 @@ export default function Footer() {
 					</div>
 				</div>
 
-				{/* Copyright */}
-				<div className="pt-6 border-t border-gray-900 text-center">
-					<p className="text-gray-600 text-xs">
-						&copy; {new Date().getFullYear()} Gayul Kim Portfolio. All rights reserved.
-					</p>
-				</div>
 			</div>
 		</footer>
 	);

@@ -1,10 +1,9 @@
 import { motion } from "motion/react";
-import Section from "./ui/Section";
 import { Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <Section id="contact" className="mb-20" noBorder variant="auto">
+    <section id="contact" className="w-full px-4 sm:px-6 lg:px-12 py-24 md:py-40 mb-20 border-t border-gray-200 dark:border-gray-800">
       <motion.h2
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -52,6 +51,6 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    </Section>
+    </section>
   );
 }
