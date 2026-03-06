@@ -2,7 +2,7 @@
   <h1>✨ Gayul Kim | Backend Developer Portfolio ✨</h1>
   <p>안정적이고 확장 가능한 백엔드 아키텍처를 설계하는 개발자입니다.</p>
 
-[![Deploy with Vercel](https://vercelbutton.com/api/button.svg)](https://gayul.vercel.app/)
+[![Deploy with Vercel](https://vercel.com/button)](https://gayul.vercel.app/)
 
 **[🌐 포트폴리오 웹사이트 바로가기](https://gayul.vercel.app/)**
 
