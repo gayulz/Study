@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Mail, Github, BookOpen } from "lucide-react";
 import { cn } from "../lib/utils";
 import { useNavigation } from "../contexts/NavigationContext";
 import type { SectionName } from "../contexts/NavigationContext";
@@ -38,22 +38,56 @@ export default function Header() {
   return (
     <>
       {/* Desktop: Left Sidebar */}
-      <aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md z-50 flex-col">
-        <nav className="flex-1 px-8 py-12">
-          <ul className="space-y-4">
-            {navItems.map((item) => (
-              <li key={item.name}>
-                <button
-                  onClick={() => handleNavClick(item.section)}
-                  className="block py-2 text-base font-medium uppercase tracking-wider hover:text-hot-pink hover:translate-x-2 hover:scale-110 transition-all text-white w-full text-left"
-                >
-                  {item.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </aside>
+		<aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md z-50 flex-col">
+			<nav className="flex-1 px-8 py-12">
+				<ul className="space-y-4">
+					{navItems.map((item) => (
+						<li key={item.name}>
+							<button
+								onClick={() => handleNavClick(item.section)}
+								className="block py-2 text-base font-medium uppercase tracking-wider hover:text-hot-pink hover:translate-x-2 hover:scale-110 transition-all text-white w-full text-left"
+							>
+								{item.name}
+							</button>
+						</li>
+					))}
+				</ul>
+			</nav>
+
+			{/* 하단 고정: 소셜 링킹 및 저작권 (미니멀/고급스러운 스타일) */}
+			<div className="p-8 border-t border-gray-800/30 bg-[#0A0A0A]">
+				<div className="flex justify-between items-center mb-6">
+					<button
+						onClick={() => handleNavClick('contact')}
+						className="text-gray-500 hover:text-hot-pink transition-colors group relative"
+						aria-label="Contact"
+					>
+						<Mail size={18} className="group-hover:-translate-y-1 transition-transform" />
+					</button>
+					<a
+						href="https://github.com/gayulz"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-gray-500 hover:text-white transition-colors group relative"
+						aria-label="GitHub"
+					>
+						<Github size={18} className="group-hover:-translate-y-1 transition-transform" />
+					</a>
+					<a
+						href="https://yurizzy.tistory.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-gray-500 hover:text-white transition-colors group relative"
+						aria-label="Blog"
+					>
+						<BookOpen size={18} className="group-hover:-translate-y-1 transition-transform" />
+					</a>
+				</div>
+				<p className="text-[10px] text-gray-600 font-mono tracking-widest uppercase text-center">
+					© {new Date().getFullYear()} gayul.kim
+				</p>
+			</div>
+		</aside>
 
       {/* Mobile: Top Header */}
       <header

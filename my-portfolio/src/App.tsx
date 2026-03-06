@@ -53,10 +53,9 @@ function MainContent() {
 						</motion.div>
 					</AnimatePresence>
 				</main>
+				{/* Footer를 본문 영역(lg:pl-64) 내부로 편입하여 좌측 네비게이션과 겹치지 않고 그리드 정렬을 맞춤 */}
+				<Footer />
 			</div>
-
-			{/* Footer는 일반 플로우에 포함되며, 좌측 네비게이션 영역까지 확장 (left-0부터 시작) */}
-			<Footer />
 		</div>
 	);
 }
