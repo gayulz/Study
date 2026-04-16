@@ -5,7 +5,7 @@
 
 import { createContext, useContext, useState, ReactNode } from 'react';
 
-export type SectionName = 'home' | 'about' | 'projects' | 'experience' | 'education' | 'certifications' | 'writing' | 'contact';
+export type SectionName = 'home' | 'about' | 'projects' | 'experience' | 'learning' | 'writing' | 'contact';
 
 interface NavigationContextType {
 	activeSection: SectionName;

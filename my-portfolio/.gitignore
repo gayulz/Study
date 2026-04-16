@@ -50,4 +50,8 @@ lerna-debug.log*
 shrimp_data/
 shrimp_data.json
 .playwright-mcp/
+.claude/docs/
+mdFolder/
+docs/
+.autopus/
 .claude/

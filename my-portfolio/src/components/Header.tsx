@@ -10,14 +10,12 @@ const navItems: Array<{ name: string; section: SectionName }> = [
 	{ name: "About", section: "about" },
 	{ name: "Projects", section: "projects" },
 	{ name: "Experience", section: "experience" },
-	{ name: "Education", section: "education" },
-	{ name: "Certifications", section: "certifications" },
+	{ name: "Learning", section: "learning" },
 	{ name: "Writing", section: "writing" },
-	{ name: "Contact", section: "contact" },
-];
+	{ name: "Contact", section: "contact" },];
 
 export default function Header() {
-	const { setActiveSection } = useNavigation();
+	const { activeSection, setActiveSection } = useNavigation();
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 
@@ -29,24 +27,48 @@ export default function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	// 섹션 이동 핸들러
+	// 섹션 이동 핸들러: 부드러운 스크롤 적용
 	const handleNavClick = (section: SectionName) => {
-		setActiveSection(section);
+		const element = document.getElementById(section);
+		if (element) {
+			const offset = 0; // 필요 시 오프셋 조절
+			const bodyRect = document.body.getBoundingClientRect().top;
+			const elementRect = element.getBoundingClientRect().top;
+			const elementPosition = elementRect - bodyRect;
+			const offsetPosition = elementPosition - offset;
+
+			window.scrollTo({
+				top: offsetPosition,
+				behavior: "smooth"
+			});
+		}
 		setIsOpen(false); // 모바일 메뉴 닫기
 	};
 
   return (
     <>
       {/* Desktop: Left Sidebar */}
-		<aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md z-50 flex-col">
+		<aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md z-50 flex-col border-r border-gray-800/30">
 			<nav className="flex-1 px-8 py-12">
-				<ul className="space-y-4">
+				<ul className="space-y-2">
 					{navItems.map((item) => (
 						<li key={item.name}>
 							<button
 								onClick={() => handleNavClick(item.section)}
-								className="block py-2 text-base font-medium uppercase tracking-wider hover:text-hot-pink hover:translate-x-2 hover:scale-110 transition-all text-white w-full text-left"
+								className={cn(
+									"group relative block py-3 text-sm font-bold uppercase tracking-widest transition-all w-full text-left",
+									activeSection === item.section 
+										? "text-hot-pink translate-x-2" 
+										: "text-gray-500 hover:text-white hover:translate-x-1"
+								)}
 							>
+								{/* 활성화 상태 인디케이터 (Dot) */}
+								{activeSection === item.section && (
+									<motion.span 
+										layoutId="activeDot"
+										className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-hot-pink shadow-[0_0_10px_#ff69b4]"
+									/>
+								)}
 								{item.name}
 							</button>
 						</li>
@@ -54,12 +76,15 @@ export default function Header() {
 				</ul>
 			</nav>
 
-			{/* 하단 고정: 소셜 링킹 및 저작권 (미니멀/고급스러운 스타일) */}
+			{/* 하단 고정: 소셜 링킹 및 저작권 */}
 			<div className="p-8 border-t border-gray-800/30 bg-[#0A0A0A]">
 				<div className="flex justify-between items-center mb-6">
 					<button
 						onClick={() => handleNavClick('contact')}
-						className="text-gray-500 hover:text-hot-pink transition-colors group relative"
+						className={cn(
+							"transition-colors group relative",
+							activeSection === 'contact' ? "text-hot-pink" : "text-gray-500 hover:text-white"
+						)}
 						aria-label="Contact"
 					>
 						<Mail size={18} className="group-hover:-translate-y-1 transition-transform" />
@@ -94,7 +119,7 @@ export default function Header() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 lg:hidden",
           scrolled
-            ? "bg-[#0A0A0A]/90 backdrop-blur-md py-4 shadow-sm"
+            ? "bg-[#0A0A0A]/90 backdrop-blur-md py-4 shadow-sm border-b border-gray-800/50"
             : "bg-transparent py-6"
         )}
       >
@@ -120,14 +145,17 @@ export default function Header() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-full left-0 right-0 bg-[#1E1E1E] shadow-lg border-t border-gray-800"
+              className="absolute top-full left-0 right-0 bg-[#0A0A0A] shadow-2xl border-t border-gray-800"
             >
-              <nav className="flex flex-col p-6 space-y-4">
+              <nav className="flex flex-col p-8 space-y-6">
                 {navItems.map((item) => (
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.section)}
-                    className="text-lg font-display uppercase hover:text-hot-pink transition-colors text-white text-left"
+                    className={cn(
+						"text-xl font-display uppercase tracking-widest transition-colors text-left",
+						activeSection === item.section ? "text-hot-pink font-black" : "text-gray-400"
+					)}
                   >
                     {item.name}
                   </button>

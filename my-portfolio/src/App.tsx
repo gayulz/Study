@@ -3,58 +3,61 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { motion, AnimatePresence } from "motion/react";
+import { useEffect, useRef } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Certifications from "./components/Certifications";
+import Learning from "./components/Learning";
 import Writing from "./components/Writing";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import { NavigationProvider, useNavigation } from './contexts/NavigationContext';
+import type { SectionName } from "./contexts/NavigationContext";
 
-// 메인 컨텐츠를 별도 컴포넌트로 분리 (Provider 내부에서 useNavigation 사용)
+// 메인 컨텐츠 컴포넌트
 function MainContent() {
-	const { activeSection } = useNavigation();
+	const { setActiveSection } = useNavigation();
+	const observer = useRef<IntersectionObserver | null>(null);
 
-	// 현재 섹션에 맞는 컴포넌트 렌더링
-	const renderSection = () => {
-		switch (activeSection) {
-			case 'home': return <Hero />;
-			case 'about': return <About />;
-			case 'projects': return <Projects />;
-			case 'experience': return <Experience />;
-			case 'education': return <Education />;
-			case 'certifications': return <Certifications />;
-			case 'writing': return <Writing />;
-			case 'contact': return <Contact />;
-			default: return <Hero />;
-		}
-	};
+	useEffect(() => {
+		// Intersection Observer 설정: 화면의 상단 1/3 지점을 지날 때 섹션 활성화
+		observer.current = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					setActiveSection(entry.target.id as SectionName);
+				}
+			});
+		}, {
+			rootMargin: "-30% 0px -50% 0px",
+			threshold: 0
+		});
+
+		// 감시 대상 섹션들
+		const sectionIds = ["home", "about", "projects", "experience", "learning", "writing", "contact"];
+		sectionIds.forEach(id => {
+			const element = document.getElementById(id);
+			if (element) {
+				observer.current?.observe(element);
+			}
+		});
+
+		return () => observer.current?.disconnect();
+	}, [setActiveSection]);
 
 	return (
 		<div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-hot-pink selection:text-white">
 			<Header />
 			<div className="lg:pl-64">
 				<main>
-					{/* AnimatePresence로 섹션 전환 애니메이션 적용 */}
-					<AnimatePresence mode="wait">
-						<motion.div
-							key={activeSection}
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							exit={{ opacity: 0, y: -20 }}
-							transition={{ duration: 0.4, ease: 'easeInOut' }}
-						>
-							{renderSection()}
-						</motion.div>
-					</AnimatePresence>
+					<Hero />
+					<About />
+					<Projects />
+					<Experience />
+					<Learning />
+					<Writing />
+					<Contact />
 				</main>
-				{/* Footer를 본문 영역(lg:pl-64) 내부로 편입하여 좌측 네비게이션과 겹치지 않고 그리드 정렬을 맞춤 */}
-				<Footer />
 			</div>
 		</div>
 	);
