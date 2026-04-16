@@ -28,19 +28,19 @@ const projects: Project[] = [
   {
     id: "modernization",
     title: "Legacy Modernization",
-    version: "v3.3.2",
-    tags: ["System Modernization", "Enterprise Solution (Company)"],
-    description: "10년 이상 운영된 거대 레거시 시스템을 최신 Spring Boot 아키텍처로 안전하게 이식한 프로젝트입니다.",
+    version: "18단계 · 5개월",
+    tags: ["1인 독립 수행", "폐쇄망 환경", "단독 수행"],
+    description: "10년 이상 운영된 레거시(Java 1.7 / Spring 3.x)를 Java 17 / Spring Boot 3.3.2로 1인 전환했습니다. 단순 이식이 아닌 아키텍처 재설계 · 보안 강화 · 코드 품질 개선을 병행했습니다. 폐쇄망 환경에서 오프라인 Gradle 빌드 구조를 완성했습니다.",
     highlights: [
-      "Spring 4/XML 설정을 Java Config로 전면 전환",
-      "생성자 주입 및 계층 분리를 통한 결합도 해소",
-      "OKTA SSO 연동 및 인터셉터 성능 최적화"
+      "18단계 전환 공정 수립 및 1인 독립 수행 완료",
+      "보안 취약점 3건 선제 발굴 및 운영 배포 전 전수 해결",
+      "Spring 4/XML 설정을 Java Config로 전면 전환 및 계층 분리"
     ],
-    techStack: ["Java 7", "Spring Framework 4", "Java 17", "Spring Boot 3.3", "Apache", "mariaDB", "JPA", "Mybatis", "OKTA", "Spring Security", "JSP", "Javascript", "Linux", "Git"],
+    techStack: ["Java 17", "Spring Boot 3.3", "Spring Security 6", "MyBatis", "JPA", "MariaDB", "Gradle 8.8", "폐쇄망 환경", "단독 수행"],
     metrics: [
-      { label: "Build Speed", value: "+40%" },
-      { label: "Maintenance", value: "Optimized" },
-      { label: "Security", value: "Hardened" }
+      { label: "Build Time", value: "-28% (2m 40s)" },
+      { label: "Fix Cycle", value: "-66% (1 day)" },
+      { label: "Security", value: "3 Hardened" }
     ],
     image: "/image/spring-gradle.png",
     links: [
@@ -50,44 +50,44 @@ const projects: Project[] = [
   {
     id: "settletree",
     title: "SettleTree",
-    version: "v1.2.0",
-    tags: ["Open Source"],
-    description: "계층형 조직 구조에서의 복잡한 수수료 배분 로직을 전산화한 엔터프라이즈급 백엔드 엔진입니다.",
+    version: "1인 설계·개발",
+    tags: ["N-Depth 트리 정산", "금융 정합성 100%"],
+    description: "판매망·프랜차이즈 등 N-Depth 계층 구조에서 발생하는 결제 대금을 각 계층의 수수료율에 따라 자동 분배하는 백엔드 정산 엔진입니다. DFS 알고리즘 기반 분배와 소수점 낙전(Dust) 보정으로 금융 정합성 100%를 달성했습니다.",
     highlights: [
-      "DFS 재귀 알고리즘 기반의 정밀 수수료 계산",
-      "Direct Exchange 방식의 RabbitMQ 비동기 메시징",
-      "BigDecimal 활용 소수점 낙전(Dust) 보정 시스템"
+      "DFS 알고리즘 기반 분배 + 소수점 낙전(Dust) 보정 알고리즘 설계",
+      "N+1 문제를 QueryDSL Fetch Join으로 해결 (쿼리 1회로 트리 전체 로드)",
+      "CI 환경에서 RabbitMQ MockBean 격리 → 빌드 속도 83% 단축 (30s → 5s)"
     ],
-    techStack: ["Java 17", "Spring Boot 3.3", "RabbitMQ", "PostgreSQL", "Docker", "OCI", "Linux", "Git"],
-    aiTools: ["Gemini", "Antigravity", "Claude Code"],
+    techStack: ["Java 17", "Spring Boot 3.3", "Spring Data JPA", "QueryDSL", "RabbitMQ", "PostgreSQL", "Docker", "GitHub Actions", "DFS", "1인 설계"],
+    aiTools: ["Gemini", "Claude Code"],
     metrics: [
-      { label: "Complexity", value: "High" },
-      { label: "Throughput", value: "Scalable" },
-      { label: "Precision", value: "99.9%" }
+      { label: "Test Build", value: "-83% (5s)" },
+      { label: "Tree Load", value: "1 Query" },
+      { label: "Precision", value: "100.0%" }
     ],
     image: "image/settlement.png",
     links: [
-      { type: 'github', url: "https://github.com/gayulz/multi-level-fee", label: "Source" },
+      { type: 'github', url: "https://github.com/gayulz/multi-level-fee", label: "자세한 트러블슈팅 보기 →" },
       { type: 'live', url: "https://settletree.p-e.kr/", label: "Live Spec" }
     ]
   },
   {
     id: "wedding",
     title: "Luxury Wedding",
-    version: "v2.0.1",
-    tags: ["Interactive App"],
-    description: "모바일 환경에 최적화된 고감도 인터랙션 디지털 청첩장 시스템입니다.",
+    version: "1인 전담 프로젝트",
+    tags: ["직접 기획/디자인", "풀스택"],
+    description: "직접 기획 · 개발 · 디자인 · 영상 제작까지 수행한 웨딩 초대장 풀스택 프로젝트입니다. 기획부터 배포까지 전 과정을 1인 전담하여 구현했습니다. React 19와 Framer Motion으로 고감도 인터랙션을 구현했습니다.",
     highlights: [
-      "Framer Motion 기반 60fps 애니메이션 최적화",
-      "Firebase Firestore 실시간 데이터 싱크",
-      "Netlify Functions 서버리스 아키텍처"
+      "React 19 및 Framer Motion 기반 60fps 애니메이션 최적화",
+      "기획부터 개발, 디자인, 영상 제작까지 1인 전담 프로세스 수행",
+      "Vercel을 통한 자동 배포 환경 구축 및 운영"
     ],
-    techStack: ["React 19", "TS", "Framer Motion", "Firebase", "Netlify", "Git", "Vercel"],
+    techStack: ["React 19", "TS", "Framer Motion", "Firebase", "Netlify", "Vercel", "개인 프로젝트", "1인 전담"],
     aiTools: ["Claude Code", "AI Studio"],
     metrics: [
       { label: "FPS", value: "60" },
       { label: "Latency", value: "Minimal" },
-      { label: "UX", value: "Premium" }
+      { label: "Role", value: "Fullstack" }
     ],
     image: "/image/wedding.png",
     links: [
