@@ -10,6 +10,12 @@ import Section from "./ui/Section";
  */
 const articles = [
   {
+    title: "OKTA SAML 로그인 무한 루프 디버깅기 (feat. 백엔드·프론트 환장의 콜라보)",
+    date: "2026.04.17",
+    category: "Security",
+    url: "https://yurizzy.tistory.com/262"
+  },
+  {
     title: "GCP to OCI 이전 구축기 및 504 Gateway Time-out 해결기 (feat. Swap Memory)",
     date: "2026.04.03",
     category: "Cloud Engineering",
@@ -39,20 +45,16 @@ const articles = [
     category: "Fullstack Engineering",
     url: "https://yurizzy.tistory.com/257"
   },
-  {
-    title: "Inflearn ✅ 내가 하는 공부 로드맵 (feat. 2년 차 주니어가 만든 두 가지 학습 로드맵 이야기)",
-    date: "2026.01.04",
-    category: "Continuous Learning",
-    url: "https://yurizzy.tistory.com/256"
-  },
 ];
 
 export default function Writing() {
   return (
     <Section id="writing" className="bg-tech-black border-t border-white/5">
-      <div className="flex flex-col gap-4 mb-24 items-center text-center">
-        <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">05. Knowledge Base</span>
-        <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter">WRITING</h2>
+      <div className="max-w-[1200px] mx-auto">
+        <div className="flex flex-col gap-4 mb-12 text-center md:text-left">
+          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">06. Knowledge Base</span>
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase">WRITING</h2>
+        </div>
       </div>
 
       <div className="max-w-[1000px] mx-auto space-y-0">

@@ -74,7 +74,7 @@ export default function Hero() {
               className="flex flex-col items-start gap-1"
             >
               <span className="mono text-[10px] text-zinc-500 uppercase tracking-widest">Tech Stack</span>
-              <span className="text-xl md:text-2xl font-bold text-zinc-200 uppercase">Java · Spring · SQL</span>
+              <span className="text-xl md:text-2xl font-bold text-zinc-200 uppercase">Java · Spring </span>
             </motion.div>
 
             <motion.div

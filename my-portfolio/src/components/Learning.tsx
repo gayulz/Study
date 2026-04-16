@@ -17,16 +17,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 
 const education = [
   {
-    degree: "컴퓨터공학과 (학사)",
-    school: "서울디지털대학교",
-    period: "2020.06 — 2024.02",
-    description: "학사 학위 취득. 컴퓨터 과학 전반에 대한 기초를 다지고 소프트웨어 개발 역량을 키웠습니다."
-  },
-  {
     degree: "자바기반 웹 개발자 프로그래밍 과정",
     school: "휴먼교육센터",
     period: "2023.08 — 2024.01",
     description: "과정평가형 정보처리 산업기사. Java, Spring Framework, Database 등 실무 중심의 웹 개발 기술을 학습했습니다."
+  },
+  {
+    degree: "컴퓨터공학과 (학사)",
+    school: "서울디지털대학교",
+    period: "2020.06 — 2024.02",
+    description: "학사 학위 취득. 컴퓨터 과학 전반에 대한 기초를 다지고 소프트웨어 개발 역량을 키웠습니다."
   }
 ];
 
@@ -113,7 +113,8 @@ export default function Learning() {
 
   return (
     <Section id="learning" className="bg-tech-black border-t border-white/5">
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .swiper-pagination-bullet {
           background: rgba(255, 255, 255, 0.2) !important;
           opacity: 1 !important;
@@ -122,9 +123,11 @@ export default function Learning() {
           background: #00F3FF !important;
         }
       `}} />
-      <div className="flex flex-col gap-4 mb-24 items-center text-center">
-        <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">04. Academic Trace</span>
-        <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter">LEARNING</h2>
+      <div className="max-w-[1200px] mx-auto">
+        <div className="flex flex-col gap-4 mb-12 text-center md:text-left">
+          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">05. Academic Trace</span>
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase">LEARNING</h2>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-32 max-w-[1200px] mx-auto">
@@ -152,6 +155,10 @@ export default function Learning() {
                 <p className="text-zinc-400 text-sm leading-relaxed">{edu.description}</p>
               </motion.div>
             ))}
+
+            <br />
+
+            <br />
           </div>
         </div>
 
@@ -195,7 +202,7 @@ export default function Learning() {
         </div>
 
         <div className="relative">
-          <motion.div 
+          <motion.div
             layout
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
           >
@@ -270,7 +277,7 @@ export default function Learning() {
                   <span className="mono text-[9px] text-zinc-500 uppercase tracking-[0.3em] block mb-1">Verify Credential</span>
                   <h4 className="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-neon-cyan transition-colors">{cert.title}</h4>
                 </div>
-                
+
                 {/* PDF Card - No pink filter, clean zoom */}
                 <div className="relative aspect-[1.4/1] bg-white rounded-2xl overflow-hidden shadow-2xl border border-white/5 transition-all duration-700 group-hover:scale-[1.2] group-hover:z-50 flex items-center justify-center">
                   <div className="w-full h-full flex items-center justify-center bg-white">

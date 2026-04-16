@@ -41,25 +41,32 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full bg-tech-black border-t border-white/5 py-32 md:py-48">
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="flex flex-col gap-4 mb-24 items-center text-center">
-          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">06. Connection Protocol</span>
-          <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase">CONTACT</h2>
+        <div className="flex flex-col gap-4 mb-12 text-center md:text-left">
+          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">07. Connection Protocol</span>
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase">CONTACT</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Left: Info */}
-          <div className="lg:col-span-5 flex flex-col">
-            <div className="p-8 bg-tech-gray rounded-3xl border border-white/5 space-y-8 flex-1 flex flex-col justify-center">
-              <div className="flex items-center gap-4 text-neon-cyan">
-                <Terminal size={24} />
-                <span className="mono text-sm uppercase tracking-widest font-bold">System Liaison</span>
+          <div className="lg:col-span-5 flex">
+            <div className="p-8 md:p-12 bg-tech-gray rounded-3xl border border-white/5 space-y-12 flex-1 flex flex-col justify-center">
+              <div className="space-y-6">
+                <div className="flex items-center gap-4 text-neon-cyan">
+                  <Terminal size={24} />
+                  <span className="mono text-sm uppercase tracking-widest font-bold">System Liaison</span>
+                </div>
+                <h3 className="text-xl md:text-1xl font-medium text-zinc-300 leading-loose">
+                  <span className="text-2xl font-black text-white block mb-4 uppercase tracking-tighter">Let's build something that lasts.</span>
+                  저는 <span className="text-white font-bold">오래 가는 시스템</span>을 만들고 싶습니다.
+                </h3>
+                <h3 className="text-xl md:text-1xl font-medium text-zinc-300 leading-loose">
+                  금융, 보험, 사내 시스템처럼 <span className="text-neon-cyan font-bold">견고함이 곧 가치</span>인 도메인에 끌립니다.
+                  10년 뒤에도 이 코드를 읽을 누군가를 생각하며 씁니다.
+                  꾸준히 성장하는 팀의 합류 제안을 기다리고 있습니다.
+                </h3>
               </div>
-              <h3 className="text-xl md:text-1xl font-medium text-zinc-300 leading-loose">
-                새로운 도전을 위한 <span className="text-3xl md:text-4xl font-black text-neon-cyan tracking-tight mx-1">합류 제안</span>과<br className="hidden md:block" />
-                의미 있는 프로젝트 <span className="text-3xl md:text-4xl font-black text-neon-cyan tracking-tight mx-1">협업</span>을
-                환영합니다.
-              </h3>
-              <div className="space-y-4">
+
+              <div className="space-y-6 pt-6 border-t border-white/5">
                 <div className="flex flex-col gap-1">
                   <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest">Digital Mail</span>
                   <a href="mailto:gayulz@kakao.com" className="text-xl font-bold text-zinc-200 hover:text-neon-cyan transition-colors">gayulz@kakao.com</a>
@@ -73,47 +80,51 @@ export default function Contact() {
           </div>
 
           {/* Right: Form */}
-          <div className="lg:col-span-7 flex flex-col">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Identification</span>
-                  <input
-                    type="text" name="name" required value={formData.name} onChange={handleChange}
-                    placeholder="NAME / ORG"
-                    className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold"
-                  />
+          <div className="lg:col-span-7 flex">
+            <div className="p-8 md:p-12 bg-tech-gray rounded-3xl border border-white/5 flex-1 flex flex-col">
+              <form onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col justify-between">
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Identification</span>
+                      <input
+                        type="text" name="name" required value={formData.name} onChange={handleChange}
+                        placeholder="NAME / ORG"
+                        className="w-full bg-black/20 border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Response Channel</span>
+                      <input
+                        type="email" name="email" required value={formData.email} onChange={handleChange}
+                        placeholder="EMAIL ADDRESS"
+                        className="w-full bg-black/20 border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Payload Content</span>
+                    <textarea
+                      name="message" required value={formData.message} onChange={handleChange}
+                      placeholder="TRANSMIT MESSAGE..." rows={6}
+                      className="w-full bg-black/20 border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold resize-none flex-1"
+                    />
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Response Channel</span>
-                  <input
-                    type="email" name="email" required value={formData.email} onChange={handleChange}
-                    placeholder="EMAIL ADDRESS"
-                    className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold"
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Payload Content</span>
-                <textarea
-                  name="message" required value={formData.message} onChange={handleChange}
-                  placeholder="TRANSMIT MESSAGE..." rows={6}
-                  className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold resize-none"
-                />
-              </div>
 
-              <button
-                type="submit"
-                disabled={status === 'submitting' || status === 'success'}
-                className={cn(
-                  "w-full py-6 rounded-2xl font-black uppercase tracking-[0.3em] transition-all flex items-center justify-center gap-3",
-                  status === 'success' ? "bg-emerald-500 text-white" : "bg-white text-black hover:bg-neon-cyan"
-                )}
-              >
-                {status === 'submitting' ? <Loader2 className="animate-spin" /> : status === 'success' ? <CheckCircle /> : <Send size={18} />}
-                <span>{status === 'submitting' ? 'Transmitting...' : status === 'success' ? 'Transmission Success' : 'Initiate Transmission'}</span>
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  disabled={status === 'submitting' || status === 'success'}
+                  className={cn(
+                    "w-full py-6 mt-6 rounded-2xl font-black uppercase tracking-[0.3em] transition-all flex items-center justify-center gap-3",
+                    status === 'success' ? "bg-emerald-500 text-white" : "bg-white text-black hover:bg-neon-cyan"
+                  )}
+                >
+                  {status === 'submitting' ? <Loader2 className="animate-spin" /> : status === 'success' ? <CheckCircle /> : <Send size={18} />}
+                  <span>{status === 'submitting' ? 'Transmitting...' : status === 'success' ? 'Transmission Success' : 'Initiate Transmission'}</span>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

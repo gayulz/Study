@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Learning from "./components/Learning";
@@ -34,7 +35,7 @@ function MainContent() {
                 });
 
                 // 감시 대상 섹션들
-                const sectionIds = ["home", "about", "projects", "experience", "learning", "writing", "contact"];
+                const sectionIds = ["home", "about", "skills", "projects", "experience", "learning", "writing", "contact"];
                 sectionIds.forEach(id => {
                         const element = document.getElementById(id);
                         if (element) {
@@ -46,12 +47,13 @@ function MainContent() {
         }, [setActiveSection]);
 
         return (
-                <div className="min-h-screen bg-black text-white">
+                <div className="min-h-screen bg-tech-black text-white">
                         <Header />
                         <div className="lg:pl-64">
                                 <main>
                                         <Hero />
                                         <About />
+                                        <Skills />
                                         <Projects />
                                         <Experience />
                                         <Learning />

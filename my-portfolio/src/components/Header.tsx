@@ -8,6 +8,7 @@ import type { SectionName } from "../contexts/NavigationContext";
 const navItems: Array<{ name: string; section: SectionName }> = [
 	{ name: "Home", section: "home" },
 	{ name: "About", section: "about" },
+	{ name: "Skills", section: "skills" },
 	{ name: "Projects", section: "projects" },
 	{ name: "Experience", section: "experience" },
 	{ name: "Learning", section: "learning" },

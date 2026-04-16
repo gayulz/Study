@@ -77,12 +77,14 @@ const experiences = [
 export default function Experience() {
   return (
     <Section id="experience" className="bg-tech-black border-t border-white/5">
-      <div className="flex flex-col gap-4 mb-24 items-center text-center">
-        <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">03. Career Timeline</span>
-        <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase">EXPERIENCE</h2>
+      <div className="max-w-[1200px] mx-auto">
+        <div className="flex flex-col gap-4 mb-12 text-center md:text-left">
+          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">04. Career Timeline</span>
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase">EXPERIENCE</h2>
+        </div>
       </div>
 
-      <div className="max-w-[1100px] mx-auto space-y-8">
+      <div className="max-w-[1200px] mx-auto space-y-8">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
