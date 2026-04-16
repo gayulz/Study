@@ -54,8 +54,10 @@ export default function Contact() {
                 <Terminal size={24} />
                 <span className="mono text-sm uppercase tracking-widest font-bold">System Liaison</span>
               </div>
-              <h3 className="text-3xl font-bold text-white leading-tight">
-                새로운 도전을 위한 합류 제안과 의미 있는 프로젝트 협업을 모두 환영합니다.
+              <h3 className="text-xl md:text-1xl font-medium text-zinc-300 leading-loose">
+                새로운 도전을 위한 <span className="text-3xl md:text-4xl font-black text-neon-cyan tracking-tight mx-1">합류 제안</span>과<br className="hidden md:block" />
+                의미 있는 프로젝트 <span className="text-3xl md:text-4xl font-black text-neon-cyan tracking-tight mx-1">협업</span>을
+                환영합니다.
               </h3>
               <div className="space-y-4">
                 <div className="flex flex-col gap-1">
@@ -99,7 +101,7 @@ export default function Contact() {
                   className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold resize-none"
                 />
               </div>
-              
+
               <button
                 type="submit"
                 disabled={status === 'submitting' || status === 'success'}

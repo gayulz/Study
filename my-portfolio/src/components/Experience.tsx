@@ -9,11 +9,36 @@ import { Terminal, Briefcase, Calendar, ChevronRight } from "lucide-react";
  * @author gayul.kim
  * @since 2026-04-17
  */
+const calculateDuration = (startDate: string, endDate: string) => {
+  const [startYear, startMonth] = startDate.split('.').map(Number);
+  let endY, endM;
+
+  if (endDate === "PRESENT") {
+    const now = new Date();
+    endY = now.getFullYear();
+    endM = now.getMonth() + 1; // 0-indexed
+  } else {
+    const parts = endDate.split('.');
+    endY = Number(parts[0]);
+    endM = Number(parts[1]);
+  }
+
+  const totalMonths = (endY - startYear) * 12 + (endM - startMonth) + 1;
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  const suffix = endDate === "PRESENT" ? " 근무 중" : " 근무";
+
+  if (years === 0) return `${months}개월${suffix}`;
+  if (months === 0) return `${years}년${suffix}`;
+  return `${years}년 ${months}개월${suffix}`;
+};
+
 const experiences = [
   {
     role: "Backend Engineer · SK Operations Team",
     company: "(주)포커스원 (FocusOne)",
-    period: "2024.04 — PRESENT",
+    startDate: "2024.04",
+    endDate: "PRESENT",
     description: "주요 사내 서비스 및 관리 시스템의 백엔드 현대화와 안정적인 운영을 담당하고 있습니다.",
     achievements: [
       "Legacy (Java 8/Spring 4) → Modern (Java 17/Spring Boot 3.3) 마이그레이션 주도",
@@ -26,7 +51,8 @@ const experiences = [
   {
     role: "Technical Support Specialist",
     company: "서비스에이스 (Service Ace)",
-    period: "2019.08 — 2023.09",
+    startDate: "2019.08",
+    endDate: "2023.09",
     description: "SK브로드밴드 서비스의 1차 기술 지원 및 장애 대응 업무를 수행했습니다.",
     achievements: [
       "복잡한 네트워크 및 서비스 이슈에 대한 신속한 원격 진단 및 해결",
@@ -37,7 +63,8 @@ const experiences = [
   {
     role: "Financial Service Support",
     company: "메타넷 (Metanet)",
-    period: "2014.10 — 2018.01",
+    startDate: "2014.10",
+    endDate: "2018.01",
     description: "메트라이프생명 금융 서비스 지원 및 고객 커뮤니케이션을 담당했습니다.",
     achievements: [
       "변액보험 및 금융 상품 관련 전문 상담 제공",
@@ -82,9 +109,12 @@ export default function Experience() {
                   <p className="text-zinc-500 font-medium">{exp.company}</p>
                 </div>
 
-                <div className="flex items-center gap-3 py-2 px-4 rounded-full bg-black/30 border border-white/5 w-fit">
-                  <Calendar size={14} className="text-zinc-500" />
-                  <span className="mono text-[10px] text-zinc-300 uppercase tracking-widest">{exp.period}</span>
+                <div className="flex items-start gap-3 py-2.5 px-4 rounded-xl bg-black/30 border border-white/5 w-fit">
+                  <Calendar size={14} className="text-zinc-500 shrink-0 mt-0.5" />
+                  <span className="mono text-[10px] text-zinc-300 uppercase tracking-widest whitespace-pre-wrap leading-relaxed">
+                    {exp.startDate} — {exp.endDate}
+                    <br />({calculateDuration(exp.startDate, exp.endDate)})
+                  </span>
                 </div>
 
                 <div className="flex flex-wrap gap-2 pt-4">

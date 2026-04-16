@@ -104,7 +104,7 @@ export default function Projects() {
         <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">02. Engineering Portfolio</span>
         <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter">PROJECTS</h2>
       </div>
-
+      <br />
       <div className="flex flex-col gap-32 max-w-[1200px] mx-auto">
         {projects.map((project, index) => (
           <motion.div
