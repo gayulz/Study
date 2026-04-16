@@ -17,10 +17,9 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: ReactNode }) {
 	// localStorage에서 저장된 테마 불러오기 (기본값: light)
 	const [theme, setTheme] = useState<Theme>(() => {
-		const saved = localStorage.getItem('theme') as Theme;
-		return saved || 'light';
+	        const saved = localStorage.getItem('theme') as Theme;
+	        return saved || 'dark';
 	});
-
 	useEffect(() => {
 		// HTML 루트 요소에 dark 클래스 추가/제거
 		const root = document.documentElement;

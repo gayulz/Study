@@ -12,10 +12,11 @@ const navItems: Array<{ name: string; section: SectionName }> = [
 	{ name: "Experience", section: "experience" },
 	{ name: "Learning", section: "learning" },
 	{ name: "Writing", section: "writing" },
-	{ name: "Contact", section: "contact" },];
+	{ name: "Contact", section: "contact" },
+];
 
 export default function Header() {
-	const { activeSection, setActiveSection } = useNavigation();
+	const { activeSection } = useNavigation();
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 
@@ -27,144 +28,113 @@ export default function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	// 섹션 이동 핸들러: 부드러운 스크롤 적용
 	const handleNavClick = (section: SectionName) => {
 		const element = document.getElementById(section);
 		if (element) {
-			const offset = 0; // 필요 시 오프셋 조절
-			const bodyRect = document.body.getBoundingClientRect().top;
-			const elementRect = element.getBoundingClientRect().top;
-			const elementPosition = elementRect - bodyRect;
-			const offsetPosition = elementPosition - offset;
-
 			window.scrollTo({
-				top: offsetPosition,
+				top: element.offsetTop,
 				behavior: "smooth"
 			});
 		}
-		setIsOpen(false); // 모바일 메뉴 닫기
+		setIsOpen(false);
 	};
 
-  return (
-    <>
-      {/* Desktop: Left Sidebar */}
-		<aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0A0A0A]/95 backdrop-blur-md z-50 flex-col border-r border-gray-800/30">
-			<nav className="flex-1 px-8 py-12">
-				<ul className="space-y-2">
-					{navItems.map((item) => (
-						<li key={item.name}>
-							<button
-								onClick={() => handleNavClick(item.section)}
-								className={cn(
-									"group relative block py-3 text-sm font-bold uppercase tracking-widest transition-all w-full text-left",
-									activeSection === item.section 
-										? "text-hot-pink translate-x-2" 
-										: "text-gray-500 hover:text-white hover:translate-x-1"
-								)}
-							>
-								{/* 활성화 상태 인디케이터 (Dot) */}
-								{activeSection === item.section && (
-									<motion.span 
-										layoutId="activeDot"
-										className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-hot-pink shadow-[0_0_10px_#ff69b4]"
-									/>
-								)}
-								{item.name}
-							</button>
-						</li>
-					))}
-				</ul>
-			</nav>
-
-			{/* 하단 고정: 소셜 링킹 및 저작권 */}
-			<div className="p-8 border-t border-gray-800/30 bg-[#0A0A0A]">
-				<div className="flex justify-between items-center mb-6">
-					<button
-						onClick={() => handleNavClick('contact')}
-						className={cn(
-							"transition-colors group relative",
-							activeSection === 'contact' ? "text-hot-pink" : "text-gray-500 hover:text-white"
-						)}
-						aria-label="Contact"
-					>
-						<Mail size={18} className="group-hover:-translate-y-1 transition-transform" />
+	return (
+		<>
+			{/* Desktop: Left Technical Sidebar */}
+			<aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-tech-black border-r border-white/5 z-50 flex-col">
+				<div className="p-8 border-b border-white/5">
+					<button onClick={() => handleNavClick('home')} className="font-black text-2xl tracking-tighter text-white">
+						GAYUL<span className="text-neon-cyan">.</span>
 					</button>
-					<a
-						href="https://github.com/gayulz"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-gray-500 hover:text-white transition-colors group relative"
-						aria-label="GitHub"
-					>
-						<Github size={18} className="group-hover:-translate-y-1 transition-transform" />
-					</a>
-					<a
-						href="https://yurizzy.tistory.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-gray-500 hover:text-white transition-colors group relative"
-						aria-label="Blog"
-					>
-						<BookOpen size={18} className="group-hover:-translate-y-1 transition-transform" />
-					</a>
 				</div>
-				<p className="text-[10px] text-gray-600 font-mono tracking-widest uppercase text-center">
-					© {new Date().getFullYear()} gayul.kim
-				</p>
-			</div>
-		</aside>
 
-      {/* Mobile: Top Header */}
-      <header
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 lg:hidden",
-          scrolled
-            ? "bg-[#0A0A0A]/90 backdrop-blur-md py-4 shadow-sm border-b border-gray-800/50"
-            : "bg-transparent py-6"
-        )}
-      >
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center">
-            <button onClick={() => handleNavClick('home')} className="font-display text-2xl font-bold tracking-tighter hover:text-hot-pink transition-colors text-white">
-              GAYUL KIM
-            </button>
+				<nav className="flex-1 px-6 py-12">
+					<ul className="space-y-1">
+						{navItems.map((item, i) => (
+							<li key={item.name}>
+								<button
+									onClick={() => handleNavClick(item.section)}
+									className={cn(
+										"group relative flex items-center gap-4 py-3 px-4 w-full text-left transition-all duration-300 rounded-xl",
+										activeSection === item.section 
+											? "bg-white/5 text-white" 
+											: "text-zinc-500 hover:text-zinc-200 hover:bg-white/[0.02]"
+									)}
+								>
+									<span className="mono text-[10px] opacity-30 group-hover:opacity-100 transition-opacity">0{i + 1}</span>
+									<span className="text-xs font-bold uppercase tracking-widest">{item.name}</span>
+									
+									{activeSection === item.section && (
+										<motion.div 
+											layoutId="activeGlow"
+											className="absolute right-0 w-1 h-4 bg-neon-cyan shadow-[0_0_10px_#00F3FF] rounded-l-full"
+										/>
+									)}
+								</button>
+							</li>
+						))}
+					</ul>
+				</nav>
 
-            <button
-              className="p-2 text-white hover:text-hot-pink transition-colors"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
+				<div className="p-8 border-t border-white/5 bg-black/20">
+					<div className="flex justify-between items-center mb-6">
+						<a href="https://github.com/gayulz" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-neon-cyan transition-colors">
+							<Github size={18} />
+						</a>
+						<a href="https://yurizzy.tistory.com/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-neon-cyan transition-colors">
+							<BookOpen size={18} />
+						</a>
+						<button onClick={() => handleNavClick('contact')} className="text-zinc-500 hover:text-neon-cyan transition-colors">
+							<Mail size={18} />
+						</button>
+					</div>
+					<p className="mono text-[8px] text-zinc-600 uppercase tracking-[0.2em] text-center">
+						System v4.16 © 2026
+					</p>
+				</div>
+			</aside>
 
-        {/* Mobile Nav Overlay */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="absolute top-full left-0 right-0 bg-[#0A0A0A] shadow-2xl border-t border-gray-800"
-            >
-              <nav className="flex flex-col p-8 space-y-6">
-                {navItems.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.section)}
-                    className={cn(
-						"text-xl font-display uppercase tracking-widest transition-colors text-left",
-						activeSection === item.section ? "text-hot-pink font-black" : "text-gray-400"
+			{/* Mobile Header */}
+			<header className={cn(
+				"fixed top-0 left-0 right-0 z-50 transition-all duration-500 lg:hidden",
+				scrolled ? "bg-tech-black/90 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"
+			)}>
+				<div className="px-6 flex justify-between items-center">
+					<button onClick={() => handleNavClick('home')} className="font-black text-xl tracking-tighter text-white">
+						GAYUL<span className="text-neon-cyan">.</span>
+					</button>
+					<button onClick={() => setIsOpen(!isOpen)} className="text-white p-2">
+						{isOpen ? <X size={24} /> : <Menu size={24} />}
+					</button>
+				</div>
+
+				<AnimatePresence>
+					{isOpen && (
+						<motion.div
+							initial={{ opacity: 0, height: 0 }}
+							animate={{ opacity: 1, height: 'auto' }}
+							exit={{ opacity: 0, height: 0 }}
+							className="bg-tech-black border-b border-white/5 overflow-hidden"
+						>
+							<nav className="p-8 flex flex-col gap-6">
+								{navItems.map((item) => (
+									<button
+										key={item.name}
+										onClick={() => handleNavClick(item.section)}
+										className={cn(
+											"text-2xl font-black uppercase tracking-tighter text-left transition-colors",
+											activeSection === item.section ? "text-neon-cyan" : "text-zinc-500"
+										)}
+									>
+										{item.name}
+									</button>
+								))}
+							</nav>
+						</motion.div>
 					)}
-                  >
-                    {item.name}
-                  </button>
-                ))}
-              </nav>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </header>
-    </>
-  );
+				</AnimatePresence>
+			</header>
+		</>
+	);
 }

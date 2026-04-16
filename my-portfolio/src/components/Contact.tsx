@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Send, CheckCircle, AlertCircle, Loader2, Terminal } from "lucide-react";
+import { cn } from "../lib/utils";
 
 /**
- * [MIG] Contact 컴포넌트 메일 전송 연동 기능 마이그레이션 적용
+ * [MIG] Contact 컴포넌트 - oryzo.ai 테크니컬 스타일 반영
  *
  * @author gayul.kim
- * @since 2026-03-06
+ * @since 2026-04-16
  */
 export default function Contact() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -16,34 +17,16 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  /**
-   * [NEW] Formspree API를 활용한 이메일 전송 핸들러
-   *
-   * @author gayul.kim
-   * @since 2026-03-06
-   * @param e 폼 제출 이벤트
-   */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-
     const formEndpoint = "https://formspree.io/f/xvzwopbb";
-
-    if (formEndpoint.includes("YOUR_FORM_ID")) {
-      setTimeout(() => setStatus('success'), 1500); 
-      return;
-    }
-
     try {
       const response = await fetch(formEndpoint, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(formData)
       });
-      
       if (response.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
@@ -51,127 +34,86 @@ export default function Contact() {
         setStatus('error');
       }
     } catch (error) {
-      console.error('메일 전송 실패:', error);
       setStatus('error');
     }
   };
 
   return (
-    <section id="contact" className="w-full px-4 sm:px-6 lg:px-12 py-24 md:py-40 mb-0">
-      <motion.h2
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        className="text-5xl md:text-7xl font-black text-hot-pink mb-16 tracking-tighter"
-      >
-        CONTACT
-      </motion.h2>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <div>
-          <h3 className="text-3xl font-bold mb-6 dark:text-white">프로젝트 협업이나 개발 관련 문의가 있으시면 언제든지 연락 주세요.</h3>
-          <div className="space-y-2 text-lg text-gray-600 dark:text-gray-400">
-            <p>Backend Developer | Java & Spring</p>
-            <a href="mailto:gayulz@kakao.com" className="block text-hot-pink hover:underline">gayulz@kakao.com</a>
-            <a href="https://github.com/gayulz" target="_blank" rel="noopener noreferrer" className="block text-hot-pink hover:underline">github.com/gayulz</a>
-            <a href="https://yurizzy.tistory.com/" target="_blank" rel="noopener noreferrer" className="block text-hot-pink hover:underline">yurizzy.tistory.com</a>
-          </div>
+    <section id="contact" className="w-full bg-tech-black border-t border-white/5 py-32 md:py-48">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <div className="flex flex-col gap-4 mb-24 items-center text-center">
+          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">06. Connection Protocol</span>
+          <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase">CONTACT</h2>
         </div>
 
-        {/* 
-          [MIGRATION_OLD] 기존 폼 구성 요소 백업
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input type="text" placeholder="Jane Smith" className="..." />
-              <input type="email" placeholder="jane@framer.com" className="..." />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          {/* Left: Info */}
+          <div className="lg:col-span-5 flex flex-col">
+            <div className="p-8 bg-tech-gray rounded-3xl border border-white/5 space-y-8 flex-1 flex flex-col justify-center">
+              <div className="flex items-center gap-4 text-neon-cyan">
+                <Terminal size={24} />
+                <span className="mono text-sm uppercase tracking-widest font-bold">System Liaison</span>
+              </div>
+              <h3 className="text-3xl font-bold text-white leading-tight">
+                새로운 도전을 위한 합류 제안과 의미 있는 프로젝트 협업을 모두 환영합니다.
+              </h3>
+              <div className="space-y-4">
+                <div className="flex flex-col gap-1">
+                  <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest">Digital Mail</span>
+                  <a href="mailto:gayulz@kakao.com" className="text-xl font-bold text-zinc-200 hover:text-neon-cyan transition-colors">gayulz@kakao.com</a>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest">Network Link</span>
+                  <a href="https://github.com/gayulz" target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-zinc-200 hover:text-neon-cyan transition-colors">github.com/gayulz</a>
+                </div>
+              </div>
             </div>
-            <textarea placeholder="Message..." rows={6} className="..." />
-            <button type="button" className="..."><span>Send Message</span><Send size={18} /></button>
-          </form>
-        */}
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input
-              type="text"
-              name="name"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              disabled={status === 'submitting' || status === 'success'}
-              className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 rounded-lg focus:outline-none focus:border-hot-pink focus:ring-1 focus:ring-hot-pink transition-all dark:text-white disabled:opacity-50"
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email Address"
-              disabled={status === 'submitting' || status === 'success'}
-              className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 rounded-lg focus:outline-none focus:border-hot-pink focus:ring-1 focus:ring-hot-pink transition-all dark:text-white disabled:opacity-50"
-            />
           </div>
-          <textarea
-            name="message"
-            required
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Message..."
-            rows={6}
-            disabled={status === 'submitting' || status === 'success'}
-            className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 rounded-lg focus:outline-none focus:border-hot-pink focus:ring-1 focus:ring-hot-pink transition-all resize-none dark:text-white disabled:opacity-50"
-          />
-          
-          <button
-            type="submit"
-            disabled={status === 'submitting' || status === 'success'}
-            className={`w-full font-bold uppercase tracking-widest py-4 rounded-lg transition-all flex items-center justify-center space-x-2 ${
-              status === 'success' 
-                ? 'bg-green-500 text-white cursor-default' 
-                : status === 'error'
-                ? 'bg-red-500 text-white hover:bg-red-600'
-                : 'bg-hot-pink text-white hover:bg-hot-pink-hover'
-            }`}
-          >
-            {status === 'submitting' && (
-              <>
-                <Loader2 size={18} className="animate-spin" />
-                <span>Sending...</span>
-              </>
-            )}
-            {status === 'success' && (
-              <>
-                <CheckCircle size={18} />
-                <span>Message Sent!</span>
-              </>
-            )}
-            {status === 'error' && (
-              <>
-                <AlertCircle size={18} />
-                <span>Retry Sending</span>
-              </>
-            )}
-            {status === 'idle' && (
-              <>
-                <span>Send Message</span>
-                <Send size={18} />
-              </>
-            )}
-          </button>
 
-          {status === 'success' && (
-            <p className="text-green-500 text-sm font-medium text-center mt-2 animate-pulse">
-              성공적으로 메일이 발송되었습니다! 최대한 빠른 시일 내에 회신드리겠습니다.
-            </p>
-          )}
-          {status === 'error' && (
-            <p className="text-red-500 text-sm font-medium text-center mt-2">
-              오류가 발생했습니다. 직접 메일(gayulz@kakao.com)로 연락 부탁드립니다.
-            </p>
-          )}
-        </form>
+          {/* Right: Form */}
+          <div className="lg:col-span-7 flex flex-col">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Identification</span>
+                  <input
+                    type="text" name="name" required value={formData.name} onChange={handleChange}
+                    placeholder="NAME / ORG"
+                    className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Response Channel</span>
+                  <input
+                    type="email" name="email" required value={formData.email} onChange={handleChange}
+                    placeholder="EMAIL ADDRESS"
+                    className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold"
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <span className="mono text-[9px] text-zinc-500 uppercase tracking-widest ml-4">Payload Content</span>
+                <textarea
+                  name="message" required value={formData.message} onChange={handleChange}
+                  placeholder="TRANSMIT MESSAGE..." rows={6}
+                  className="w-full bg-tech-gray border border-white/5 p-5 rounded-2xl focus:outline-none focus:border-neon-cyan/50 transition-all text-white placeholder:text-zinc-700 font-bold resize-none"
+                />
+              </div>
+              
+              <button
+                type="submit"
+                disabled={status === 'submitting' || status === 'success'}
+                className={cn(
+                  "w-full py-6 rounded-2xl font-black uppercase tracking-[0.3em] transition-all flex items-center justify-center gap-3",
+                  status === 'success' ? "bg-emerald-500 text-white" : "bg-white text-black hover:bg-neon-cyan"
+                )}
+              >
+                {status === 'submitting' ? <Loader2 className="animate-spin" /> : status === 'success' ? <CheckCircle /> : <Send size={18} />}
+                <span>{status === 'submitting' ? 'Transmitting...' : status === 'success' ? 'Transmission Success' : 'Initiate Transmission'}</span>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );

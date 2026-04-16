@@ -2,85 +2,84 @@ import { motion } from "motion/react";
 import Section from "./ui/Section";
 
 /**
- * [MIG] About 컴포넌트 고도화
- * - 가독성 중심의 심플한 텍스트 리라이팅
- * - 좌측 컨텐츠와 우측 이미지 높이 자동 동기화 (items-stretch)
+ * [MIG] About 컴포넌트 - Bento Grid & Technical Spec 스타일
+ * - 정보를 구획화하여 엔지니어링 감성 극대화
  *
  * @author gayul.kim
  * @since 2026-04-16
  */
 export default function About() {
   return (
-    <Section id="about" className="relative overflow-hidden" variant="full">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
-        {/* Left: Text Content (7/12) */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="lg:col-span-7 flex flex-col justify-center"
-        >
-          <h2 className="text-6xl md:text-8xl font-black text-hot-pink mb-10 tracking-tighter">
-            ABOUT
-          </h2>
+    <Section id="about" className="bg-tech-black border-y border-zinc-900" variant="full">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="flex flex-col gap-4 mb-16">
+          <span className="mono text-neon-cyan text-[10px] uppercase tracking-[0.4em]">01. Profile Abstract</span>
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter">ENGINEERING MINDSET</h2>
+        </div>
 
-          <div className="space-y-8 text-zinc-400">
-            <div className="space-y-4">
-              <p className="text-2xl md:text-3xl font-bold text-white leading-snug">
-                "안정성을 설계하고 효율을 확장합니다."
-              </p>
-              <p className="text-lg leading-relaxed">
-                10년의 현장 경험에서 얻은 <span className="text-white font-bold">'집요한 문제 해결 능력'</span>으로
-                현재는 거대 레거시 시스템을 Spring Boot 3.3으로 현대화하는 핵심 엔지니어링을 수행하고 있습니다.
-              </p>
-            </div>
-
-            <div className="space-y-4 text-lg leading-relaxed">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+          {/* Bento Box 1: Core Narrative */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-8 p-8 md:p-12 bg-tech-gray rounded-3xl border border-white/5 flex flex-col justify-center"
+          >
+            <p className="text-2xl md:text-3xl font-bold text-white mb-8 leading-tight">
+              "안정성을 설계하고 <br />AI와 함께 효율의 임계치를 돌파합니다."
+            </p>
+            <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
               <p>
-                <span className="text-hot-pink font-bold">Claude Code, Gemini, Antigravity</span>를 실무에 전면 도입하여
-                단순 코딩을 넘어 최적화된 <span className="text-white font-bold">AI 워크플로우와 프롬프트 엔지니어링</span>을 끊임없이 연구합니다.
+                10년의 서비스업 경험은 <span className="text-white font-bold">'집요한 문제 해결 습관'</span>을 선물했습니다.
+                현재는 Spring Boot 3.3 현대화 프로젝트의 주축으로서, 레거시의 복잡한 의존성을 해소하고 시스템 성능을 최적화하는 데 집중하고 있습니다.
               </p>
               <p>
-                저에게 기술은 비즈니스 가치를 실현하는 도구입니다.
-                <span className="text-zinc-200">가독성, 안정성, 성능</span>이라는 본질에 집중하며 타협 없는 시스템을 구축합니다.
+                단순 생산성 향상을 넘어, <span className="text-neon-cyan font-bold">Claude Code, Gemini, Codex</span> 등 다양한
+                AI 도구와 개발툴들을 실무 워크플로우에 깊숙이 통합하여 단순 반복을 줄이고 본질적인 설계와 비즈니스 가치에 집중할 수 있는 환경을 만드는 것을 즐깁니다.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Skills Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-            {[
-              { name: "Java 17 & Spring Boot 3.3", level: "90%" },
-              { name: "JPA & QueryDSL", level: "85%" },
-              { name: "AI Prompt Engineering", level: "85%" },
-              { name: "RabbitMQ & Messaging", level: "75%" },
-              { name: "Docker & OCI", level: "70%" },
-              { name: "Claude Code & AI Studio", level: "90%" },
-            ].map((skill) => (
-              <div key={skill.name} className="bg-zinc-900/50 p-4 rounded-xl flex justify-between items-center border-l-2 border-hot-pink/50 hover:border-hot-pink transition-all w-full group">
-                <span className="font-bold text-xs md:text-sm text-zinc-300 group-hover:text-white transition-colors">{skill.name}</span>
-                <span className="text-hot-pink font-mono text-xs font-black ml-4">{skill.level}</span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+          {/* Bento Box 2: Profile Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="md:col-span-4 relative bg-tech-gray rounded-3xl overflow-hidden border border-white/5"
+          >
+            <img
+              src="/image/gemini.png"
+              alt="Profile"
+              className="object-cover w-full h-full  brightness-75 hover:grayscale-0 hover:brightness-10 transition-all duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-tech-black/80 via-transparent to-transparent" />
+          </motion.div>
 
-        {/* Right: Profile Image (5/12) - Height automatically matches left side */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="lg:col-span-5 relative bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl flex"
-        >
-          <img
-            src="/image/gemini.png"
-            alt="Profile"
-            className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700 brightness-90 hover:brightness-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/40 to-transparent pointer-events-none" />
-        </motion.div>
+          {/* Bento Box 3: Technical Specs (Skills) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="md:col-span-12 p-8 bg-tech-gray rounded-3xl border border-white/5"
+          >
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {[
+                { label: "Runtime", value: "Java 17 / Spring Boot 3.3" },
+                { label: "Persistence", value: "JPA / QueryDSL / Oracle" },
+                { label: "Messaging", value: "RabbitMQ / Async Processing" },
+                { label: "DevOps", value: "Docker / OCI / Netlify" },
+                { label: "AI Stack", value: "Claude Code / Prompt Eng." },
+                { label: "Frontend", value: "React 19 / TS / Tailwind" },
+              ].map((spec, i) => (
+                <div key={i} className="flex flex-col gap-2 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-neon-cyan/30 transition-colors">
+                  <span className="mono text-[9px] uppercase tracking-widest text-zinc-500">{spec.label}</span>
+                  <span className="text-xs md:text-sm font-bold text-zinc-200">{spec.value}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
     </Section>
   );
