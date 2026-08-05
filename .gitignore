@@ -324,3 +324,6 @@ dist
 .obsidian/**
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,macos,java,visualstudiocode
+
+# Java I/O 실습 산출물 (대용량 바이너리)
+2026/java-adv2/java-adv2/temp/
