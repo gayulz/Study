@@ -327,3 +327,55 @@ dist
 
 # Java I/O 실습 산출물 (대용량 바이너리)
 2026/java-adv2/java-adv2/temp/
+
+### 대용량 파일 방지 (GitHub 100MB 파일 제한 대응) ###
+# 빌드 산출물
+target/
+build/
+bin/
+.gradle/
+*.hprof
+*.dump
+
+# 실습/테스트로 생성되는 바이너리 데이터
+*.dat
+*.bin
+*.iso
+*.dmg
+*.img
+
+# 네이티브 라이브러리 / 실행 파일
+*.node
+*.dylib
+*.so
+*.dll
+*.exe
+*.o
+*.a
+
+# 영상 및 무압축 오디오
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.wav
+*.aiff
+*.flac
+
+# 압축 파일 (기존 *.jar, *.war, *.zip, *.tar.gz, *.rar 외 추가분)
+*.7z
+*.gz
+*.tgz
+*.bz2
+*.xz
+
+# 데이터베이스 / 백업 덤프
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+*.bak
+*.sql.gz
