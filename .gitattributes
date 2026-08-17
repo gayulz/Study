@@ -1,1 +1,8 @@
 *.html linguist-detectable=false
+
+# 줄바꿈 정규화
+# 저장소에는 항상 LF로 저장하고, 체크아웃할 때 파일 종류에 맞는 줄바꿈으로 변환한다.
+# core.autocrlf 설정은 사람마다 다르므로 여기서 강제해야 OS가 섞여도 스크립트가 깨지지 않는다.
+*.bat   text eol=crlf
+gradlew text eol=lf
+*.sh    text eol=lf
