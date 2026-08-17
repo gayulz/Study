@@ -326,7 +326,7 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,macos,java,visualstudiocode
 
 # Java I/O 실습 산출물 (대용량 바이너리)
-2026/java-adv2/java-adv2/temp/
+2026/02-java-adv2/java-adv2/temp/
 
 ### 대용량 파일 방지 (GitHub 100MB 파일 제한 대응) ###
 # 빌드 산출물
