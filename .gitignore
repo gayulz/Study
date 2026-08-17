@@ -112,6 +112,9 @@ fabric.properties
 *.tar.gz
 *.rar
 
+# Gradle Wrapper는 예외 - 이게 빠지면 clone 후 ./gradlew 실행이 안 된다
+!**/gradle/wrapper/gradle-wrapper.jar
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
